@@ -1,0 +1,3224 @@
+,Title,Categories,Tags,Replies,Post,Comment
+0,Where can I learn Languages Codecademy Doesn't teach?,"FAQ,General Coding FAQ",,20,"
+This is a copy of a post I originally had in Codecademy Forums years ago.
+I thought I would post it again so people can benefit from the linked material; as it was made so long ago CC has since made some of the courses listed such as SQL and Java but for completeness I will leave these sections in so people have additional material they can use.
+
+If you use any other good sites add them to the list, this post is a wiki so click on the little green pencil in the top right to add to the list. 
+Thanks
+Alex C
+
+This is a great list of resources for learning languages we don’t (yet!) teach, compiled originally by Patrick. Have others? Post them below!
+C/C++
+C++ Tutorial from cplusplus.com
+C and C++ Tutorials from cprogramming.com
+Learn C the Hard Way
+TheNewBoston’s C++ Tutorials
+Learn C interactive tutorial
+Dev-HQ
+C#
+Microsoft Developer Network (MSDN) C# Tutorials
+MSDN Channel 9 C# Fundamentals Tutorials
+C# Station Tutorial
+Objective-C (iOS and Mac)
+Objective-C from Cocoa Dev Central
+Apple’s Objective-C intro (you’ll need an Apple Developer account, it’s free)
+Stanford CS193P Look under “more from Stanford” for iOS 5 updated versions. Also covers MVC basics that some have expressed interest in.
+TheNewBoston’s Objective-C Tutorials
+Haskell
+Learn You A Haskell
+Try Haskell
+Java
+Stanford CS106A Awesome class. It covers Java but more importantly it covers program design theory that many people have asked for. It can be followed up with CS106B and CS107 also available on that website, for more theory combined with (non-Java) practical.
+TheNewBoston’s Java Tutorials
+Oracle’s Java Tutorials
+Practice-it Java practice
+PHP
+Now on Codecademy!
+PHP Bounce (Interactive in the vein of Codecademy)
+PHP Academy
+TheNewBoston’s PHP Tutorials
+VB.NET
+MSDN Channel 9 VB Fundamentals Tutorials
+SQL
+Stanford’s Introduction to Databases via Coursera
+SQL The Hard Way
+W3 Schools
+Markdown
+Eherrera Markdown Tutorial
+Agea Markdown Tutorial
+JacobSwain Markdown Tutorial
+Multiple Languages
+Programr (too many to list)
+CodingBat (Java and Python)
+Marakana Bookshelf (too much to list)
+Marakana’s Youtube channel (more advanced but great, too much to list)
+WiLDacademy
+The New Boston
+Tutorials point
+Multi Language Doc’s
+Almost Everything
+Free books list on GitHub
+A quick shout out to those who contributed the original links. Thanks guys.
+
+","
+Just Saying SQL Is thought in Codecademy now
+
+
+
+
+ alexcraig:
+
+as it was made so long ago CC has since made some of the courses listed such as SQL and Java
+
+
+@amanuel2 I know I just did it for completeness as I mentioned.
+
+Here are three Markdown tutorials. I know, not a programming language, but it is useful.
+
+
+
+CommonMark Discussion – 30 Jun 15
+
+
+
+Markdown Tutorial contest feedback
+Winners have been selected!  First, thanks to everyone who participated – the entries were all of very high quality in my opinion!  First Prize 🏆  http://eherrera.net/markdowntutorial/ by eh3rrera   all 16 books in my recommended reading list, or the...
+
+
+
+
+
+
+Added them in 
+
+
+
+C tutorial
+Java tutorial
+
+Thanks alex for showing me programmr.  I’ll be using it right alongside codecademy.
+
+C++ Definite Book/Viedos Guide List:
+https://discuss.codecademy.com/t/c-learning/40880/1
+
+Do you know of any free websites that cover Swift? (besides youTube  )
+
+Not seen that many free ones around and not tried any myself.
+Been able to find this though:
+
+
+Bloc
+
+
+
+Bloc | Online Programs in Web Development, Mobile Development, and Design
+A free iOS programming tutorial using Swift. Get started with Xcode, Swift, and the iOS SDK as you code your own version of Tetris.
+
+
+
+
+
+And a free trial at treehouse:
+https://teamtreehouse.com/tracks/ios-development-with-swift-20
+
+Awesome thanks a lot  I will stick with youTube tutorials until I find some good sites that teach it 
+
+I know a good website to learn all sorts of coding from.
+https://www.sololearn.com/Courses/
+That’s a direct link to it, there are plenty of courses there. It’s helpful for beginners, it’s where I started from. I’ve completed all their courses.
+
+I also found this basic website that teachs stuff for web development. HTML, CSS, Java, PHP, etc. While most of the stuff it teaches Codecademy also teaches, it does teach some stuff that isn’t available to learn here yet.
+http://www.w3schools.com/
+I hope you all find it helpful.
+
+Some things are outdated on that site, be wary of that.
+
+That is true, but any information may turn out useful. There are still some things on that site that isn’t taught here yet. I haven’t found the “perfect” free teaching thing everyone looks for, but at least we can put together all our knowledge from multible learning programs.
+I would like to point out that you shouldn’t pay for their certificates, just go through it if you would like to learn the basics. It is a little out of date.
+
+Another place.
+
+
+
+udacity.com
+
+
+
+Course Catalog | Udacity
+All Courses and Nanodegree Programs
+
+
+
+
+
+
+It also teaches Responsive Website Design, a very important thing to learn.
+
+A post was split to a new topic: Chatbot… thoughts?
+
+"
+1,FAQ - Free resources to train your programming skills,"FAQ,General Coding FAQ",,6,"
+Practice makes perfect - following this age-old saying is very important for a programmer. The more problems we practice solving in a language, the more perfect our skills in that language become.
+Therefore, here are a number of free and useful sites - where you can train in a number of real-world problems, learn new algorithms and compete with people across the globe:
+
+CodeWars
+CodinGame
+Hackerrank
+CodeChef
+Sphere Online Judge
+TopCoder
+CodingBat
+
+CheckIO - only Python
+
+","
+
+A post was split to a new topic: How much Swift could I learn in 2 weeks?
+
+Cool, that helps a lot.
+
+
+
+
+ gaurangtandon:
+
+o
+
+
+Oh
+Thanx fot these resources - I think that these resources can help me with studying!
+
+Thanks for the list! Codewars looks really interesting, especially for teaching beginners.
+"
+2,About the General Coding FAQ category,"FAQ,General Coding FAQ",,1,"
+This category is for guides and helpful resources on programming topics in general where they are not otherwise covered by the language or course-specific guide categories.
+",
+3,What kinds of problems does a data analyst solve?,"FAQ,General Coding FAQ",q-a,10,"
+Question
+In the context of this lesson, what kinds of problems does a data analyst solve?
+Answer
+The types of problems that data analysts work on can depend on different things, such as the context of the field they are working in, which can include finance, e-commerce, real estate, and many different fields that data plays an important part in.
+For example, in the context of business, some common types of problems that data analysts work on are discovering trends in the data to choose the best course of action and strategies to provide the most benefit to a company.
+Or, in the context of e-commerce companies, data analysts may try to figure out what ads to show that will have the highest click rate, based on user habits and preferences.
+In addition, data analysts in the field of real estate may be determining the price of houses in 5 or 10 years from now, based on current data and trends.
+","
+hy, a question please!!
+what is the most important types of company recruiting data scientist ( is it banks and insurance company) ???
+
+          the beast will shine and then ill be the best person in the world.
+        
+Are there any freelancing opportunities in Data science ?
+And , what is difference between Data Scientist and Data analyst?
+
+@prateekjain015133619 am still in my discovery phase too but in a lay man’s language this is how i differentiate the two; Data Analysts have the skills needed to communicate “Here’s what’s happening with the data” and Data Scientists have the skills needed to communicate "" Here’s what’s happening with the data, what may happen in the future, and what we might want to do with it.""  Hope this is helpful.
+
+Yes Kaggle hosts Kaggle Competitions where several people sign up to compete to win a monetary prize to solve real world problems or come up with solutions for companies that range from small startups to large companies like Google etc.
+
+Every company is looking for data scientists. Especially companies whose contracts consist mainly of govt contracts.
+
+The type of problems that can be solved using “big data” based analytic methods deal primarily with demographic study based issues. These issues cover such things as indicate how a particular group of people in a particular area will vote, what they will shop for, what their house hold incomes are, how much education they will most likely have, how long they will live on average and the types of medical problems they are most likely to develop in their life time. These are but a small selection of the possible uses of the results of “big data” analytic methods attempt to answer by using statistical mathematical methods of analysis.
+
+Would a UX Quantitative Researcher have similar skills as a data analyst/scientists?
+
+you tell the differences very goood
+"
+4,Guide: What is a Symbol?,"FAQ,General Coding FAQ","resource-wiki,guide",1,"
+
+Codecademy Community FAQs on General Coding Questions.png1000×208 146 KB
+
+What is a Symbol?
+A symbol is anything, really, that can stand in for something else.
+pi is the symbol for the ratio of a circle’s circumference to its diameter, an irrational.Archimedes
+phi is the symbol for the golden ratio, a + b / a = a / b, also an irrational. Michael Maestlin
+In programming we use symbols to represent whatever we want them to represent, they’re called variables.
+MY_SYMBOL = ""Whatever I want it to represent"".
+",
+5,FAQ: Functions - Functions,"FAQ,General Coding FAQ",,3,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Functions” exercise from the lesson “Functions”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How to Code
+FAQs on the exercise Functions
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+ Just notification- I was surprised there's no option to move hamburgers, so they just fall  on one another
+
+Just a thought- as someone who works in a burger shop, typically we put the condiments down before the burgers.  For example, bread, pickles, burger, then bread.
+"
+6,What are some ways that machine learning is applied in the present?,"FAQ,General Coding FAQ",,6,"
+Question
+In the context of this lesson, what are some ways that machine learning is applied in the present?
+Answer
+Although it is not quite 2049 yet, as in the exercise’s narration, the applications of machine learning are already impacting the world. Facial recognition has been around for some time and is constantly becoming more accurate. Self-driving cars, and in the near future self-driving flying cars, are already a reality and improving every year. Furthermore, recommendation engines have been applied in video streaming services, social networks, and e-commerce sites, and is getting more precise.
+In addition to these, machine learning applies to many other areas. This includes healthcare, such as for the identification of illnesses based on patterns in symptoms. GPS navigation systems utilize machine learning to predict traffic patterns and provide the best routes. Email services utilize machine learning to identify spam or malware. In addition, virtual assistants such as Google Home, Amazon Alexa, and Apple’s Siri apply machine learning to learn user preferences in order to better assist them.
+","
+I was in a lecture and i learned that it can be utilised to monitor the progress of a building and how it was progressing so that the commissioner of the building did not have to send anyone to see if going to meet the deadline of when it was completed.
+
+I suppose it could be used this way, assuming there were some automatic collection of certain data points on site. Do you have more details on this specific application?
+
+It can be used in educational institutions to help students better understand the concepts and empower student future.  It can be used in healthcare, finance, etc etc… the list go on never end
+
+If you drive a car in just about any major city in the world you will be experienced with machine learning, though might not realize it. Traffic control is a major concern in any urban metropolis. Machine learning helps those systems learn from traffic flow patterns so intersections can be better controlled to accommodate the direction(s) with the greatest traffic load.
+
+Thanx for explaining @mtf
+"
+7,What else can we do with the fill_between function?,"FAQ,General Coding FAQ",q-a,3,"
+Question
+In the context of this exercise, what else can we do with the fill_between function?
+Answer
+In addition to drawing lines with shaded error as shown in this exercise, we can use the fill_between function to do several different things.
+One is drawing multiple lines with shaded error on the same graph, so we can see more information or compare different plots.
+
+multipleShadeds.png685×532 44.2 KB
+
+Another thing we can do is draw the lines directly on top of other lines, where the top of one plot is the bottom of another. This is somewhat similar to the stacked bar chart.
+
+stacked.png731×567 56.4 KB
+
+We can also fill in areas where plots differ, for instance like the following.
+
+In addition, you can also use fill_between to show the area under a curve, by simply setting all the bottom bounds to 0’s.
+
+655c8d27d542e5ad7cf67989b72667b6944a780e.png811×645 13.3 KB
+
+","
+Hi there!
+It seems like some of the images are not loading.
+
+Wow there’s so much we can do.
+"
+8,Concat Array (n-Dimensional) without actualy using concat,"FAQ,General Coding FAQ",,7,"
+Hello Folks,
+I’m having a hard time to concat Array (n-Dimensional) without actualy using concat (for training).
+const multiArray = [[1,2,3],[4,5,6,[6,7,8,],[7,8,9]],['2','3','4']];
+let newArray =[];
+function readArray(input,output){
+  for (let i=0; input.length>i; i++){
+     if (Array.isArray(input[i]))
+     {
+      readArray(input[i],output) 
+     } else {
+        output.push(input[i]);
+            }
+   } 
+}
+readArray(multiArray, newArray);
+console.log(newArray) //[ 1, 2, 3, 4, 5, 6, 6, 7, 8, 7, 8, 9, '2', '3', '4' ]
+
+This is what I got so far, it works fine but is gritty, because i have to use a hoisted scope for the new array and giving it to the parameters. Instead i’d like it as the return value [newArray] - any Ideas?
+As this is a recursive function I do not know where to return and how to merge the Arrays from earlier recursive steps.
+","
+Just thinking on this, one conclusion I’ve drawn is that the only way to not use a global array is to return an array. That means using a call stack. Each recursion needs to return something, and a base case will return to the caller, which will wind down the stack. The net result will be the flattened array.
+
+
+
+
+ mtf:
+
+which will wind down the stack
+
+
+Thanks for sharing your thoughts, currently I’m learning the basics for JS - how to put it in the call stack and using return without stopping the function in its track?
+If there is some method/function like “jmp” to an anchor or line i could create the recursion without recalling the fuction, thus ending it only once with return.
+
+Recursion is a rather advanced topic that may best be explored somewhere down the road when all the basic concepts are cemented in your thinking. That being said, let’s consider a recursion for Factorial…
+function factorial(n) {
+    if (n < 0) {
+        return 0;
+    }
+    if (n === 0 || n === 1) {        // base case
+        return 1;
+    } else {
+        return n * factorial(n - 1)  // recursive case
+    }
+}
+
+console.log(factorial(7))            // <- 5040
+
+There are other topics on recursion in the forums which may help illustrate and explain the above, and the concept in general. The thing to note is that every case returns something, namely another call (except for the base case).
+
+Hello, @web4547361878.
+You could nest a function within a function like so:
+const flatten = arrayToFlatten => {
+  //flattens an array of nested arrays regardless of nesting levels
+    
+    const flatArray = []
+    
+    const flat = arr => {
+      for(let e of arr) {
+        if(Array.isArray(e)) {
+          flat(e)
+        } else {
+          flatArray.push(e)
+        }
+      }
+    }
+    
+    flat(arrayToFlatten)    
+    return flatArray
+}
+
+//Test
+const myArray = [[1,2, [3, 'four', ['five', false], true], 8], 'nine', 10, [11, 12, [13]]]
+const myFlatArray = flatten(myArray)
+console.log(myFlatArray)
+
+Output:
+
+[ 1, 2, 3, ‘four’, ‘five’, false, true, 8, ‘nine’, 10, 11, 12, 13 ]
+
+
+Thanks for this hint, the nested function works fine. No more hoisted variables, and a clean output.
+could have thougth of this earlier.
+
+This topic was automatically closed 18 hours after the last reply. New replies are no longer allowed.
+"
+9,Guide: A Zero Value,"FAQ,General Coding FAQ","resource-wiki,guide",1,"
+
+Codecademy Community FAQs on General Coding Questions.png1000×208 146 KB
+
+A Zero Value
+What is nothing?
+Today we can count on new technology year on year; but, there was a time when technological change occurred over centuries. The discovery of zero had a profound influence on the advancement of mathematics.
+When I was a kid in grade school we were told that “zero is undefined”. I still go along with that. It’s the only number we cannot assign a unit to. Nothing from nothing leaves nothing. There were no centimeters, there, Sir!
+
+
+en.wikipedia.org
+
+
+
+0
+
+ 0 (zero) is both a number and the numerical digit used to represent that number in numerals. The number 0 fulfills a central role in mathematics as the additive identity of the integers, real numbers, and many other algebraic structures. As a digit, 0 is used as a placeholder in place value systems. Names for the number 0 in English include zero, nought (UK), naught (US) (/nɔːt/), nil, or—in contexts where at least one adjacent digit distinguishes it from the letter ""O""—oh or o (/oʊ/). Informa
+
+
+
+
+
+Numerically and logically every learner, especially learning maths and/or programming has to come to grips with this value.
+The only other number that fits into this domain of numerical reason is 1. That’s another story.
+",
+10,FAQ: Data Types - Boolean,"FAQ,General Coding FAQ",,3,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Boolean” exercise from the lesson “Data Types”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Boolean
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Can anyone tell me how I can input the Boolean on python to turn a system on and off. I would like SysON to be true an SysOff to be false. Would I enter it in that way or another way?
+
+Are SystemOn and SystemOff specific commands to do something? I couldn’t find anything, so I made some up:
+def SystemOn():
+    print(""True, so system is now on."")
+    
+def SystemOff():
+    print(""False, so system is now off."")
+
+
+while True:
+    prop = input(""Enter a boolean proposition, such as 3>4. \nEnter q to quit\n"")
+    if prop == 'q':
+        break
+    is_true = (eval(prop))
+    
+    if is_true:
+        SystemOn()
+    else:
+        SystemOff()
+
+If the user enters a statement that evaluates to True, function SystemOn() runs; if False, SystemOff() runs.  The eval() function does the work.
+"
+11,Are documents and collections like objects?,"FAQ,General Coding FAQ",,1,"
+Question
+Are documents and collections like objects?
+Answer
+As we start exploring working with Mongoose in this lessons, we see that it refers to each set of key/value pairs as a document, and a set of documents is called a collection. What are this two exactly?
+Both are stored in the MongoDB database, according to MongoDB documentation:
+
+collection
+A grouping of MongoDB documents. A collection is the equivalent of an RDBMS table. A collection exists within a single database. Collections do not enforce a schema. Documents within a collection can have different fields. Typically, all documents in a collection have a similar or related purpose. See Namespaces.
+
+Lets clear some of that up, what is an RDBMS table? RDBMS stands for Relational Database Management System, which is your regular SQL, where you have an index based system (id) to relate to each item inserted and they all have to have the same properties (column names).  A visual representation would be a dogs table:
+
+id | name | breed| age
+
+
+
+1 | “fluffy” | “poodle” | 3
+2| “spike”| “bulldog”| 2
+
+etc.
+A collection is equivalent, but it does not enforce a schema, which means that if we were to make a collection of dogs, they do not have to all have a name, they certainly will not be tracked by id, they may have different properties, not just name, breed, and age, and the values can be entered in any order. Collections give us the flexibility to only focus on having dogs in a dogs table, that is if we want all documents to have a similar purpose. this leads us to:
+
+document
+A record in a MongoDB collection and the basic unit of data in MongoDB. Documents are analogous to JSON objects but exist in the database in a more type-rich format known as BSON.
+
+So what is JSON and BSON?
+JSON stands for JavaScript Object Notation that most commonly contain key/value data in string form:
+{
+  ""Dogs"" : [
+    { ""id"": ""1"",
+      ""name"": ""fluffy"",
+      ""breed"": ""poodle"",
+      ""age"": ""3""
+    },
+    {...}
+  ]
+}
+
+BSON, on the other side, is a Binary encoded JSON , here is an example I found for a hello world key/value pair:
+ {""hello"": ""world""} →	
+
+  \x16\x00\x00\x00                   // total document size
+  \x02                               // 0x02 = type String
+  hello\x00                          // field name
+  \x06\x00\x00\x00world\x00          // field value
+  \x00                               // 0x00 = type EOO ('end of object')
+
+ {""BSON"": [""awesome"", 5.05, 1986]}
+→	
+  \x31\x00\x00\x00
+  \x04BSON\x00
+  \x26\x00\x00\x00
+  \x02\x30\x00\x08\x00\x00\x00awesome\x00
+  \x01\x31\x00\x33\x33\x33\x33\x33\x33\x14\x40
+  \x10\x32\x00\xc2\x07\x00\x00
+  \x00
+  \x00
+
+Because of the simplification of turning the objects into binary, it becomes space savvy in most cases.
+Now we know, a document is a JSON object structured in binary, and a collection is like a representational database management system, but with greater flexibility, like not needing to have a specific schema to follow for each document we add to it.
+",
+12,FAQ: Data Types - Numbers,"FAQ,General Coding FAQ",,6,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Numbers” exercise from the lesson “Variables and Data Types”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Numbers
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+What are the first and the second pieces of data in relation to “I’m 20 years old” phrase?
+
+My First day of coding though:  As per my understanding there are two pieces of data in this example:1)20-The number and 2) I am 20 years old-The text.
+
+As I interpreted it, the first piece is “20”, and the second piece is “I am 20 years old”.
+
+I interpret the two pieces of data as “20” - which the value can represent - but “old” is not a piece of data that can be represented by a value on the computer.  That’s my understanding…don’t know if that’s right.
+
+20 is a counting number. It also represents the value of a numerical state, age. Numbers are not strings, but to represent them in a string we need to cast them to match that data type.
+const intro = (name, age) => `My name is ${name} and I am ${age} years old.`;
+
+console.log(intro(""Wee Gillis"", 19))
+
+The above syntax does all the work under the hood. All ES objects have a .toString() method which gets employed here. The expressions are coerced to String type so no errors are raised. Only a printable string is returned from the function.
+My name is Wee Gillis and I am 19 years old.
+"
+13,"When we have two points of different dimensions, how do we make sense of their distance?","FAQ,General Coding FAQ",q-a,8,"
+Question
+In this exercise, we compute the distance between two points where the first is 2D and the second is 3D. How do we compute their difference when the dimensions are different?
+Answer
+If we have points p1 and p2 represented as arrays and the dimension, that is, the size of the array, of p1 is less than the dimension of p2. Then we make sense of the distance between these points by adding enough zeros to the end of the array for p1 until the sizes of the arrays are equal. Explicitly, if p1 = [1,0] and p2 = [1,1,1,1], then Distance(p1,p2) is the same as Distance([1,0,0,0], p2).
+","
+
+Explicitly, if  p1 = [1,0]  and  p2 = [1,1,,1,1] , then  Distance(p1,p2)  is the same as  Distance([1,0,0,0], p2) .
+
+What does the empty space do at index 2 of the p2 list p2 = [1,1,,1,1] ?
+I feel like this would throw a syntax error.
+
+Well spotted! You are right 
+I edited the FAQ. Thank you very much.
+
+On point 2 with the code:
+
+Blockquote
+def euclidean_distance(pt1, pt2):
+distance = 0
+“# We will be adding code here next”
+for i in range(len(pt1)):
+distance += (pt1[i] - pt2[i]) ** 2
+
+It is giving me error:
+
+Blockquote
+Traceback (most recent call last):
+File “script.py”, line 10, in 
+for i in range(len(pt1)):
+NameError: name ‘pt1’ is not defined
+
+Which is probably right pt1 and pt2 haven’t been defined yet.
+Anyone else having similar issues?
+
+the for loop should be part of the function (body). There pt1 is defined, its one of the function parameters.
+
+I know this question is two months old and you’ve probably resolved the issue yourself, but just in case someone else comes along and sees this question, what I think is going on here is that you have indeed defined pt1 as a parameter of the function, but you are then using pt1 as a variable outside the function in your line “for i in range(len(pt1)):” because it’s not indented (plus the indent problems for the for loop and the “distance = 0”)
+I think if your code is otherwise fine if it’s just indented correctly.
+Happy coding.
+
+def euclidean_distance(pt1, pt2):
+distance = sum([(pt1[i] - pt2[i]) ** 2 for i in range(len(pt1))]) ** 0.5
+return distance
+
+Like @jimbeason pointed, the identation thing is very important, absolutely. Although, it seems that the step 2 will only works if you pass the the step 3 code in that ; it is, when you return the square root of distance.
+"
+14,FAQ: Loops - Review,"FAQ,General Coding FAQ",,4,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Loops”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How to Code
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+This is not a review question. I’m getting nothing but a black background screen when moving from review page to next page. Has anyone run into this and if so, has there been a reason?
+
+yeah I am having the exact same problem. really want to continue studying!
+
+I finally went back out to home page and went back in. It worked but I has to surf back through all the previous lessons. Then it did the same thing to me the next day. Kind of frustrating for sure.
+"
+15,FAQ: Variables - Putting it All Together,"FAQ,General Coding FAQ",,12,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Putting it All Together” exercise from the lesson “Variables”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Putting it All Together
+
+
+What should coders do when they are stuck?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I am unable to move on from this lesson without getting the solution from the help menu! It seems simple so I don’t know if I am missing something or if it is just a bug.
+
+Not able to reproduce this problem. Lesson worked fine for me and let me move on to completion. What browser are you using?
+
+I am using Firefox. I reopened it, copied the solution, and pasted it. It wouldn’t allow the pasted solution to proceed either. I think it must be a bug on my end somewhere.
+
+Where is the HTML to go with this JS? I thought they both would be accessible. It would to helpful to see how it all works together.
+
+That is not the objective of this module. It’s more about concepts than actual code. You might glean a lot from the HTML and CSS but it would be ahead of the learning curve and you would have more questions than answers, which questions if they do not get answered force you into presumptions.
+Bottom line, don’t try to get ahead of the curve, just yet.
+
+Yes, I agree. I’m inquisitive by nature, wanting to know all things . Thanks. 
+
+I’m having the same problem as govtchris had, even did the copy paste thing too and it wouldn’t let me pass either. I had to use the help to move on.
+
+I notice in these early examples you’re not declaring variables with var. I know I’m getting way ahead of myself – but is this not the proper convention anymore?
+
+Declaring variables is less convention and more intrinsic requirement. In the global namespace a declaration is rather moot, though. For small exercises most of the activity takes place there. Declared or not, variables are all global, in the var sense.
+In ES5, var gave variables function scope which prevented them from leaking out into the global namespace. In ES6, let and const give variables block scope which prevents them from leaking into their local scope.
+This is vitally important since now it means that even in the global namespace, variables can exist in their own block scope and not collide with global variables. It has relegated var to a legacy keyword that might even one day be deprecated.
+
+Is it considered bad coding if you don’t have a space in between the symbols?  For example:
+two=‘grass’
+vs how it should look like
+two = ‘grass’
+
+
+
+
+ tera7247856106:
+
+Is it considered bad coding
+
+
+There is no such thing as bad coding, unless it doesn’t work, or doesn’t work correctly all the time. Not having spaces around operators still works. The only thing is it is harder to spot the operators when reading the code.
+Style guides generally recommend whitespace around operators. Nothing is said about it making the code better, or not bad. It’s just easier to read and debug.
+"
+16,FAQ: Functions - Functions for Organization,"FAQ,General Coding FAQ",,5,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Functions for organization” exercise from the lesson “Functions”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Functions for organization
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+During the “4/6, Functions for organization” exercise, I arrived at the last “I’d like 3 sandwiches, 2 fries, and 2 triple ice cream scoop, please!”… When making the fries without functions, I actually accidently added an extra fry.  A simple mistake I really didn’t think would happen, but knew WITH the functions button, my error would not have occurred. Thank you for this basic and valuable lesson on functions.
+
+Aspiring coder here. Just trying to string together what I’ve learnt. Would anyone mind telling what the difference is between a function and variable? Thank you in advance.
+
+They are really quite different from one another. A variable is a label to which we can assign any object, which in JavaScript includes anonymous functions, since they too are objects.
+A function is an isolated block of code that we can call upon repeatedly anytime during the run session. Some functions perform heavy lifting and others perform relatively simple utility tasks.
+foo = function (parameter) {
+    // code body
+    return expression or value
+}
+
+Above, foo is the variable to which we have assigned an anonymous function expression. We can execute (call) the function by referring to its variable name…
+console.log(foo(argument))
+
+Variables are not objects, per se. They refer to objects so that we can access them either to poll (get their data) or update (modify their data).
+We learn more about functions as we move forward, but variables once we understand them to be simply labels, won’t require much review or practice. They are used all the time so one gets quite used to them.
+
+That’s really helped to clear the confusion. Thank you for taking the time.
+"
+17,FAQ: Variables - Changing the Value of a Variable,"FAQ,General Coding FAQ",,10,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Changing the Value of a Variable” exercise from the lesson “Variables”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How to Code
+FAQs on the exercise _Changing the Value of a Variable _
+
+What makes an “effective” programmer?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+where is the drop down menu to change the game options located
+
+It says the value of a variable can be changed part way through the code. You are using the example “my_number” in this case. How does the computer not get confused over which value belongs to the variable name as it is the same for both the old and the new number?
+
+
+
+
+ patriciai:
+
+it is the same for both the old and the new number?
+
+
+The latest assignment takes the place of the earlier one. The value first referenced is no longer in effect. my_number will now refer to new_number, as it were.
+It’s very common to have variables change their values. In fact that is why we refer to them as variable. They are subject to change. The only ones that cannot be changed are constants.
+const pi = 3.1415;
+
+Interesting. I get it!
+A follow up question then:
+
+Isnt it better to “clean up” the code then and remove old variabler no longer needed or used?
+
+Thanks for your help
+
+Programs are meant to be dynamic, not static. We want to build in as much flexibility as possible so the code may be re-used.
+function times_2_plus_3()  {
+    return 5 * 2 + 3;
+}
+
+The above is a static function. It contains no variables, only literals and returns a constant value, 13. How can we make it dynamic and reusable? By letting the user input any value, not just 5.
+function times_2_plus_3(number)  {
+    return number * 2 + 3;
+}
+
+Now can reuse this function on any number, which will be doubled and added to 3.
+Cleaning up the code only means removing redundancy, repetition and simplifying bloated code patterns. It does not mean manually reseting values on variables. The program needs to be able to do that on the fly in the normal course of action.
+Perhaps you could post the code sample in question? That will give us something to bounce this discussion off of.
+
+In the section “We could also change the value of  my_number  part way through our program:”, I can see how the values of my_number can be changed with the multiply * and division / symbols. Yet I see an equal sign = next to 1, & an equal sign next to 3. How can an equal sign change the value of a number since an equal sign means equivalent, after all equal sign in an equation can’t change the value of a number.
+
+
+
+
+ johnantonacci4655991:
+
+since an equal sign means equivalent
+
+
+In Python, the equal sign is not equivalence, but assignment.
+a = 3
+
+is not a comparison, but an assignment to the variable a of the value 3. We can still manipulate the value of a,
+a = a + 3
+print (a)    # 6
+
+Mathematically it makes very little sense, but in programming we refer to the right side as an expression and the left side as the reference.
+The expression is evaluated first and the outcome is assigned back to the same variable.
+A comparison would use ==, as in,
+print (a == 6)    # True
+
+my_number = 847595593392818109495
+my_number * 2
+1.69519118679e+18  or does it just execute my number twice and not actualy multiply it ?
+
+
+
+
+ board0732420027:
+
+or does it just execute my number twice and not actualy multiply it ?
+
+
+The result would indicate that it does multiply. Computers are dumb. They don’t know 2 from Adam.
+"
+18,FAQ: Data Types - Introduction to Data Types,"FAQ,General Coding FAQ",,7,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Introduction to Data Types” exercise from the lesson “Variables and Data Types”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Introduction to Data Types
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Can we say that Primitive data types are like the basics things that all human beings can do, but in this case it will be the functions that are inbuilt within the computer?
+
+I suppose that’s one way interpreting it.
+
+On my evaluate function, what’s the meaning of the Outoput equals to 1?
+
+As I understand it, the output is the expected answer of the function - in this case, it is a Boolean value where 1 = True and 0 = False.
+
+Out of curiosity, why doesn’t the Capitalise function turn True into TRUE? How does it know the difference between a Boolean value and a string/word?
+
+I would like to know the answer to your question as well.
+"
+19,FAQ: Lists - Lists: Review,"FAQ,General Coding FAQ",,5,"
+
+This community-built FAQ covers the “Lists: Review” exercise from the lesson “Lists”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How to Code
+FAQs on the exercise Lists: Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+In the coding area, all that’s showing is the “main.js” on top of the scree.
+I’ve already tried reloading the page, resetting the execercise, and waiting a couple hours. Does anyone know what’s wrong?
+
+I managed to solve the problem by restarting my pc.
+
+I come from a complete different sector of work and I am trying to make a transition to ‘this’. Let me tell you one thing, never encountered an approach where it looks like they want to frustrate you so much right from the beginning even if you do things right (but you start to doubt because the exercise doesn’t respond or …). Guess they are trying to brainwash you immediately, recognizing that programming/coding is a complete different environment (e.g. reset, refresh, precise, KISS, don’t try to be to smart etc.). Also forcing you to understand the importance of forums and threads. Wooooow this last exercise really tested my state of mind big time and it taught me mentally a lot. It was not about the right coding this exercise but preparing/testing your state of my mind. Well I am still alive and will not quit.  ;>)
+
+Hi I just finished the last part of this subject.
+but I’m left with one question.
+// Build a list
+var comicStrip = [‘Codey sees the trail’, ‘Codey starts the hike’, ‘Codey is halfway’, ‘Codey reaches the finish’]
+// select the 4th item from the list
+comicStrip[3]
+// and save it to the variable selection
+selection = comicStrip[3]
+It tells me to select comicStrip[3] but I don’t have to define a Variable to make it work,
+but when I insert the same piece of code into Scrimba it tells me “selection is not defined (/index.js:7)”
+so to fix this I simply put var before the line: “var selection = comicStrip[3]”
+is it necessary to put var before the selection or not?
+"
+20,FAQ: Lists - Accessing List Items,"FAQ,General Coding FAQ",,4,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Accessing List Items” exercise from the lesson “Lists”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How to Code
+FAQs on the exercise Accessing List Items
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Using iPad, doesn’t work comleting the comic, you can drag but can’t put it in the empty comic strip, anyone who knows why?
+
+Your device may not be fully supported by Codecademy. See this Troubleshooting Guide. Mobile devices like tablets and phones are not fully supported.
+
+Why is the first item in the index identified as 0 instead of 1?
+"
+21,FAQ: Control Flow - Exception,"FAQ,General Coding FAQ",,5,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Exception” exercise from the lesson “Control Flow”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Exception
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I just wanted to ask if it is possible to explain how the computer would be able to identify whether something is valid (i.e. how does it know the address truly exists vs if the address is fake? same with email address). Is there a specific coding that we must implement in order to figure this out or is it mapped out separately somehow?
+https://www.codecademy.com/paths/code-foundations/tracks/learn-how-to-code/modules/bop-ii/lessons/bop-control-flow/exercises/exception
+
+What is the primary difference between conditional structures and exception structures?
+
+what is the difference between conditional and exception structures?
+
+A conditional is a control flow construct such as,
+if condition:
+
+while condition:
+
+whereas try..except is an error trap that first tries to execute some code, which if it fails to run (raises an exception) will first loop through the except block and if the error isn’t handled there it will halt the program with the raised exception.
+
+>>> a = 100
+>>> b = 0
+>>> try:
+    print (a / b)
+except ZeroDivisionError:
+   print ('Cannot divide by zero')
+
+   
+Cannot divide by zero
+>>> 
+
+"
+22,FAQ: Variables - Reusing Values in Variables,"FAQ,General Coding FAQ",,17,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Reusing Values in Variables” exercise from the lesson “Variables”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Reusing Values in Variables
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+how do i get to know that what is the variable name and what if i forget it .
+
+you can always find the line where you defined the variable, to remind yourself of the variable name
+
+Hi. I don’t know what to do in the first lesson. I typed rocks grass rocks or whatever in the blank rectangles, but nothing happened on the screen.
+
+Could you please post a link to the exercise you’re referring to?
+
+Thank you so much for responding. It was in Python, but I found out I really enjoy learning Java instead. Thank you anyway!!
+
+The code works in changing the shapes in the chart to what word u input. My question is how is that chart built up or if i wish to build same in my web page or blog, how do i do it?
+
+You will need html, css and JS.
+you will need listeners on the input fields, then with JS dynamically change the chart which you constructed with html & css
+
+Okay, i will try that out, if i do have a problem, i would give an alert.
+
+Can somebody explain this code:
+my_number = 847595593392818109495
+my_number * 2
+my_number / 4
+*** I would assume this is the code for block 1, 2, and 3? What is the = 8475--------, *2, and /4?
+
+its multiplying (*) and division (/), so basic math operations.
+
+Hello,
+This is a new question, not a reply to a previous comment.
+When writing variables in code, do they always have to have the underscore in the middle?  In this lesson, they give the long number the variable name of my_number.  Do you always have to write variable names like that?  I’m a bit confused as to why it is written like that and notjust without the underscore, ie: mynumber?
+Thanks,
+
+The use of snake-case is very common in Python, with the chief aim to make variable names more readable. The underscore is not needed, but we can see the difference it makes when the names are rather verbose.
+
+I’m REALLY starting at the beginning so will be asking lot of dummy questions. On Basics of Programming p.2 - the difference that I see is that I’m only typing in in each variable once instead of three times like I did in on the previous page - is that right?
+
+yes, that is why the lesson is called reusing variable, for example:
+one = 'grass'
+two = 'rocks'
+three = 'forest'
+
+now i would just do:
+draw(one) // draws grass
+draw(two) // draws rocks
+draw(three) // draws forest
+draw(one) // draws grass
+draw(two) // draws rocks
+draw(three) // draws forest
+draw(one) // draws grass
+draw(two) // draws rocks
+draw(three) // draws forest
+
+and i get 9 fields like in the example, i reuse the grasslands (and the other ones as well)
+and then i only need to change 'grass' to to 'rocks' in one place to change 3 fields
+
+Please explain why Variables are important to understand the foundation of code.   To clarify I want to why replace the number with a variable?
+
+Variable at the very basics of learning to program. We can store data in a variable, so we can programmatically access this value later. We don’t replace the number with a variable, we store the number in the variable.
+"
+23,FAQ: Loops - While Loops,"FAQ,General Coding FAQ",,13,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “While Loops” exercise from the lesson “Loops”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How to Code
+FAQs on the exercise While Loops
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I had changed the loop of pink-orange-mint to try something else. Instead, I did pink-orange-mint-purple, which is 4 colors total. My condition was “loop while under 15 tiles are placed”. After running it, I realised that the loop stops at the 16th title, which is against the condition I chose. I understand that it  is because my color loop is complete at the 16th title, but shouldn’t the computer stop at 15th title to complete the condition? What is the reason it can’t stop?
+
+Welcome, @ekina!
+What this has to do with is the number of instructions within you loop body. Since there are four instructions, four tiles get placed each time through the loop. All the tiles get placed. When the program discovers 15 or more tiles it exits the loop. Try adding another color (5), or go back to 3 and you will see it places 15. Go up to six colors and it will place 18.
+Ultimately, the loop ends when the condition is no longer met, not necessary at 15, but any value 15 or greater.
+
+So my question is how do i create a loop solo, without a precursor or operator to initiate the loop. I enjoy the task of manual labor but is there any way to personally create a loop without the plug? I am only on the 3rd slide so i am unaware if there is soon to be an introduction to create our own loop effects by manual coding. Sure there is the tedious literal retyping of a function but is creating a loop an ability of koders?
+
+Loops are an integral part of programs. Along with functions, they let programmers use a single statement over and over again without repeatedly typing it.
+A while loop has a condition or state that must be met for the loop to continue. Once the condition is not met, the loop terminates.
+There are no restrictions on what condition we use, so long as it is pertinent to the program. It might be a numeric value that is either growing to a maximum, or shrinking to a minimum. That variable would need to be declared before the loop, and modified within the loop.
+Another case might be where an object is either growing in size (length) or shrinking to nothing. When you get to break we could discuss a static state in the while signature and a conditional within the loop. We’ll save that for later.
+
+thanks, you for sure are a comfort of knowledge to rely upon. Onward to BREAK.
+
+I’m just curious, what happened when we accidentally created an infinite loop? Will the computer throw an error? Will there be any certain warning? How to stop it if it’s already running?
+
+In many cases the interpreter will eventually throw an error, but if it doesn’t then refresh the browser (if it’s JavaScript running) or in the case of Python, and perhaps other languages, Ctrl+C will perform a keyboard interrupt.
+
+Ah I see.
+Will there be notification that specifically stated that it’s an infinite loop error, or perhaps just a generic error?
+
+If there is an exception or error thrown then it will likely have a fairly explicit message. One would hope it declares the run-on.
+Some infinite loops occur when recursion is not adequately bounded. That may be another topic, but the two are related but for one difference… Recursion is based on an infinite loop principle but expected to have one or more cases that cause the stack to wind down. The stack is full of calls made to this function that depend upon the result of the later call. Once we wind it down, we hand the result backwards up the stack until the final call is returned. As I said, it is another topic.
+while (true) {
+
+}
+
+With no breaking condition, this loop will run forever. An alternative to a breaking condition, or rather in addition to one, we can have the user providing input at each iteration. A lot of games or constantly alert programs use this principal. The key concern is that the USER dictates when the program ends.
+
+This is a very clear explanation! Makes me want to learn more  Thank you @mtf!
+
+
+
+ mtf:
+
+The key concern is that the USER dictates when the program ends.
+
+
+Yes, this totally makes sense to me.
+Thanks again!
+
+You’re welcome, @cyelz!
+
+
+
+ cyelz:
+
+Makes me want to learn more
+
+
+You go!
+
+iSecond that!
+@cyelz
+"
+24,FAQ: Operators - Using Operators to Get Different Outcomes,"FAQ,General Coding FAQ",,16,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Using Operators to Get Different Outcomes” exercise from the lesson “Operators”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Using Operators to Get Different Outcomes
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+could someone give me an example of when a NOT expression is used? I’m kinda having a hard time getting it.
+does it mean that if something like NOT (2 < 7) is used in a code, the computer would identify anything equal to that as false?
+sorry if I’m not getting it, this is still new to me lol
+
+NOT is a boolean toggle.
+not True  => False
+not False => True
+
+That’s the direct toggle, but there is anothe aspect to booleans, truthy and falsy.
+not truthy => False
+not falsy  => True
+
+A truthy value is any non-zero number, any non-empty string, any relation that yields True, or an object such as {} or [].
+A falsy is any number equal to zero, any empty string, any relation that yields False, any undefined variable, and depending upon the language, undefined, None, nil, null, …
+Since the NOT operator casts truthy to True, and falsy to False before toggling, we can double NOT as a way to cast any expression to an untoggled boolean.
+ not not 1  => True
+
+ not not '' => False
+
+If the expression is truthy, not not expression will be True. If falsy, it will be cast to False.
+
+ah okay, that makes more sense. Thank you 
+also I had no idea truthy and falsy were a thing. Javascript language is more colorful and fun than I realized lol
+
+Yuo’re welcome. 
+
+
+
+ ellenw8482939338:
+
+I had no idea truthy and falsy were a thing.
+
+
+That might not have come up yet. When it does you’ll be raring to go.
+It’s actually a general programming concept that any loosely typed or moderately typed language will support. The stricter the typing, the stricter the comparisons. JS is probably the most loosely typed of them all.
+There’s another rabbit hole to go down between == (equality) and === (identity) comparisons. That will be for another discussion but don’t be afraid to bring it up when you get to that point in the learning curve.
+
+I am also struggling to understand the meaning of the “NOT” boolean operator. And unfortunately the explanation here isn’t helping me very much. Can anyone explain it to me in a different way?
+
+From what I understand, the NOT operator is there to give an opposite answer of whatever value is presented.
+So if 1 = True, then putting NOT before 1 makes it False and vice versa.
+
+Hi, cattoren.
+The ‘NOT’ Boolean operator change a value to it’s opposite.
+If you have:  1  < 3 = TRUE, when you use ‘NOT’    1  < 3  the value will change from ‘TRUE’ to ‘FALSE’, its opposite.
+The same with:  2 > 10 = FALSE, if you use ‘NOT’  2 > 10 the value ‘FALSE’ will change to ‘TRUE’, its opposite.
+I hope have helped 
+
+This made it click! Thank you
+
+for recipe 2: applesauce
+the question says a recipe that includes apples.
+And there are 0 apples.
+I think the question should use another fruit rather than an apple because if we write it in code
+NOT (0 apples) it doesn’t make any sense.
+the question should be like this: a recipe needs 5 oranges
+and there are only 4 apples.
+then we can say NOT ( 4 apples) Thank you 
+
+Hey guys. I’m in a bit of confusion with this given piece of text:
+
+“For example, what if we only had apples in our fridge? If a recipe asked for either apples OR pears, we could still make the recipe. But if a recipe requires both apples AND pears, we wouldn’t be able to make it.”
+
+So, my theory is: If a recipe asks for 2 pears AND 3 apples while we only have the 3 apples in our fridge, the expression would be apple (3 ≥ 3) AND pear (0 ≥ 2). So, we literally can’t proceed with this recipe, but the explanation to AND operator is: both expressions leads to true. So, although we know we can’t, the program keeps telling we can?
+I hope it makes sense but it really got in my sissies.
+
+
+
+
+ mtf:
+
+toggle .
+
+
+I’m sorry but what is a toggle?
+
+So, the operator NOT means its opposite. If I need a pair of shoes to go out (not by now) and I only found one of them, the result may be NOT whether I have a pair of shoes or just one?
+In which cases I might use this operator?
+
+
+
+
+ wankkoz:
+
+what is a toggle?
+
+
+Toggle is a term we can use in any situation where there are but two states. A toggle switch toggles from one source to another in an electrical circuit, or it may toggle on and off. This is known as a binary. Same with 0 and 1. Toggling simply takes the opposite state.
+not True   =>  False
+not False  =>  True
+
+
+
+
+ wankkoz:
+
+In which cases I might use this operator?
+
+
+It lets us check if a state is opposite.
+a = 1
+
+if not a:
+    print ('a is 0')
+else:
+    print ('a is 1')
+
+why would we use NOT to change something to its opposite? like if we want something to be false, couldn’t we just make the statement false, instead of say NOT true? I’m confused why this is necessary.
+
+I understand the Recipe 2 and Recipe 3, but Recipe 1 doesn’t make sense. “You have a fruit salad recipe that calls for seven apples and four oranges.” On the picture, it shows 3 apples “select” 2 oranges. How is it 3 apples “AND” 2 oranges? There aren’t enough apples or oranges for Recipe 1.
+"
+25,FAQ: Control Flow - Intro to Control Flow,"FAQ,General Coding FAQ",,19,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Intro to Control Flow” exercise from the lesson “Control Flow”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Intro to Control Flow
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+@mtf  Hi,
+I have aproblem with the right half of the screen it doesn’t work it writes to me this
+dae8147d327b4fd192aa497a0c3a696a.cc-propeller.cloud ’s server IP address could not be found.
+so please help 
+reply as fast as you can please.
+
+Best I can do is tag in a staff member. @alyssavigil, are you up for this?
+
+ok if she fixed this problem
+
+Can’t say, but she will know someone who can look into it. Have you tried refreshing the page to see if this is a persistent problem?
+
+I refreshed it many times, And this problem happened with nearly each page.
+
+Guess we’ll just need to be patient. Is it something you can come back to later and move on to another lesson in the meantime?
+
+With any thing related to this link http://localhost:8000/ it doesn’t work.
+yes I could come back to it later.
+
+I tried to search for it but it tells me this site can’t be reached.
+
+localhost is your own machine. The issue is not with the URL, but with the LE (Learning Environment).
+
+What does this mean? and what shall I do?
+
+??please explain more.
+
+
+
+
+ giga0228063262:
+
+what shall I do?
+
+
+Nothing to do but wait to see if the problem gets fixed. Segue to something else, for now.
+
+Ok thank you Roy for your help.
+
+@mtf Ok how long shall I wait?
+
+@alyssavigil  when will she help?
+
+Does the problem persist, still?
+
+yes it still exsists
+
+I think it has been fixed, thanks for help 
+"
+26,FAQ: Lists - Removing Items from a List,"FAQ,General Coding FAQ",,20,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Removing Items from a List” exercise from the lesson “Lists”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How to Code
+FAQs on the exercise Removing Items from a List
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+myList = [‘apple’,‘banana’,‘pear’]
+myList.splice(1,1)
+print (myList)
+
+myList.splice(1,1)
+AttributeError: ‘list’ object has no attribute ‘splice’
+This is the error I got.  Does  anyone knows why?  Much appreciated!
+
+It would appear you are working in a Python environment. splice is a JavaScript method. Python has no such method.
+
+
+
+
+ wiki-bot:
+
+other
+
+
+Hi,
+I have some questions. To be able to move forward in this learning process I need to understand and be comfortable with what I have learnt. I’m completely new to this, so maybe the questions are “stupid”, but I would appreciate if somebody takes time to answer them.
+
+
+.pop
+In previous exercise we used .append to add something at the end of a list. Does in this case .pop mean “remove something from the end of a list”? Are we always using .pop when we want to remove something from the end of a list? What is the meaning of .pop?
+
+
+.splice
+Does .splice always mean that something is happening in a middle of a list? In previous exercise we were adding something with .splice, now we are removing it with .splice? How do a computer know then when we are adding and when we are removing if we in both cases use .splice?
+
+
+MyList.splice (1, 1)
+
+
+What is (1, 1)? Does the first 1 mean “index 1”? Does the second 1 mean “remove 1 item from a list”?
+
+/ / returns ‘pear’ or // returns ‘banana’ or // now, myList = [ ‘apple’, ‘pear’] etc.
+What are those grey explanations? Are we going to type them too when coding? Or are they only here as an explanation (instructions) for us, so that we understand what is happening and that they don’t really exist when coding in reality?
+
+Thanks in advance for your answers,
+Natasha
+
+If this is JavaScript, then there is no .append() method for arrays that I’m aware of. There is a node insertion method, .append but deals with the DOM.
+We use .push() to append, and .unshift() to prepend.
+.pop() is always the last item in the array to be removed. It can be assigned or used in an argument.
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+b = a.pop()
+console.log(b)
+console.log(a)
+// 9
+// [1, 2, 3, 4, 5, 6, 7, 8]
+
+.splice() will mutate the array it is acting upon, and will return the values removed as an array. It can remove zero or more items, and can replace them with zero or more items starting at that index.
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+b = a.splice(4, 2)
+console.log(b)
+// [5, 6]
+console.log(a)
+// [1, 2, 3, 4, 7, 8, 9]
+a.splice(4, 0, 5, 6)
+console.log(a)
+// [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Any code preceded by // does not execute. It is a single line comment providing information to the reader.
+
+Hello @nanski84 ,
+@mtf has answered your questions, but I think you or maybe others need more explanation on how .splice() method works… Please, check out the below:
+
+
+.splice() method used for add or remove items to or from the list.
+inside .splice() brackets () there are three types of data .splice(--1--, --2--, ""--3--"", ""--3--"", ""--3--""):
+
+
+the first space --1-- tells what index[] number you will to start with.
+the second space --2-- tells how many items will be removed starting from the index[]
+number given in the first space…(if second number is set to 0 means, remove nothing).
+the third space “–3--” (between double quotation marks) are the items which will be
+added to the list.
+
+///////////////////////////example 1
+kokoGroup = [""koko00"", ""koko11"", ""koko22"", ""koko33"", ""koko44"", ""koko55"", ""koko66""]
+action = kokoGroup .splice(4, 2)
+console.log(action)
+// this will remove two items starting from the 
+//fifth item in the list [""koko44"", ""koko55""]
+console.log(kokoGroup)
+// [""koko00"", ""koko11"", ""koko22"", ""koko33"", ""koko66""]
+
+///////////////////////////example 2
+kokoGroup = [""koko00"", ""koko11"", ""koko22"", ""koko33"", ""koko44"", ""koko55"", ""koko66""]
+action = kokoGroup.splice(2, 1, ""ToTo-1"", ""ToTo-2"" )
+console.log(action)
+// this will remove one item starting from the 
+//third item in the list [""koko22""], 
+//and add two extra items [""ToTo-1"", ""ToTo-2""]
+console.log(kokoGroup )
+// [""koko00"", ""koko11"", ""ToTo-1"", ""ToTo-2"", ""koko33"", ""koko44"", ""koko55"", ""koko66""]
+
+
+Hi, i’m also new at programming so i don’t understand what means returns? In this exercise we have myList.pop() // returns ‘pear’ but why? would it be able to function without returns?
+
+
+
+
+ web4386730420:
+
+what means returns?
+
+
+It refers to the final output of the method, what is given back to the caller.
+[1, 2, 3, 4, 5].pop()    #  5
+
+5 is returned by the method.
+
+hey, just curious about removing and adding items to a list in the examples I can use splice and append to add or remove items
+myList = [‘apple’, ‘banana’, ‘pear’]
+but wouldn’t it be the same to just  edit said line instead of making a new line just to add/remove
+like why can’t we go back to my list and put orange inside or delete pear
+
+A program when running cannot be edited. That is why there are methods that can modify an array dynamically. We might not have any hand in the original creation of the list, only in how that data is read from or written to. Our intentions are written in the code, with all operations being done by that code.
+The principal methods we have at our disposal are,
+unshift()
+shift()
+
+for inserting at, and removing from the left side (beginning) of the array;
+push()
+pop()
+
+for inserting at, and removing from the right side (end) of the array; and,
+splice()
+
+for inserting at, or removing from within the array.
+Edited: Nov. 3, 2019: why
+
+Thak you for very comprehensive explanation. Things are starting to make sense now
+
+why is 1 written twice in this code : myList.splice(1, 1)  ?
+
+When we interpret that expression it means essentially, ‘remove the one element at index 1’.
+
+looking for this solution. You solved this. thanks.
+
+Thank you very much for the extremely helpful explanation Tobasi & MTF ! I was confused about the numbers following a .splice, and felt uncomfortable moving forward. You two broke that down perfectly, I appreciate that very much. Your comments were lessons of their own !
+
+If we had written myList.splice(1,1,‘mango’) would mango replace ‘banana’ ie:
+myList=[‘apple’,‘mango’,‘pear’] ?
+I just want to make sure I’m understanding it correctly.
+
+Welcome, @webcoder12367,
+The second positional argument is how many elements to delete, so if ‘banana’ is in the second position in the array, then it will be deleted before insertion of the new entry. If that is the idea you have, then you are on the right track.
+
+
+
+
+ mtf:
+
+b = a.splice(4, 2)
+
+
+what do you mean by (4,2)?
+
+We can read up the documentation for Array.splice to get a complete picture of what the method promises to do. Basically, the first positional argument, 4 is the index of the start of the splice, and the second argument is the element count.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+
+
+Previous lesson says do not worry about pop/splice then in very next lesson has the same concepts with a comic frame and no other exercise/instructions? What does this do? How do I learn this?
+"
+27,FAQ: Functions - Putting It All Together,"FAQ,General Coding FAQ",,41,"
+
+This community-built FAQ covers the “Placholder” exercise from the lesson “Functions”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How to Code
+FAQs on the exercise Putting It All Together
+
+
+What does + ',' mean?
+What does return do?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Hello, I’m so confused! This is what I have done, but I keep getting an error (“expected variable ‘result’ to be defined”)
+// Define the ‘makeSandwich()’ function
+function makeSandwich(topping1, topping2) {
+sandwich = ‘bread’
+sandwich =+ sandwich + ‘topping1’
+sandwich =+ sandwich + ‘topping2’
+sandwich =+ ‘bread’
+result = makeSandwich(‘burger patty’, ‘pickles’)
+}
+Help please! I really wanna master this so I can move on confidently. Thanks!
+
+
+
+
+ kellebelle99:
+
+=+
+
+
+All compound assignments are written with the operation first, then assignment.
+a += 1
+
+which is the equivalent of,
+a = a + 1
+
+The addition takes place first, then the assignment.
+Note that when using the augmentation operator we do not repeat the variable on the right hand side.
+sandwich = bread
+sandwich += topping1
+
+Note also that topping1 and topping2 are variables so we would never write them in quotes.
+
+8 posts were split to a new topic: What does + ',' mean?
+
+Hello,
+What if I have 7 “layers” and want to have them flexible and changeable? I was trying this (below) but it returns a sandwich with bread only (“One or more ingredients are not valid”). Can you see the mistake?
+topping1 = ‘jelly’
+topping2 = ‘pickles’
+function makeSandwich(topping1, topping2, topping1, topping2, topping1, topping2, topping1) {
+sandwich = ‘bread’ + ‘,’
+sandwich += topping1 + ‘,’
+sandwich += topping2 + ‘,’
+sandwich += topping1 + ‘,’
+sandwich += topping2 + ‘,’
+sandwich += topping1 + ‘,’
+sandwich += topping2 + ‘,’
+sandwich += topping1 + ‘,’
+sandwich += ‘bread’
+return sandwich
+}
+result = makeSandwich(‘jelly’, ‘pickles’)
+
+Please post a link to the exercise. (Copy the URL in the location bar and paste into a reply.)
+
+Sorry, here it is: https://www.codecademy.com/paths/code-foundations/tracks/learn-how-to-code/modules/bop-ii/lessons/bop-functions/exercises/all-together
+
+
+
+
+ ruby5774027993:
+
+function makeSandwich(topping1, topping2, topping1, topping2, topping1, topping2, topping1) {
+
+
+The parameter variables should all be unique. Work with the two parameters given, topping1 and topping2.
+
+Would someone be able to tell me what’s the reasoning behind writing the function in multiple steps as…
+
+function makeSandwich(topping1, topping2) {
+sandwich = ‘bread’ + ‘,’
+sandwich += topping1 + ‘,’
+sandwich += topping2 + ‘,’
+sandwich += ‘bread’
+return sandwich
+}
+
+…and not as a single row?
+
+function makeSandwich(topping1, topping2) {
+sandwich = ‘bread’ + ‘,’ + topping1 + ‘,’ + topping2 + ‘,’ + ‘bread’
+return sandwich
+}
+
+Is it just to make it easier to read?
+
+
+
+
+ textninja18763:
+
+Is it just to make it easier to read?
+
+
+Quite possibly, yes. At this point is difficult to say how comfortable the new learner is with concepts such as concatenation.
+ES6 gives us a really special tool for constructing a string from literals and variables… The template literal syntax.
+function makeSandwich(topping1, topping2) {
+    return `bread, ${topping1}, ${topping2}, bread`
+}
+
+This will be covered in the lessons on strings and string concatenation so let this slide for the time.
+
+Hi, can someone help me brake down the instructions in { }, I don’t understand the logic behind it 
+function makeSandwich(topping1, topping2) {
+sandwich = ‘bread’ + ‘,’
+sandwich += topping1 + ‘,’
+sandwich += topping2 + ‘,’
+sandwich += ‘bread’
+return sandwich
+}
+
+
+
+
+ script4534789097:
+
+I don’t understand the logic behind it
+
+
+Technically, there is no logic, only inline assignments. The first line in the function block defines a string object, sandwich and assigns the first word concatenated with a comma string character. The next three lines continue the assignment using an assignment operator that extends the string in one step. += is sometimes referred to as an augmentation operator.
+The finished result will be string composed of the assignments in all four lines.
+console.log(sandwich)
+// bread,ham,cheese,bread
+
+Thank you! Made it clear 
+
+3 posts were split to a new topic: What does return do?
+
+Hi, I’m having the same problems as kellebelle99,
+https://www.codecademy.com/paths/code-foundations/tracks/learn-how-to-code/modules/bop-ii/lessons/bop-functions/exercises/all-together
+I tried to running the function that was already set up, but that doesn’t make the burger sandwich so I don’t know where I messed up.
+Could someone explain mtf in a different way?
+
+Hello, @dog_geist! Welcome to the forum.
+If you wouldn’t mind copying and pasting the code you are having trouble with in a reply to this post we’ll be happy to try to help. Please click on the </> icon before pasting your code, and then paste it in the space indicated. Without seeing the code in question, it is really difficult to speculate what may be wrong.
+
+Hi, thanks for responding, but interestingly enough it works now.
+// Define the 'makeSandwich()' function
+function makeSandwich(topping1, topping2) {
+  sandwich = 'bread' + ','
+  sandwich += topping1 + ','
+  sandwich += topping2 + ','
+  sandwich += 'bread'
+  return sandwich
+}
+
+// Call the function and store the returned value in 'result'
+result = makeSandwich('peanut butter', 'jelly')
+
+
+It’s very odd, because I did nothing different. At first it wouldn’t even run the default example.
+
+I guess we chalk it up as a glitch. Happy coding!
+
+Hi midlinder,
+I have the same problem as dog_geist. My code is the same as his, but it doesn’t run. I get an error and can’t move on.
+Can you please help me?
+
+If your situation is anything like mine, just wait a couple of hours and get back to it.
+"
+28,FAQ: Control Flow - Review,"FAQ,General Coding FAQ",,6,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Control Flow”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Can you please clarify the differences between conditional and exception control structures?
+
+Plus one here, I find that these two control structures are not strongly different one from the other.
+
+Plus two here, it is not clear of the difference between conditional and exception.
+Is it that conditional can only process one decission where an exception can do multiple?
+
+Exceptions are much more manageable, because they define general families of things that can go wrong.
+its also important to understand that we can throw errors, in case someone else uses your code and attempt things which aren’t allowed
+having exception throwing and handling separated of conditionals (the control flow of our program), means we separated concerns.
+And its okay if doesn’t yet make 100% sense, that will come with practice and experience
+
+The social media example chosen might be causing a confusion between conditionals and exceptions.
+Imagine you need to find which number is the largest out of the three inputs. Which control structure would you use? Conditional or Exception?
+Imagine you need to decide the dress for a party and you have two options (Each have separate shoes, shirts, pants etc). You can wear one of them. But it can be decided, if all the different parts fits you. Which control structure would you use here? Conditional or Exception?
+"
+29,FAQ: Loops - For Loops,"FAQ,General Coding FAQ",,6,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “For Loops” exercise from the lesson “Loops”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How to Code
+FAQs on the exercise For Loops
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+When I chose at the exercise, Loop for 20 times (meaning 20x3=60 tiles), I actually expected that the code would not run and an error message would appear since there are only 30 places for Tiles available . Nevertheless, the code ran normally, 30 tiles were put to the right order and that was all. My command referred to 60 tiles, what happened to the rest that have to be placed?  The same question obviously applies when choosing Loop for 15 times. I am wondering, why does the code run normally in the above 2 cases?
+
+I noticed that when I ran the first code without using loops the tiles flew in one by one very quickly with a consistent speed.  When I ran the second code that used a loop there was a pause after each of the three tiles were placed.  I’m wondering if this was a deliberate animation choice or if it was a result of looping.
+In other words while it is much faster to code using the loop does it take more processing and/or result in a slower execution than writing it out many times?
+
+The for loop tutorial (2/6) it says "" When a computer receives this program it sets a counter to 0 and executes the instructions in the body of the loop. After each  iteration  (one pass through the instructions), it advances the counter by 1. The process repeats until the counter is 10, meaning 10 iterations are completed.""
+Given that the counter starts at 0, shouldn’t the process only repeat until the counter is 9? If a counter repeats from 0 to 10, isn’t that 11 iterations?
+
+No, the little pause is just animation
+
+Replying to tylerlahaie118650831
+So the counter starts with zero.
+Once the first set of three tiles are placed. The counter then moved to one.
+Then after second set of three tiles are placed the counter then moved to two.
+…
+Similarly after the 10th set of three tiles (30 tiles done and the maze is filled) the counter moved to 10 and the for loop is stopped.
+"
+30,FAQ: Variables - Introduction to Variables,"FAQ,General Coding FAQ",,11,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Introduction to Variables” exercise from the lesson “Variables”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Introduction to Variables
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+what are values i went threw the lesson and i still dont understand
+
+I filled the variables in order for each row, box by box and couldn’t progress. There’s a mistake in the progress of this lesson.
+
+
+introduction_to_variables.PNG599×586 36.2 KB
+
+
+how did you done exercise let you help me
+
+Enter the information given, into the input boxes. @mtf has the picture of how they should be entered above, where you’ve asked for the help.
+See how his picture has “grass rocks grass - forest rocks forest - rocks grass rocks” vertically, down the left-hand side? This is how you should enter your values, to obtain the output as seen on the majority of his picture.
+
+So I’m a pretty visual learner, my brain can sometimes glaze over words it’s not used to seeing often, “Values” and ""Variables’ for example. Can anyone think of a an everyday example that could help give me a visual representation between the two?
+
+When we hang a tag on something, that’s a variable. The something the tag is hanging from is the value.
+Values are objects, variables are references.
+a = 42
+
+42 is primitive, wherever it lives in memory. The primitive is given an object wrapper according to its detected type before assignment to the reference; the variable, a references a ‘number’ type object in JavaScript.
+
+So…
+Value-  I’m looking at a candle but it has no name or designation yet so it is only an object at this point (a)
+Variable- Then someone slaps a label on it that says “candle”. It went from just an object and is now known to be a candle (42)
+object(a)  = candle(42)
+and from here on out, the object will be known as candle anytime “object” is entered, or until redefined.
+Right?
+
+Pretty much, but,
+candle_a = object_42
+
+The object is always on the right side of the assignment, and the variable always on the left.
+We can give a variable a new assignment any time unless it is defined in JS as a const. The key to remember is that the variable is not the object, the object is.
+An object can have multiple references.
+a = 42
+b = 42
+
+Both variables refer to the same object as long as neither of them is given a new object to reference. The value is the same for both.
+
+It keeps saying “Connecting to codecadamy” But it never loads it and my internet is just fine…
+"
+31,FAQ: Control Flow - Conditional,"FAQ,General Coding FAQ",,8,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Conditional” exercise from the lesson “Control Flow”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Conditional
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+""In our social media example, all the instructions are shown in the diagram, but only some of them will be executed each time. Here they are in text form:
+Check profile privacy
+Hide the post
+Show the post""
+
+Why they will be executed each time if in one time can be completed just one thing. Or “Hide the post” or “Show the post”?
+
+this is just the first step, imaging you have a bunch of posts, you will need to check each post if its private or public:
+for post in posts:
+  if post is private:
+    hide
+  else:
+    show the post
+
+
+hi po, i got stuck to this part, i already did the instructions in this short activity but i cant move on to next, … just need help here, thanks po in advance 
+
+please see this topic:
+How to ask good questions (and get good answers)
+with your current information its really difficult to help you
+
+what’s the control flow ?  can we say ( control flow = is the account public or private )
+
+“When is step 2 executed and when is 3 executed? The answer is: it depends. The control flow is 1-2 if the profile is private and 1-3 if the profile is public. The condition is the privacy setting on the profile.”
+I am not sure what the numbers represent in the function. I suppose the 1 makes sense because it is the beginning of the control flow, but why is the first option 1-3 and the second option 1-2?
+
+what do you been by whats the control flow of each?
+"
+32,FAQ: Lists - Adding Items to a List,"FAQ,General Coding FAQ",,31,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Adding Items to a List” exercise from the lesson “Lists”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How to Code
+FAQs on the exercise Adding Items to a List
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Why is the .splice command  string (1, 0, ‘mango’) instead of (0, ‘mango’, 1) if putting ‘mango’ in the second position? why is the 1 before the 0 ?
+
+
+
+
+ erkela90:
+
+(1, 0, ‘mango’) instead of (0, ‘mango’, 1)
+
+
+The second position in the array is at index 1, which is the start of the splice sequence. The second argument is optional but it represents the number of elements to be deleted, in this case none.
+
+Array.prototype.splice
+
+
+Aha! thank you for explaining that.
+
+could you explain your answer in another way? I think I still don’t understand… so the zero argument represents that no items are being deleted, correct?
+so if we were making ‘mango’ the third item on the list the command would read:
+myList = [‘apple’, ‘banana’, ‘pear’]
+myList.splice(2, 0, ‘mango’) // make ‘mango’ the third  item in the list
+// now, myList = [‘apple’,  ‘banana’, ‘mango’, ‘pear’]
+correct? how would the command look if we were deleting ‘pear’? like this?
+myList = [‘apple’, ‘banana’, ‘pear’]
+myList.splice(2, 3, ‘mango’) // make ‘mango’ the third  item in the list
+myList.splice(2, 3, ‘mango’) // returns ‘pear’
+// now, myList = [‘apple’,  ‘banana’, ‘mango’]
+correct?
+
+
+
+
+ m.royce:
+
+myList.splice(2, 3, ‘mango’)
+
+
+Given that only pear exists at the original index 2, and we are inserting at that index, to delete pear we give a deletion count of 1. Recall that the count has no connection to indices.
+
+ok. thanks. I got it. 
+
+myList = [‘apple’, ‘banana’, ‘pear’]
+myList.splice(1, 0, ‘mango’) // make ‘mango’ the second item in the list
+// now, myList = [‘apple’, ‘mango’, ‘banana’, ‘pear’]
+I’ve read the above but I still don’t get it.
+Why can’t I put:
+myList.splice(1, ‘mango’) to get mango at Index 1 position?
+How does deleting work in this context?
+
+
+
+
+ szu2:
+
+Why can’t I put:
+myList.splice(1, ‘mango’) to get mango at Index 1 position?
+
+
+Did you try it? As I understand it if we leave off the second argument, JS inserts its own default value in its place, 0. Check to be sure this is in fact the case.
+
+
+
+ szu2:
+
+How does deleting work in this context?
+
+
+Deleting allows us to replace the value at a given index, or a group of values beginning at that index. If we don’t delete anything, the list shifts to the right to permit insertion of the new item at that index.
+
+I still dont get it. When:    myList = [‘apple’, ‘banana’, ‘pear’]
+myList.splice(1, 0, ‘mango’)
+Isn’t it supposed to be calling to index 1, which inside the array it is the position 1, so it should be apple, but as an index, index 1 it should recall to banana, which is the actual index 1, instead of apple.
+Im kinda confused about this exercise tho.
+Some help, or a way to be able to understand whi the splice goes with 1 instead of 0, which it would be the index value of apple inside the array by position?
+
+Nvm i just understood the one means where we are putting the mango string inside the array, which is index 1, which is after the index 0 which is apple. And the optional value of 0 mens not removing anything inside the currently values inside the array.
+Yep
+Got it
+Not a big deal.
+
+Cant we add just by writing into the main list once it is created.
+Like
+Mylist = [‘apple’, ‘banana’,‘orange’]
+Instead of using mylist.append or mylist.splice tool,
+we can directly add into the main list wherever we want.
+mylist = [‘apple’, ‘mango’, ‘banana’, ‘orange’]
+Correct me if i am wrong or where this method will help us?
+
+
+
+
+ prateekjain015133619:
+
+Cant we add just by writing into the main list once it is created.
+
+
+Yes, we could, but it would be counterproductive. We are given a list, and must assume that the program will do the manipulation. We cannot access the list to make manual changes while the program is running. That is why list methods are available for the purpose of mutating the list.
+
+Hi! I don’t understand…Could you explain please and translate ? WHY O???
+
+??? SOS could you explain why ‘O’ ( why items to be deleted !!?) and why mixing index number and names…This chapter is very dark
+
+Hello.
+Let’s see if I got this clear:
+“myList.splice(1, 0, ‘mango’)”
+Number 1 = It means the new position for the “mango” string keeping the normal order of the other items and moving “banana” one position forward. If the number was 0 there instead 1, the order will start with “banana” instead “apple”.
+Number 0= It means that none item in the list is gonna be deleted.
+Correct?
+
+
+
+
+ tortilla6462480741:
+
+Correct?
+
+
+Pretty much, yes. The first argument is the insertion point, so mango will take index position 1, and every element from there will be shifted to the right. The second argument is the deletion count, as in how many items will be replaced (if any) by the inserted slice.
+
+if i write myList=[‘apple’,‘banana’,‘pear’]
+mylist.splice(0,0,‘mango’)
+the new list ll be mylist=[‘mango’,‘apple’,‘banana’,‘pear’]
+is that right and what is the difference betweeen pop and splice
+
+Thanks for taking the time to answer this. I had the exact same question!
+
+In the example - myList.splice( 1, 0, ‘mango’). Mango is being put into second position ( index 1 ). Why is it written as ( 1, 0 )?
+"
+33,FAQ: Loops - For Each Loops,"FAQ,General Coding FAQ",,11,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “For Each Loops” exercise from the lesson “Loops”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How to Code
+FAQs on the exercise For Each Loops
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Hi! I didn’t quite understand how the foreach loop repeated the instruction the number of times that was needed to complete the tile pattern in the exercise? I expected it to only repeat the instruction according to the number of items in the list.
+
+"" We only need to write  placeTile()  once because the pink-green-red repetition is already described in the list.""
+So… the repetition is defined by the input “festiveList = [‘pink’, ‘green’, ‘red’, ‘pink’, ‘green’, ‘red’ ]”?
+So, if I were to just input “festiveList = [‘pink’, ‘green’, ‘red’]” once, it wouldn’t loop?  I just don’t get why you need to type ‘pink’, ‘green’, ‘red’ twice.
+
+I would like to second this question, can you please explain how the lists were written?
+Also where is the code to run each of the different list?
+There is only placeTile(color) but how do we know to make it festiveList or moodyList?
+
+https://www.codecademy.com/courses/learn-how-to-code/lessons/bop-loops/exercises/for-each-loops?action=resume_content_item
+The exercise calls for ‘placeTile(color)’
+Does this mean that ‘color’ has already been defined outside of this exercise (ie the backend)? If I were building this from scratch, would I have to define ‘color’ first, before it can be used?
+
+Is this exercise an infinite loop ?
+How does the computer knows when to stop ?
+
+Why is the “for each loop” a loop?
+To me it is like asking the computer “do all this ONCE”. I do not see any loop in doing something only once.
+
+
+
+
+ jkinaus:
+
+The exercise calls for ‘placeTile(color)’
+Does this mean that ‘color’ has already been defined outside of this exercise (ie the backend)? If I were building this from scratch, would I have to define ‘color’ first, before it can be used?
+
+
+i would also like to understand that part, it kinda bugs me to get half of the information. to fully understand this, i would need to at least get access to the code behind (i’m guessing it’s backend because i don’t know exactly what it is yet) to see how it works. if someone could explain this to us, it would be really appreciated.
+Thank you!
+
+i got a friend to explain me that the (color) has been defined in the “for each” before wich we don’t see because it’s not the point of this exercise and it could be confusing to give us that kind of information at this point.
+feel free to answer my original question if you want to, so that it can help others, but i understand it now. Thank you!
+
+I Understand that this for each loop exercise might be a little tough.
+I will try to explain it here.
+Note that code editor. The different types of lists are already describes there with the exact sequence of color an the exact number of repetitions needed.
+Hence, the syntax placeTile(color); works for all the spaces exactly.
+A few of you have a question with regards to the code in the Learn part of the lesson.
+festiveList = [‘pink’, ‘green’, ‘red’, ‘pink’, ‘green’, ‘red’ ]
+Why was the loop repeated twice?
+The only reason the loop was repeated twice was to show us an example. If this code is used in the editor, then only six tiles would be filled.
+
+Think of it like this:
+festiveList is a list that has already been defined by the programmer. Within that list, the programmer has already specified the sequenced items (coloured titles) and just like any other list, each item is indexed (the first item starts at 0 and then moves to 1, and so on…)
+The programmer then writes a ‘For Each Loop’. This loop works by working through a range and in this case that range is the list festiveList.
+As seen below:
+For each color in festiveList:
+placeTile(color)
+color is a variable and as we know, variables store data. In this instance, the index position from ‘festiveList’ is being stored. So at the very beginning of the ‘For Each Loop’ the index position is 0. This means that when the programme runs 'placeTile(color) it is asking the computer to place whatever is in indexed position 0 (pink). The ‘For Each Loop’ would then iterate again but this time the contents of variable color would be 1 (green) and this will continue until the ‘For Each Loop’ reaches the very end of the ‘fetiveList’.
+Finally, placeTile() is a function. In this particular scenario, we can’t see how the placeTile() function is built but it clearly needs a parameter within the parentheses (the brackets) in order for the function to work. Again, whilst we can’t see how the function has been programmed, we can see what happens everytime that function is called ‘placeTitle (color)’ - it places the corresponding color (according to the index position) into the next available tile.
+I hope this makes sense.
+"
+34,FAQ: Control Flow - Putting It All Together,"FAQ,General Coding FAQ",,32,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Placeholder” exercise from the lesson “Control Flow”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Putting It All Together
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+if (mode === ‘public’) {
+showDetails();
+} else {
+hideDetails();
+}
+Basics of Programming II
+CONTROL FLOW
+Putting It All Together
+It will not let me past this step, even though it appears to be correct?
+
+Same for me. Strange.
+
+It’s very confusing.  Take away semicolon and it will work.  Took me forever to figure that out. I even clicked on give me solution and nothing changed.  Very very confusing with no help on something so minor.
+
+Why do we use a semi colon and not a colon after the functions showDetails(); and hideDetails();
+
+In JavaScript we use an end of statement token to tell the interpreter to parse the line and stop. That token is the semi-colon. There are no colons in JS, except as property-value separators in objects.
+obj = {
+    property: value
+}
+
+Modern JS (ES6 and above) have somewhat relaxed the need for the semi-colon and it will actually insert them automatically where needed if they are omitted. In time you will get the hang of where they are typically needed, and also where they are not needed.
+One such relaxed situation is the last statement in a block. It does not technically need a semi-colon since it is followed by a closing brace, which is where the interpreter will naturally stop parsing. When statements follow each other, they will have a token to end each one.
+
+Hi i have the same problem, even taking the semicolons away did not solve it for me i guess im stuck
+
+You don’t need the semicolons but you do need to capitalize the ‘d’ in details. showDetails() and hideDetails() will make it work.
+
+I am in the same position here. Have tried with or without ;
+Caps for d in Details 
+
+@steve85tait if you have the code well written, just press f5 and course will let you move to the next step!
+Hope worked for you and/or others here looking to move forward 
+
+Was about to post this exact question till I read this post.  I figured it had something to do with punctuation and after going through the replies my problem was fixed.  Thanks for this even though I didn’t post my question.
+
+so this loaded and there is nothing written down for this exercise
+
+It was a bit confusing as the solution didn’t have the public post appearing until I put the brackets in though if I added the semicolon it didn’t work.
+
+Dear all,
+if (mode === ‘public’)
+*whats the difference between ==, and ===. specifically in JS.
+Thanks
+
+
+
+
+ ajax8103580073:
+
+whats the difference between ==, and ===.
+
+
+JS is loosely typed which means we can coerce one type to another in a comparison. == is the coercive equality operator.
+1 == '1'     =>  true
+
+The strict comparison uses the non-coercive identity operator.
+1 === '1'    =>  false
+
+If the types do not match, they are not equal (identical).
+Best practice guidelines recommend never use the loose type comparison unless it is the actual intention to allow coercion. Use === for all comparisons. This suggests being close aware of the data types in our program.
+
+Hi guys,
+I was going through the coding portion of this and had some previous experience with coding from a class. If you try to define the functions before hand above the already written code before calling them, that will also ruin your code. Thought I should mention this in case anyone else has this problem. Do not define the functions before calling them.
+
+Please post a link to this lesson.
+I find it difficult to believe that we can call a function before it is defined, unless the function is hoisted, in which case it is defined. Function declarations are hoisted so can appear anywhere in the source listing. Function expressions are not, so they must appear in the source listing before their first call.
+
+Can someone tell me why we use brackets after showDetails’()’ and hideDetails’()’?can someone also tell me what happens if the brackets are filled?
+
+Hi guys . I was trying to figure out why my code doesn’t work, finally found the answer . Remove double slash // before showDetails(); and hideDetails();
+
+
+
+
+ methodsolver09743:
+
+Putting
+
+
+Hi
+Same problem for me, tried all of the suggestions and nothing worked until I added the brace } underneath
+"
+35,FAQ: Data Types - Strings,"FAQ,General Coding FAQ",,3,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Strings” exercise from the lesson “Data Types”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Strings
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+How do i represent the numerical value 20 inside a string? (without it splitting into 2 & 0)
+or is there no need to do so when using strings
+
+What I understand is that you can´t use a numerical value inside a string because you are using it like a letter, it´s info not value.
+"
+36,FAQ: Loops - Putting it All Together,"FAQ,General Coding FAQ",,43,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Putting it All Together” exercise from the lesson “Loops”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How to Code
+FAQs on the exercise Putting it All Together
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+ok…i’m on the Putting It All Together part of the Loops lesson and i’m looking at the examples for For Loops and While Loops and all i can think is “where the ■■■■ did those i’s and semi-colons come from?” Did i miss something? Maybe I’m having trouble putting two and two together, but the (i = 0; i < 10; i++) confused me and for the first time in this whole course, I’m completely lost…
+
+Same. My gut interpreted it as the conditions that would read kinda of like this (but i’m not sure it’s correct):
+FOR loop
+for (i = 0; i < 10; i++) {  //for index starting at 0; with up to 10 items indexed; repeat the index
+placeTile(‘mint’)
+placeTile(‘orange’)
+placeTile(‘mint’)
+WHILE loop
+let i = 0;  //let index start at 0
+while (i < 10) {  //run list until index reaches 10
+placeTile(‘mint’)
+placeTile(‘orange’)
+placeTile(‘mint’)
+i++  //repeat indexed tiles as above (just like the  === means verify it’s really true, i’m guessing ++ means add up the items
+It’d be great if someone could confirm or correct this 
+
+A little modification on the previous response:
+let i = 0
+while (i < 10)
+{
+placeTile(‘mint’)
+placeTile(‘orange’)
+placeTile(‘mint’)
+i++
+}
+//Corrected.
+
+
+
+
+ silviacoco.art:
+
+i++ //repeat indexed tiles as above (just like the === means verify it’s really true, i’m guessing ++ means add up the items
+It’d be great if someone could confirm or correct this
+
+
+Looks like that confirmation has not been forthcoming.
+i++
+
+is the JS shorthand to increment i.
+i++  <=  i += 1  <=  i = i + 1
+
+Having trouble getting past the Review, it’s not loading the next page (assuming it’s a quiz)
+When I click the “Up Next” button I get a white screen.
+
+I’m having the same issue. Did you reach a solution? I ran the code correctly, but the Next button won’t pop up.
+
+So I have done the lab part of this lesson and completed the objectives. however, the next button is not lighting up.
+
+I also had this problem, in the end I just got frustrated and refreshed the entire page. It then allowed the next button to light up. Not sure why it worked tho!
+
+i = (is for) iteration
+
+Messing around with the numbers following the i and re-running the program helped me work it out. But i agree it came from nowhere
+
+hi everyone
+for loop
+we write
+for (i=0 ; i<10 ; i++)
+{the instructions … }
+my main quest is that we use i like variable but we didn t declare it as int or declare his category
+
+I understand that:
+i = iteration,
+i=0 means start counter at 0,
+i<10 means run the iterations until 10
+i++ means to increment the iterations each time.
+But I kind of learnt this from elsewhere, the tutorials didnt explain this properly,  and there was even a question in the quiz about this!
+
+This is a very helpful explanation.  The breakdown is appreciated.
+
+Thank you! I was really confused on the i++
+
+I am sorry to bother Mtf, but I am still confused as to what i++ is exactly. I am trying to understand your explanation, but I do not have any experience with anything like this.
+I guess my main issue is that I do not understand the longhand code you wrote out describing i++. What do “<=” and “+=” mean in your code?
+You wrote i++ is a shortcut to increment i, by increment do you mean it adds to i ? Is there any way you could break this down for me? I apologize for my ignorance, would love to understand this.
+I thought I understood when Silviacoco explained that i++ may mean repeat, or add up, the index. As if “i” meant index. But from your reply I gathered that is not the case. I also read what Booga wrote about i meaning iteration, so that further confused me lol. I know I am asking a lot, but any help at all would be greatly appreciated!
+
+
+
+
+ board7764832843:
+
+what i++ is exactly
+
+
+It is a shorthand form of,
+i = i + 1
+
+which increments the current value represented by i.
+i = 5
+i++
+console.log(i)    //  6
+i++
+console.log(i)    //  7
+
+Note that the operation takes place immediately without need for assignment.
+We can also decrement a value using -- operator…
+i--
+console.log(i)    // 6
+i--
+console.log(i)    // 5
+
+BRB after I finish reading your post.
+
+
+
+ board7764832843:
+
+What do “<=” and “+=” mean in your code?
+
+
+<=    less than or equal to (a relation test)
+
++=    augmentation assignment (assignment operator)
+
+Eg.
+a = 5
+a += 5
+console.log(a)    //  10
+
+It is the short form of writing,
+a = a + 5
+
+
+
+
+ board7764832843:
+
+by increment do you mean it adds to i ?
+
+
+Yes, but it adds only 1, which is the default increment value. Typically, when we read, increment the value we assume it will grow by 1. The term could be used with other values, but ++ will not work for them.
+a = 10
+// increment a by 5
+a += 5
+
+Augment means to increase.
+
+
+
+ board7764832843:
+
+wrote about i meaning iteration
+
+
+It is typical to see i used as the iteration variable though we could use any variable with the same effect. In the for loop we are iterating over each index as the value for i increases to the length of the object.
+
+Wow you are good ! Thank you very much for the help !!! I am not sure what was blocking me from understanding this in your first reply, I might have been overthinking it lol. I wrote everything you just shared in my notes, you cleared it all up for me. I am extremely grateful !! edit: I must thank you again for taking the time to thoroughly explain everything. I am sorry to have taken up your time with all my questions lol. The way you just broke everything down was a MAJOR help !!! I can comfortably move on fully understanding, I appreciate you very much.
+
+You are very welcome. It’s good that you took the time to grapple with the concepts rather than steaming ahead. Keep going back and reviewing, while at the same time exploring a little more each concept. Eventually they become second nature, but not without lots of practice. Work with small snippets and hammer out the meaning and purpose so that gradually you begin to see the bigger picture. Time and effort. Never be in a hurry.
+
+You are very considerate, thank you for the priceless advice ! I will apply, and take note of everything you generously shared here. Its funny how our minds are a lot like computers, takes real programming to learn lol. Like you said with constant practice and exploring it should become second nature. I gained some incredible notes from your help here in the forums so far, thank you very much !!
+"
+37,FAQ: Functions - Functions for Flexibility,"FAQ,General Coding FAQ",,7,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Functions for Flexibility” exercise from the lesson “Functions”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Functions for Flexibility
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Hi!
+I’m not sure I understand how to call a function with two arguments in case I only want to use one.
+For example here:
+function makeSandwich(“ham”, “cheese”) {
+Add bread
+Add ham
+Add cheese
+Add bread
+}
+Suppose I only want to use ham. How do I call the function?
+Would it be something like this:
+makeSandwich(“ham”) ?
+Whereas if I want to use both, I’ll just do makeSandwich() which executes the function entirely.
+Is that correct?
+Thanks in advance!
+
+
+
+
+ alessio89:
+
+function makeSandwich(“ham”, “cheese”) {
+
+
+First we write the parameters as variables, not values…
+function makeSandwich(ingredient1, ingredient2) {
+
+and then pass the actual values as the call arguments…
+makeSandwich('ham', 'cheese')
+
+Our function will assemble these ingredients between two slices of bread, and return the final product.
+sandwich = 'bread' + ', ';
+sandwich += ingredient1 + ', ';
+sandwich += ingredient2 + ', ';
+sandwich += 'bread';
+return sandwich;
+
+The return value will be a string that looks like this…
+'bread, ham, cheese, bread'
+
+Hi! Thanks for the reply.
+I have another doubt now. If I write it like this, i.e. with no arguments:
+
+function makeSandwich() {
+sandwich = ‘bread’ + ‘,’
+sandwich += ‘bread’
+return sandwich
+}
+
+Why do I still have to write this part:
+
+result = makeSandwich();
+
+Even if the function has no arguments?
+Can’t I just call the function like this:
+
+makeSandwich()
+
+
+
+
+
+ alessio89:
+
+Can’t I just call the function like this:
+
+makeSandwich()
+
+
+
+You could, but then the return value will vanish. By assigning it to a receiving variable we retain the value for further use, such as printing.
+
+whats the difference between variables and functions
+
+Variables are just names we give to references. They’re like a mailing label. We have an object, but to access that object we need to give it a label so we can refer to it later.
+Functions are blocks of code. Since their reference is assignable we can write an expression and assign it to a variable. That is the name the function will be known by.
+We can assign any object or expression to a variable. It doesn’t hold the data, it merely points to where it is stored. The language looks after the details. All we need is to know the name to reference it.
+variable_name = 'assigned value'
+"
+38,FAQ: Data Types - Putting it All Together,"FAQ,General Coding FAQ",,19,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Putting it All Together” exercise from the lesson “Data Types”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Putting it All Together
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I typed the number 1 for the variable myNumber which led to an error called “error, Input is not number”. Does anybody know why?
+
+Maybe since the square of 1 is one, this program can’t account for any thing that is itself?
+
+Interesting!  I got the same result with 0.  Non-integers and negative numbers seem to work fine.  Reporting bug…
+
+Could it be something to do with 1 and 0 being ways of referring to true and false?
+
+For mybool = , i changed the value from true to “1”, and it gives me an error - input is not a boolean. why does it only work with true or false. 1 or 0 can also be a boolean input.
+
+Well wtf are you supposed to type in the “putting all together” part?  It all made sense until then.  I guess I know why I don’t code.  Why go from explicit instructions, to basically no instructions. fna
+
+The reason you get an error message is because there should only be quotation marks for the second variable, the string. A number does not have marks nor a boolean.
+
+I don’t understand how to do this exercise can anyone help me?
+
+Transmit button isn’t working. What is wrong? As far as I understand, what I was supposed to do is choose “square” from the drop down menu, and press Transmit!. But even though transmit appears as a button in HTML, the code is wrong and when I fix it it doesn’t want to respond and loses the layout. What is happening?
+
+As of today, when changing the myNumber variable to 1, the function remains unable to square it.
+
+What do you mean by,“What happens if you swap out the data type?”
+-what will I swap?
+-how will I swap?
+
+Are boolean values always case sensitive?  It would error out if I type in False but would work if I typed in false
+
+What does this exercise what me to do? (ex: Step 1. Step 2. Step 3.)  What does the ‘transmit’ button do? There is no mention of this anywhere in the ‘directions’ I type in anything different and it doesn’t do anything or makes errors. What are the instructions saying? Call function? Change what?None of this is in my notes and I just reviewed the entire chapter AGAIN. I Looked these things up on google and they look NOTHING like what is in this exercise…this is really confusing.
+I don’t know why these lessons are set up this way but it’s really discouraging and defeating after trying so hard to learn something that is already so complicated.
+Screen Shot 2020-06-04 at 5.00.27 PM2824×1742 489 KB
+
+i dont understand what this exrecis try to tech us ?
+
+so im guessing you cant square 1 you have to try other numbers
+
+I tried other numbers but it doesn’t do anything. I don’t even know what this exercise wants me to do. This is so frustrating.
+
+Hello there!
+This exercise lets you play around with different variable values and functions so that you can get a better grasp of data types. First, run the code as is. Then, you can play around with the interactive area on the right, selecting different functions from the dropdown and clicking the “Transmit!” button. You will see the result of each function displayed on the image of the computer screen in the interactive area on the right.
+The exercise also asks you to try changing the values of myNumber, myString, and myBool to see how different values could affect how the functions run. The same goes for data types; you can change the data types of the variables to see how the functions are affected. After making changes, simply press Run again and play around with the interactive area on the right.
+
+Thank you, These are helpful. I wish the lessons had instructions this clear, most people are smarter than me so maybe it’s not important. I’ll try these with the excercise.
+"
+39,FAQ: Data Types - Handling Errors,"FAQ,General Coding FAQ",,16,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Handling Errors” exercise from the lesson ""Data Types and Variables "".
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn C#
+FAQs on the exercise Handling Errors
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I get that “number” and “lock” should be a decimal and “lock” should be changed or replaced, but when I exchange the data type to “decimal” or “double” I produce an error. How would these numbers be handled in C#?
+
+I’m just seeing a bunch of gobbledygook in my console no text line with the errors that were shown in the reference tab any one else having this issue?
+
+i cant seem to get past this lesson, everything seems good, not returning any errors, wrote lines to print to console and  everything prints out as its entered, any ideas?
+
+@chip4597530281  I had the same problem. Once I went hit back to go back to an older example and then came back to the lesson it allowed to go to the next problem
+
+that works, thanks. Sit on this problem 20 minutes.
+
+Having the same issue.
+
+Leave it for a few minutes then it’ll pass.
+
+Just a suggestion, maybe this page should come before the “Creating variables with types”, as it will reassure new learners when they encounter errors, and also it mentions that a semicolon should be used to end each line.
+
+Hi Brantaylo
+Lock is KeyWord and you can’t use it as variable.
+
+decimal number = 38498.3222M ;
+SHOULD BE LIKE THAT
+that’s what the console say
+
+Hey, arcblaster 60412
+Thank you for letting me know!
+
+Hi @wcroman, I am having the same issue as you described, in part 3 of this lesson as well as part 4. Did you ever find a resolution to the problem? Thanks!
+
+Thank you. I was stuck in this dumb level for a while trying to figure what the heck wrong.
+
+It seemed to let me move on without actually fixing all the errors, but I wanted to do this exercise right. If you need a hint, just don’t forget your semicolons after each line.
+Also, some of the names of variables don’t seem to work. I didn’t know what they wanted the names of the variables to be but I just changed them to something random and that worked.
+And make sure you have the right data type attached to each one.
+Hope that helps if you’re struggling like me, an absolute programming beginner!
+
+It seems most errors in the console begin like this:
+Program.cs(8,5)
+Program.cs(13,14)
+Program.cs(21,1)
+I didn’t see anything in the material that teaches us what the numbers in the parentheses mean. Does anyone know?
+"
+40,FAQ: Operators - Using Operators to Make Calculations,"FAQ,General Coding FAQ",,18,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Using Operators to Make Calculations” exercise from the lesson “Operators”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Using Operators to Make Calculations
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+what is supposed to happen in this excercise?
+
+Nothing extraordinary  You just have to count the number of apples using the buttons: Add, Subtract, Multiply, Divide. You should have 16 4!
+
+Step 2/6 not working for me. Pressing the buttons and nothing happens 
+
+If still not working 
+Instructions: “The recipe says that for a fruit salad that serves 2-4 people you will need four apples. But you’re making a fruit salad for a party, so you need to double the recipe. Use the buttons to calculate the correct amount of apples to use in the fruit salad.”
+Here is an example: Choose the number 4, click the Add button, then the Calculate! button. 4  will appear. Next, select a number from the list and click the arithmetic action you want to do (Add, Subtract, Multiply, Divide). You can press the Multiply button, and then the Calculate! button. The number of  will double. It’s simple! 
+
+Surely the answer is 8 apples?
+Normally the recipes requires 4 apples. Yet the exercise requires you to double this so that would come to 8 apples (4 x 2 =8)
+So to calculate this you would:
+
+choose the number 4, click the  Add  button, then the  Calculate!  button. 4 apple appear.
+select Multiply  and the number 2 - then the  Calculate!  button. The number of :apple will double to be 8.
+
+
+You are absolutely right  I hurried with the answer and multiplied by four  In the end, and received 16 
+
+
+
+I used add and multiply before the numbers and after the numbers both and came up with 8, I thought there had to be a specific order in which to enter them.
+
+This lesson slide does not function.  After pressing all of the buttons in various order, nothing happens.  It is broken.
+
+Did you select a number from the pull down menu, first?
+
+Yes.  It seems others are having this same issue as well.  I just ignored it and moved on.  I chose to report it in case someone thought they had fixed it… it is not fixed.
+
+This exercise seems pointless. The sequence of entering/clicking is neither explained nor made visible, so it’s only by hit-or-miss that you can get anything to happen. For several tries, my screen remained unchanged.  Nothing to learn here.
+
+I understand now. When it said double the amount, I multiplied instead adding first. Basically, I jumped a step.
+
+Thank you! This was helpful.
+I think what was missing for us folks who didn’t get it was the idea that you have to imagine each entry kind of like an accounting calculator entry. A simple calculator goes “4 add 4 calculate = 8”. In this example it goes ""4 add calculate , 4 add calculate = eight "" or “4 add calculate, 2 multiply calculate = eight”
+
+This is a mistake IMO. Wouldn’t you want answer to be 6 so that you can use that variable later when applying the answer to the rest of the recipe? Shouldn’t it be more like:
+apples = 5
+my_apples = apples * 2
+answer = my_apples - 4
+making answer = 6
+then later, in apple apple pie container, you’d add answer as part of the whole recipe.
+
+This isn’t working? What am I supposed to do? I click all the buttons and numbers and nothing changes. I don’t see the =* =+ =- =/ operators that were in the lesson material
+
+Same here, step 2/6 isn’t working for me either 
+"
+41,FAQ: Operators - Using Operators to Make Comparisons,"FAQ,General Coding FAQ",,14,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Using Operators to Make Comparisons” exercise from the lesson “Operators”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How to Code
+FAQs on the exercise Using Operators to Make Comparisons
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Just a question on unknown quantity
+probably overthinking but in the example given it sounds like you’re telling the computer that it == .5lbs not asking it correct?
+The wording choice used is throwing me.
+""We could weigh the strawberries and see if the total weight equals a half ""
+strawberry_weight = ?
+is (strawberry_weight == .5lb)? = true
+
+
+
+
+ candacechentel:
+
+is (strawberry_weight == .5lb)? = true
+
+
+.5lb
+
+is not recognized by the interpreter. There are no units in programming. That is something that we the programmer have to keep track of.
+b === 0.5 * a    // JS comparison
+
+will be true if b is half of a.
+
+If i understand the code, it simply means its a built in code
+
+But then, could there be changes to it if one has to use a different value (a different number for the weight).
+
+Variables will vary, so we need to create arbitrary values to compare them with. If we want our variable to match a certain value, then that is what we compare it to.
+
+I’m a little confused by the strawberry code
+The way I read it if the strawberries are .5lb or greater then it’s true?
+strawberry _ weight = ?
+is (strawberry _ weight == .5lb)? =***>*** true
+Is that what the > symbol shows =>true?
+Thanks,
+
+Welcome, @mcsullie_1.
+Please post a link to the exercise page of this problem.
+a > b   =>  a is greater than b
+
+a >= b  =>  a is greater than or equal to b
+
+Note that the = sign is last in two character sequence.
+
+
+
+ mcsullie_1:
+
+if the strawberries are .5lb or greater
+
+
+if (a >= 0.5) {
+    // a weighs half a pound or greater
+} else {
+    // a weighs less than half a pound
+}
+
+Sorry I‘m little confused, the code is (oranges > bananas)? => false means if oranges more than bananas, it will show false. But in the directory, it said ’ If that’s false, I’ll have to add more oranges.’ I can’t figure it out…
+
+Consider,
+4 > 5 ? true : false
+                ^^^
+4 + 1 === 5
+
+5 > 5 ? true : false
+                ^^^
+5 + 1 === 6
+
+6 > 5 ? true : false
+         ^^
+
+Relational operators always return a boolean that reflects the assertion made in the comparison. We see that neither 4 nor 5 are greater than 5, so that comparison will yield false. 6 is greater than 5, so the comparison yields true.
+
+GOT IT！！Thanks！！
+
+I am a bit confused about the strawberry code, which is as follows:
+strawberry_weight = ?
+is (strawberry_weight == .5lb)? => true
+The way I interpret this is that the line of code is asking: is the strawberry weight equal to .5 lb? And then if the strawberry weight is greater than .5 lb, the answer is true. Is this correct? Perhaps I am mistaking the boolean operator (>) for an arrow.
+
+If we are to assume the language is ES6+ (JavaScript), then,
+if (strawberry_weight === 0.5) {
+    // code statements
+}
+
+Notice that we do not include the unit (lb), only the numeric value?
+Same would apply if the language is Python:
+if strawberry_weight == 0.5:
+    # code statements
+
+
+>
+<
+==
+etc.
+
+are comparison operators. Such operations yield a boolean.
+
+Comparison operators are the building blocks of coding.
+When playing a shooting game. Did the bullet hit the target or not.
+Was there three bullets or four?
+For three fall in front. For four fall at back.
+The Famous Temple Run game use the same basic logic.
+"
+42,FAQ: Operators - Putting it All Together,"FAQ,General Coding FAQ",,30,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Putting it All Together” exercise from the lesson “Operators”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Putting it All Together
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Here, I’m coding “oranges = oranges - 2”. Isn’t that impossible, defining something with itself?  That would mean that every time I code in “oranges”, it takes the previous oranges and subtracts 2 from that, right? How does a computer get around that logical problem?
+Thanks!
+
+I believe so. Essentially, you’re saying I would have to assign a new variable to equal the “orange - 2”.
+A question: what would happen if you didn’t do so? Essentially doing this:
+// Create an orange variable and set it to 4
+orange = 4;
+// Decrease the amount of oranges from 4 to 2
+orange = orange - 2;
+What would the program reader do then?
+
+You may be able to find a better explanation, but think of your variable orange as a container like a basket or bag. It’s simply a named memory location holding a value. When you declare orange = 4 you’ve put the value 4 into your bag. For the sake of this example, let’s say you have four oranges in the bag. When the computer reads your line orange = orange - 2 the position of the = makes a difference. The orange on the left side is waiting to be assigned a new value. The new value will be determined by what’s on the right side. The orange on the right is not the memory location itself or the bag. It is the contents of the bag, or value stored in the memory location which in this case is 4. Therefore, you are assigning orange a new value of 4 - 2. Hopefully that made some sense 
+
+Think of values as objects with a hook on them, and variables as tags that we can hang on those hooks. When the variable is assigned a new value, the current value does not change. Only the hook we hang the tag on does. The new value would likely be in a different location, and the old value will cease to be unless it still has a tag or tags hanging on its hook.
+This runs counter to thinking of variables as containers. They are not containers, only names that refer to an object in memory such as a value or a data structure.
+
+Thank you everyone for all your help!
+
+Ive inputed orange = 4 and then orange = 4 -2
+Two oranges appeared on the screen with 3 apples, but when i tried to continue there was a red circle over the continue button.
+
+@script8041588897, thanks for bringing this up. I’ve gone to the exercise, and there is a bug in this lesson that prevents the Next button from becoming active even after clicking run with the correct code in the code editor. You can continue on by clicking the Get Help icon in the lower right corner, and then clicking on the Solution tab. Then click on Get Code Solution, then on Give me the solution to this exercise. It will refresh the screen, and the Next button will be active. I’ll report this bug to the Codecademy Engineering team. Thanks again, for pointing out this bug.
+
+There may be a new bug (or not) my screen now shows only 2 apples alongside the wonderful 2 oranges  so, what became of the other apple since it seemed to illogically disappear?!
+
+Thanks @midlinder. I could not get this page to work, gave up and moved on anyway 
+
+Sorry @tag1881612833, I hadn’t gotten back to you. I seemed to notice that that numbers of different fruits didn’t necessarily coincide with the lesson, but I’m not sure that’s a bug. I don’t know it they intended it too or not. Hopefully the lessons are functional though.
+
+I’ve reported the bug in the lesson, but haven’t had any response other than “they’re working on it.”
+
+Just to add: Since the computer reads the code from top to bottom, it will see that your have given the variable oranges a value of 4 and then it sees you change the value on the next line into previous value of orange - 2.
+
+Hello all,
+so, since the computer reads from top to bottom, shouldn’t the last value here be 1?
+// Create an orange variable and set it to 4
+orange = 4
+// Decrease the amount of oranges from 4 to 2
+orange = orange - 2
+// Decrease the amount of oranges from 4 to 2
+orange = orange - 1
+I’ve entered this and I’m left with no orange at all.
+Thanks
+
+Oranges and apples; hmmm.
+
+oops i meant I’m left with no orange at all. i’ve edited my previous message for clarity now.
+
+I have entered
+orange=4
+orange=orange-2
+But how about orange=4-2? It it the same? It gives me the same result so I was wondering why we need to type orange if we can type 4-2?
+
+
+
+
+ santanasj9744179813:
+
+ut how about orange=4-2? It it the same?
+
+
+Not the same. We might not know the value of orange is actually 4, only that we wish to increase it by 2.
+orange = orange + 2
+
+That’s taking the current value of orange, adding 2 then reassigning the new value back on to the original variable.
+
+Even after clicking on "" Get code solution"" i am unable to click on button next.
+I believe its a bug 
+
+When I click on Run, it doesn’t show me any fruit
+"
+43,FAQ: Lists - Introduction to Lists,"FAQ,General Coding FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Introduction to Lists” exercise from the lesson “Lists”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How to Code
+FAQs on the exercise Introduction to Lists
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+44,FAQ: Functions - Functions for Reusability,"FAQ,General Coding FAQ",,8,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Functions for Reusability” exercise from the lesson “Functions”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How to Code
+FAQs on the exercise Functions for Reusability
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Shouldn’t there be another ‘ADD BREAD’ in the function description
+
+I’m just learning but I have the exact same question. There are 3 instructions in the function yet it performs 4?
+
+Nice - sharp eyed programmer-in-training you are.  The instructions to the left in the black dialogue area have 2 ADD BREAD instructions but not on the visual set of instructions.
+
+What does the “()” stand for in this function? It comes out of the blue. Does it have any meaning as code, or is it part of the name of the function?
+function makeHamburger() {
+I get that the { … } is there to englobe what the function will perform, but nothing about “()”
+
+THERES  4 INSTRUCTIONS IN THE CODE, SO THE PROGRAM KNOWS TO ADD THE ADDITIONAL BUN WHEN YOU CLICK THE FUNCTION .,
+NO NEED FOR IT TO DISPLAY ON THE ACTUAL PROGRAM TWICE, SINCE CLICKING THAT ONE BREAD BUTTON CAN PUT BREAD ON THE BOTTOM AND TOP OF THE BURGER.
+FOR REPEATED INSTRUCTIONS IN A FUNCTION, ITS ONLY GOING TO DISPLAY THE BUTTON IN THE PROGRAM ONCE, SINCE ITS THE SAME INSTRUCTION JUST AT A DIFFERENT POINT OF THE FUNCTION
+
+What is http://localhost:8000?
+
+You would be able to know better about it when you learn web development.
+For now, understand that third the part of the screen acts like a browser within browser. It is hosted on the website.
+(Your Browser) ==> (Codecademy Website) ==> (The third screen/Browser within the browser )
+The http://localhost:8000/ is domain of website displayed by third screen.
+"
+45,FAQ: Loops - Introduction to Loops,"FAQ,General Coding FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Introduction to Loops” exercise from the lesson “Loops”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How to Code
+FAQs on the exercise Introduction to Loops
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+46,FAQ: Operators - Review,"FAQ,General Coding FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Operators”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+47,FAQ: Operators - Introduction,"FAQ,General Coding FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Introduction” exercise from the lesson “Operators”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Introduction
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+48,FAQ: Control Flow - Loop,"FAQ,General Coding FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Loop” exercise from the lesson “Control Flow”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Loop
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+49,FAQ: Variables - Review,"FAQ,General Coding FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review - Variables” exercise from the lesson “Variables”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+50,FAQ: Functions - Review,"FAQ,General Coding FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Functions”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Learn How To Code
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+In sandwich function, there is only one arguments of ‘add bread’ in first. But in result, there is sandwich enclosed with two breads? how is that possible? Doesn’t it need to have another ‘make bread’ at the bottom in order to make complete sandwich?
+"
