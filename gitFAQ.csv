@@ -1,0 +1,1763 @@
+,Title,Categories,Tags,Replies,Post,Comment
+0,About the Git FAQ category,"FAQ,Git FAQ",,1,"
+Git is an essential tool for saving and managing different versions of your code projects.  This category contains the most frequently asked questions about Codecademy’s Git courses.
+",
+1,What makes Git useful to a developer?,"FAQ,Git FAQ",,13,"
+Question
+What makes this tool, Git, useful to the typical software developer? Why would I need this in my day-to-day work?
+Answer
+When I think of Git, a few key things come to mind:
+
+
+Peace of mind. I know that when I use Git, I have a history of changes I’ve made to my work, and I know I can access those old versions whenever I need to. So if I break something by trying to add some new feature, I can simply revert to an older, working version of the code.
+
+Collaboration. Working on a team with other developers means, at least in part, knowing how to use Git. It allows you to work on the same project at the same time and not interfere with each other’s work. This is possible because of branching, which you’ll learn about soon.
+
+Production. When you’re developing any non-trivial product, you’ll likely have a production version that is available to your end users, and versions that aren’t. The versions that aren’t are where you’re testing new features, working out bugs, and making improvements to existing code. This is all made possible, or at least much easier, through Git.
+
+Blame. Git keeps track of who wrote what and made what changes in a project. This is called blame, and it’s not a bad thing like it might sound. It can be very useful to know who worked on a piece of code so you know who to talk to about it if it needs changing or if you’re curious about how it works.
+
+Ubiquity. Git is used practically everywhere today, and for good reason! It saves a lot of headache in the development cycle, and has become a part of almost every developer’s toolkit.
+
+There are a lot of other reasons to learn and love Git, but that comes with experience. Happy learning!
+","
+“Responsibility” could replace “Blame” to remove negative connotation.
+
+However, if “blame” is the correct term, then people should just remember that it’s doesn’t mean anything bad. Replacing terms could be a really good way to mix up communication.
+I get it, though. English has a stunning capacity for imprecision, and it does create some confusion. 
+
+Its a shorter word in length.  Tech likes short, descriptive words.
+
+Thanks for explanation.
+
+why we don’t go from working directory straight to stage 3 repository and have stage 2 ?
+
+When people have to remember it does not mean anything bad  that is a hallmark that the wrong word is being used.  That is why @dubx86 made that comment. This is the price that we pay for people thinking it is ok failing to be accurate in English.
+
+To say in super short… Cause Git is Awsome.
+
+Very true. In project management we say, “we attack problems, not people”. E.g. during a daily standup meeting instead of saying, “John wrote really bad code and we need to fix it” you’d say, “we need to refactor this section of the codebase to make it more DRY”.
+
+I immediately thought of this too. Blame has a very negative connotation.
+
+
+
+
+ text0643515535:
+
+When people have to remember it does not mean anything bad that is a hallmark that the wrong word is being used.
+
+
+I’m going to embroider this as a wisdom tile 
+
+So, can we say that Git is basically a Google Document, shared to others and allowing them to edit?
+
+LOL, you do make a good point there.
+Of course, English is already a really inaccurate language.
+"
+2,What are these untracked files showing up that I didn't create?,"FAQ,Git FAQ",,5,"
+Question
+When I do git status, several files show up in red that I didn’t create, like ‘init_test.rb.’ What are these files?
+Answer
+These are files created by Codecademy’s environment to check that you’re completing the exercises successfully. They’re not part of the project and don’t need to be considered.
+However, they do offer a valuable lesson! When you’re working with a project that generates files that you aren’t interested in tracking with your Git repo, you don’t always have to add them, and it’s okay for them to remain red.
+For example, often at times you’ll use a .gitignore file and specify file types to be ignored by Git. These will be file types that are generated for logging, by your operating system, or any other file that doesn’t need to be tracked and maintained as part of the essential project. It’s just good to be mindful of the fact that such files can be generated, so using git status to see what files are modified is a good way to keep track of that.
+","
+The first line of git status shows “On branch master”. What does it mean? Please explain.
+
+A branch in git is simply put, an independent line/path of development.
+The line consists of references (pointers) to your git commit snapshots.
+It may help to visualize these snapshots as aligning in a “branch”/sideways flowchart-like structure.
+The master branch is the main (default) branch.
+The master branch can “branch off” into smaller “twigs” of individual branches.
+These smaller branches can later be merged (synced) back into the master branch.
+The git status line “On branch master”, basically means that your commit is connected to the default/master branch.
+
+Example: Two people both work on the same coding project. The project lie on the master branch.
+Person A is tasked with fixing bugs in the project.
+Person B is tasked with adding new features to the project.
+In order to be able to work parallel on the project. They both create their own separate branches that points to their respective Git Commits, which in turn keep track of their own individual changes to the code. This way, they won’t risk messing up the main project on the master branch.
+After they have made sure it’s safe to sync up their changes to the main project, they can then (in turn) merge their own branches with the master branch.
+
+To better understand the concept, here are some resources:
+https://www.codecademy.com/learn/learn-git/modules/learn-git-git-branching-u
+https://www.atlassian.com/git/tutorials/using-branches
+https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is
+https://learngitbranching.js.org
+
+Hi,
+When I type  git status, it shows nothing but this
+fatal: not a git repository (or any of the parent directories): .git 
+
+what is that mean? Did I do wrong?
+
+just find out in the next step
+https://discuss.codecademy.com/t/why-am-i-unable-to-git-add-a-file/361676
+"
+3,Why would I want to see a log of past commits?,"FAQ,Git FAQ",,1,"
+Question
+When would git log's output come in handy?
+Answer
+The output seen when running git log is the 40-character SHA, the author of that commit, the date and time of the commit, and the commit message.
+This is super helpful when you need to look back over the history of a piece of code for various reasons.
+
+What if you broke something in the code and wanted to see what past, working commits you have available to revert to?
+What if you want to make a new feature based on an older version of your code, but didn’t remember which commit you wanted to base it off of?
+It’s good to know this information is there so that when you’re developing, you have the peace of mind knowing that, as long as your commit messages were decent, you’ll have a safety net.
+
+And that’s really the main issue: bad commit messages. If you don’t write commits that concisely tell what happened in a commit, it won’t be of much use later when you run into trouble.
+",
+4,What does it mean to be a Git project?,"FAQ,Git FAQ",q-a,2,"
+Question
+This exercise says we’re turning sorcerers-code into a Git project – what does this mean?
+Answer
+sorcerers-code is an existing directory with some files already in it, so it’s already a project of sorts. But! It’s not yet a Git project – better known as a Git repository, or repo.
+When you use git init and initialize a repo, you’re officially making a Git project and can now make use of all the git commands in the world! If you’re not inside of a git repo, you won’t be able to use git commands and the terminal will complain to you about it.
+","
+Git is a version control system. It is on the command line. So when you turn it into a Git project, you are essentially making your project able to be compatible with Git by getting git commands imported to the command line.
+"
+5,Why am I unable to 'git add' a file?,"FAQ,Git FAQ",,10,"
+Question
+I’m trying to git add <filename.txt> but it’s complaining about not being a git repository, why is this and how do I fix it?
+Answer
+If you see an error message along the lines of fatal: Not a git repository (or any of the parent directories), this means you’re not in the right directory to be using git commands. Recall that you can only use git commands in a git repo.
+To navigate back to where you should be (/home/ccuser/workspace/sorcerers-code) you’ll want to make use of pwd and ls while you cd your way back from wherever you currently are.
+Also, be sure to take a look at this handy directory map if you need a reminder of how the structure is set up.
+If that still doesn’t fix the issue, be sure you’re correctly typing the filename you want to add. To avoid typos, type the first few letters of the file and press tab and it’ll autocomplete for you.
+","
+If you see the fatal: Not a git repository (or any of the parent directories) error, initialise a new Git again in the directory you are working by git init command and try running the git add scene-1.txt
+
+Thanks bro it worked
+
+Thanks was stuck here. Works
+
+Hey, it still doesn’t work for me. I checked the directory and the git init, but it still doesn’t work. I restarted it and refreshed it many times with the same result. can somebody help me?
+
+The same! Stuck there. Now it works!:))
+
+it still did not work for me 
+
+Same hier!
+Please help!
+
+I managed to make it work now!
+@paulbangle1519982234  did you managed to solve it?
+I just did…
+I refreshed the page once again and then I did the following:
+ git init /home/ccuser/workspace/sorcerers-code/.git/
+Reinitialized existing Git repository in /home/ccuser/workspace/sorcerers-code/.git/.g
+it/
+ ls
+add_test.rb  init_test.rb  scene-1.txt
+$ git cd scene-1.txt
+git: ‘cd’ is not a git command. See ‘git --help’.
+Did you mean this?
+add
+$ git add scene-1.txt
+it worked! 
+
+Thank you so much! This helped me a lot
+"
+6,Can we reset HEAD without unstaging?,"FAQ,Git FAQ",,1,"
+Question
+We learn in this lesson that git reset HEAD filename is a useful way to unstage filename and update the HEAD pointer. Is there a way to simply update the HEAD pointer while keeping the stage as is?
+Answer
+The short answer is yes but let’s first justify wanting to move the HEAD and leave the staging area the same. One reason you may want to rollback the HEAD without clearing the staging area is to commit the files currently in the staging area immediately (or soon) after the rollback.
+With that in mind, how do we do this? The way we accomplish this is by writing
+git reset --soft HEAD
+
+or if you have the commit SHA hash,
+git reset --soft commitSHA
+
+So the key is to use reset with the argument --soft.
+",
+7,How does Git backtracking differ from simply commiting the desired changes?,"FAQ,Git FAQ",,1,"
+Question
+In the lessons on Git backtracking, we’re introduced to techniques for modifying a previous commit. How does this differ from making a commit with the corrections?
+Answer
+Backtracking differs in a few ways from making a new commit but there are two reasons that are important for up at this point. First, by backtracking instead of making new commits, we’re able to make small changes to our previous commits without cluttering our repository history with commit messages of similar to “forgot to add file X from my previous commit so doing that now.” Second, and very important, is the following (to quote ProGit):
+
+It’s important to understand that when you’re amending your last commit, you’re not so much fixing it as replacing it entirely with a new, improved commit that pushes the old commit out of the way and puts the new commit in its place. Effectively, it’s as if the previous commit never happened, and it won’t show up in your repository history.
+
+As you should see now, backtracking behaves differently from committing and serve different purposes.
+",
+8,What should we be careful about with Git checkout?,"FAQ,Git FAQ",,4,"
+Question
+The command git checkout provides us with a way of pulling down a previously committed file into our working directory. What should we be aware of when using this command?
+Answer
+git checkout is sometimes referred to as a “dangerous command”. This highlights that it has some gotcha aspects that you should be aware of when utilizing it. For now, it’s most important to understand that any local (in your working directory) changes that you’ve made to the file being checked out will be gone. Git will simply copy the most recently-committed version of the file to your working directory, overwriting your copy. Therefore, it’s crucial that you avoid this command unless you absolutely know that you don’t want your unsaved local changes. Keeping this consideration in mind while using this command will save you the grief of losing your progress when all you wanted was to take a peak at what the previous commit looked like.
+","
+Hello, perhaps this is explained later on the course. But it seems that the file is overwritten (this was hard for me to understand because it wasn’t reflected on the codecademy console). My question is this. Are all files overwritten when you save multiple files as the upcoming lesson “More git add” explains? Does checkout restore all of them or just the one? Maybe we can write multiple files on the same line and get it to reverse them all.
+
+Checkout command can behave differently depending what we want to achieve. Most common way - you will be switching to new branch with it, in doing so your basically replacing your local files with their version from repo. But in context of reversing changes - you can do it (you can specify files you want to adjust).
+Probably this will be useful in context to this question link
+
+If we want to peak at the last commit, is it possible to write git checkout HEAD filename.txt > peak_commit.txt? Would this be considered best practice or an anti-pattern?
+"
+9,FAQ: How to Backtrack - git reset I,"FAQ,Git FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “git reset I” exercise from the lesson “How to Backtrack”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise git reset I
+
+
+Can we reset HEAD without unstaging?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+10,How is the Git HEAD command used in backtracking?,"FAQ,Git FAQ",,1,"
+Question
+We are introduced to Git’s HEAD variable in this lesson. What is its significance in backtracking?
+Answer
+As we learned, the HEAD command gives us access to the most recent commit on the branch which we’re working on. Knowing this, we can use HEAD alongside commands like show, checkout and reset to quickly access or see what changes have been made on the head commit and, potentially, to add or remove modifications easily.
+",
+11,FAQ: Deploy Your Website to GitHub Pages - Add the Remote,"FAQ,Git FAQ",,12,"
+
+This community-built FAQ covers the “Add the Remote” exercise from the lesson “Deploy Your Website to GitHub Pages”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Add the Remote
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+everytime I try to deploy my website, the system doesn’t do anything. Instead of checking to see if my work is right or not, it does nothing, so I am unable to move on or get a solution to my issue. any tips or ways to fix this?
+
+Did you find a solution to this issue? I am encountering the same problem.
+
+Stuck at step 4 Add the Remote. I’ve followed the instructions but the exercise doesn’t recognise that I’ve done what it asked and I can’t progress.
+
+Exactly the same here, can’t continue with this lesson because of this issue.
+
+unfortunately I never found a way to fix this. i was learning this for a school project (due in February) and had to time crunch so I couldn’t.
+
+@mykash7326 @tatiana.ovchar.firef @jamesbudge8648399444   I eventually found an old post last night
+
+
+
+
+Solving for 4/7 Deploy a Website using Git Problems Deploy: Deploy Your Website to GitHub Pages
+
+
+    This post is for the people having trouble with the exercise 4/7 Deploy a Website. 
+That works for me: 
+Step 1: Click “Get Help” in the bottom right of the page. 
+Step 2:write the following commands to the console. 
+ jekyll new personal-website
+ jekyll serve (maybe not necessary) 
+ pwd (just to see where are you are)
+ cd personal-website 
+ git init
+ git remote add origin https://github.com/your-username/your-username.github.io.git 
+(this step only work right when you created the repositiory on g…
+  
+
+
+I have no clue how to initialize my repo. I tried using the solution, but it does nothing, it just checks off the boxes and lets’s you move to the next step without accomplishing anything.
+
+I’m having the same issue as everyone else, slightly concerned that this was first raised six months ago and it seems to still be happening. Hopefully at some point someone at Codecademy will wonder why nobody seems to finish this course…
+
+I have no idea how to do this. Glad i’m not the only one, though.
+
+Seems to be some kind of bug. Also stuck on this part - can’t move past it.
+
+Just do it on real command line of your system instead of using this codecademy.
+These commands will work fine
+"
+12,What is the difference between `checkout` and `reset`?,"FAQ,Git FAQ",,1,"
+Question
+The behavior of git reset and git checkout seem similar in the way that they treat the HEAD pointer and the commits that we have access to as a result. How do they differ?
+Answer
+The differences in the way that checkout and reset treat the HEAD pointer can be a bit subtle. The following image from ProGit Git reference book is very helpful.
+
+reset-checkout.png800×605 21.2 KB
+
+So what are we seeing here? First, let’s understand that (1) master and develop are different branches of our project and (2) the HEAD pointer points to a particular branch, not a commit directly. With that, we have the following difference between the two commands:
+
+
+git checkout master: checkout updates HEAD. It simply makes HEAD point to the master branch instead of the develop branch as it did initially.
+
+git reset master: On the other hand, reset will move the branch that HEAD points to. That branch is updated but HEAD still points to the same branch.
+
+So although the commit that the HEAD pointer is referring to is the same, the way that the commands behave are quite different.
+",
+13,Can we backtrack multiple files simultaneously?,"FAQ,Git FAQ",,8,"
+Question
+As we seen in this lesson, we can stage and commit multiple files simultaneously. Can we also backtrack on multiple files at the same time?
+Answer
+The answer is yes if each of the files that you would like to backtrack are in the same commit and the same branch. If this is the case, then as we see from git status, we can backtrack to the previous commit using the command
+$ git checkout -- <file> ...
+
+where the ellipses are replaced by other files which you would like to backtrack.
+","
+I’d just like to add that in that particular exercise you can add/backtrack/commit multiple files with this syntax:
+git add scene*
+which is easier than scene-1.txt scene-2.txt scene-3.txt…
+
+
+Or you can just do this
+git add .
+
+This actually worked for me whereas trying to add by “scene-3.txt” etc didn’t work.
+
+In this exercise, for the part
+
+In scene-3.txt , everywhere you see the name “LARRY” change it to “LAERTES.”
+I would like to use the following code on the command-line as shown below.
+
+
+However, when you display the contents of the file afterwards, the file is empty.
+It works if you output to a new file then rename it to the file you want in this case, scene-3.txt
+What would be a good way of accomplishing this?
+Thank you for your help.
+
+You could, for example, write the output and move operations on one line using &&:
+sed 's/LARRY/LAERTES/g' scene-3.txt > tmp && mv tmp scene-3.txt
+
+sed also provides an options to do this place:
+
+It makes sense that in place is not the default behavior, too risky.
+
+Thanks bleier. This one works better for me using the wildcard* for series of filenames.
+"
+14,FAQ: How to Backtrack - Backtracking Intro,"FAQ,Git FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Backtracking Intro” exercise from the lesson “How to Backtrack”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise Backtracking Intro
+
+
+How does Git backtracking differ from simply commiting the desired changes?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+To clear the point 3 one must commit twice.
+Please fix this bug.
+"
+15,FAQ: Git Teamwork - git clone,"FAQ,Git FAQ",,5,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “git clone” exercise from the lesson “Git Teamwork”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise git clone
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I can’t find the remote_location in this exercise; Am I missing something? please help me/
+
+Hey @mo3npk!
+I’m not sure what you are asking… You are supposed to clone the science-quizzes remote into the my-quizzes directory. You clone remotes using git clone remote_location clone_name. In this case, science-quizzes is the remote_location and my-quizzes is the clone_name
+
+
+Any idea what i’m doing wrong?
+
+Hello,
+What you entered is correct something should be changed.
+git clone /home/ccuser/workspace/curriculum/science-quizzes my-quizzes
+You can find the path by entering pwd command.
+"
+16,FAQ: How to Backtrack - git checkout,"FAQ,Git FAQ",,7,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “git checkout” exercise from the lesson “How to Backtrack”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise git checkout
+
+
+What should we be careful about with Git checkout?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Im having a difficult time trying to figuring out how im using the :
+_git diff _   command.
+it works until I modify the text of the scene-5.txt Once I change the text and run the git diff I get nothing… any Ideas?
+
+
+The command -  “git checkout HEAD filename” does not discard the changes in the working directory.
+can someone explain this?
+
+I had to close and re-open the file before it would show the changes were discarded:
+
+Click the “X” next to scene-5.txt
+
+Click Open File under Code Editor
+
+Select scene-5.txt
+
+
+
+Hi. After using the git checkout command, the changes are not show in the working directory. This is despite using the process outlined by tensor2. Any suggestions?
+
+Close and re-open the file to show the changes.
+
+Is there any reason the lesson is having us specify HEAD with the checkout command? Can’t it be omitted since the HEAD is targeted by default?
+"
+17,FAQ: Git Teamwork - generalizations,"FAQ,Git FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “generalizations” exercise from the lesson “Git Teamwork”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise generalizations
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+18,FAQ: Basic Git Workflow - git add,"FAQ,Git FAQ",,9,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “git add” exercise from the lesson “Basic Git Workflow”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development Computer Science
+Learn Git
+FAQs on the exercise git add
+
+
+Why am I unable to ‘git add’ a file?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I wasn’t able to get the solution.
+I wrote:
+git add scene-1.txt
+but it didn’t get through. What did i miss here?
+
+I am having the same issue.
+The answer clearly seems to be:
+git add scene-1.txt
+But I am still getting an error.  When I click to auto-solve the exercise, it does not explain anything.  Is this a bug?
+
+First, you must type:
+git init
+Then you can type:
+git add scene-1.txt
+
+@thestephenbell Why is there nothing that explains that tho?
+
+@jahnoel exactly!!!
+
+Type git status to see the status of the file.  Then if need to do a git init.  Then you can type
+git add filename
+Shortcut.  Type git add sc and then press TAB and it will autocomplete the typing of that filename for you.  TAB will autocomplete the filename if enough characters are there to uniquely match the filename you are trying to autocomplete.
+
+What are those .rb files that were getting created along the way.
+
+I know this isn’t codecademy’s fault, but why in the world is this tool so widely used? Surely there’s a better way to save and share different versions of projects than by typing everything into a command line like this.
+"
+19,FAQ: Git Branching - git merge,"FAQ,Git FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “git merge” exercise from the lesson “Git Branching”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise git merge
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Do you have to be in the master before you can merge changes from other branches?
+"
+20,What should I do if the file I need isn't displaying?,"FAQ,Git FAQ",q-a,2,"
+Question
+The Codecademy environment isn’t showing the file I need for this exercise, what should I do?
+Answer
+If you come across an exercise, in this lesson or others, that isn’t showing the file you’re meant to be working on, try the following:
+
+Be sure you’re using Chrome!
+Press ‘Get Help’ in the bottom right and ‘I want to restart this exercise’
+If that doesn’t work, try clearing your browser’s cache and hard refreshing the page (cmd + shift + R on Mac, ctrl + F5 on Windows)
+
+Also, if you ever accidentally close a file you needed open, simply press the folder icon at the top of the editor and find the file you want to open.
+","
+estoy perdido creo que al seguir  git para codificar me quede ai la opcion era pedir ayuda  y reiniciar ese ejercicio
+"
+21,6 cannot solve question 2,"FAQ,Git FAQ",,21,"
+$ git branch bio-questions
+fatal: A branch named ‘bio-questions’ already exists
+","
+Weird, did you spell bio-questions correctly?
+I suggest deleting the branch:
+git branch -d bio-questions
+
+and then creating it again
+
+If you want to change to that branch, use checkout
+(I have no clue what your intentions are aside from the command that you wrote)
+
+I looked up the exercise, the instructions for step 2 are:
+Create a branch called bio-questions
+
+branch can not be deleted I receive error
+When I create a branch:
+git branch bio-questions
+I receive:
+fatal: A branch named ‘bio-questions’ already exists
+however exercise does not complete and I receive error :
+Did you create a new branch called “bio-questions”?
+
+
+
+
+ sahaj108:
+
+branch can not be deleted I receive error
+
+
+I’m guessing the error isn’t just a big red flag, but that it actually tells you something, likely something that you can act on.
+
+
+I JUST NEED TO COMPLETE EXERCISE 2
+AND IT DOES NOT WORK
+When I create a branch:
+git branch bio-questions
+I receive:
+fatal: A branch named ‘bio-questions’ already exists
+however exercise does not complete and I receive error :
+Did you create a new branch called “bio-questions”?
+
+Dunno, completion seems secondary to solving the problem, learning to solve problems.
+If you need to create a branch, and it’s not letting you because it exists, then you need to delete it.
+Stop trying to do what it is clearly not allowing, and fix what it is saying prevents it from doing what you want.
+
+I CAN NOT DELETE THE BRANCH I RECEIVED ERROR WHEN I TRYING DO DELETE
+git branch -d bio-questions
+it saying cannot delete a branch which you are currently on
+
+And what was my response last time you said this?
+Well if you’re on it, then stop being on it.
+You know,  or keep telling us in all-caps that you have some sort of error because that really gets you somewhere.
+Just follow what the error messages are telling you needs to change, that’s all anyone ever does.
+
+what the solution?
+the problem still unsolved:
+exercise 2  new branch cannot be added or deleted
+
+The solution is to read the error and change what it is saying is preventing it from doing what you’re asking it to do.
+It’ll do you no good at all to just copy a command if you can’t produce that command yourself.
+
+i post error with explanations for you to read and expaline but do not receive correct answer  you just saying read and follow errors  that everyone can tell:)
+
+You sure about that? Because I said what you should be doing in response to the latest error 13 minutes ago.
+
+you said a lot of thing which did not help
+problem still unsolved
+can you tell exact command which resolve the issue?
+
+
+
+
+ ionatan:
+
+if you’re on it, then stop being on it.
+
+
+change branch, and then delete it, and then re-create it.
+
+I asked about the exact commands not steps, I already complete steps above
+
+
+
+
+ sahaj108:
+
+I already complete steps above
+
+
+Hi @sahaj108, you can’t delete a branch if you are still on it. Were you able to change branches?
+
+Thank you guys for help, will try more from scratch step by step
+
+
+
+
+ sahaj108:
+
+Thank you guys for help, will try more from scratch step by step
+
+
+Just holler if you need a nudge.
+"
+22,How can I add changes to the staging area?,"FAQ,Git FAQ",,1,"
+Question
+The third step of this exercise asks me to add the changes to the staging area in Git, how do I do this?
+Answer
+Recall that we do git add <filename.extension> to add a file to the staging area.
+If our file name was ‘homework.txt’, we’d type git add homework.txt and, if it was successful, nothing would happen in the terminal after pressing enter. If there’s an issue, Git will usually print a handy error message that sometimes include steps to fix the issue or suggestions.
+",
+23,Why is my git commit invalid?,"FAQ,Git FAQ",,1,"
+Question
+I tried committing my changes and the terminal returned an error saying Valid Git commands start with the word ""git"" followed by a space, then the command name., how can I fix this?
+Answer
+If you see this error, it may be a temporary environment issue that can be resolved with a restart. In that case, try pressing ‘Get Help’ in the bottom right and then restarting. If the issue persists, try the following:
+
+Make sure you’re using Chrome
+Clear your browser cache
+Hard refresh the page (Cmd + Shift + R on Mac, Ctrl + F5 on Windows)
+
+If you’re still seeing the same error, be sure you actually did commit correctly!
+A passing commit would look like: git commit -m ""Complete first line of dialogue""
+",
+24,FAQ: Git Branching - git branch 2,"FAQ,Git FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “git branch 2” exercise from the lesson “Git Branching”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise git branch 2
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+How do we view our branches?
+Nevermind, git branch.
+"
+25,FAQ: Git Branching - git checkout,"FAQ,Git FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “git checkout” exercise from the lesson “Git Branching”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise git checkout
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+in this lesson, you are told to:
+
+1. Switch to the fencing branch from the master branch.
+
+However, it throws an error that ‘fencing’ isn’t a known filepath to git, so you need to go back and create the branch again. Not a huge problem, but since creating the branch isn’t included in the steps, it makes you feel like you are doing something wrong.
+Here is a screenshot of what happened:
+
+Screen Shot 2020-01-16 at 8.01.15 AM1278×428 41 KB
+
+"
+26,Learn Git – Basic Git Workflow – Hello Git,"FAQ,Git FAQ",,2,"
+
+This community-built FAQ covers the “Hello Git” exercise in Codecademy’s lessons on Git.
+FAQs on the Git exercise Hello Git
+
+
+You can help contribute to this section by offering your own questions or feedback on the exercise!
+Unlock your understanding, and share that aha moment with someone else!  Teaching others and answering their questions is one of the best ways to learn.
+Questions about formatting, syntax, or conceptual understanding are just a few avenues you may consider exploring.
+
+Join the Discussion. We Want to Hear From You!
+Have a new question or can answer someone else’s?  Reply () to an existing thread!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources about Git in general? Go here!
+Want to take the conversation in a totally different direction? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account, billing, Pro, or Pro Intensive? Reach out to our support team!
+None of the above?  Find out where to ask other questions here!
+","
+Other FAQs
+The following are links to additional questions that our community has asked about this exercise:
+
+This list will contain other frequently asked questions that aren’t quite as popular as the ones above.
+Currently there have not been enough questions asked and answered about this exercise to populate this FAQ section.
+This FAQ is built and maintained by you, the Codecademy community – help yourself and other learners like you by contributing!
+
+Not seeing your question?  It may still have been asked before – try searching for it by clicking the spyglass icon  () in the top-right of this page.  Still can’t find it?  Ask it below by hitting the reply button below this post ().
+"
+27,FAQ: Git Branching - generalizations,"FAQ,Git FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “generalizations” exercise from the lesson “Git Branching”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise generalizations
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Is there a best practice for maintaining details of branches?  The general workflow in the exercises seems to be:
+Create branch -> edit branch -> merge branch into master -> delete branch.
+But if there are merge conflicts then there is the possibility of losing data.  If there is a merge conflict, shouldn’t you preserve the branch and be more explicit in your master commit message about which branch is being merged in?
+"
+28,FAQ: Basic Git Workflow - git commit,"FAQ,Git FAQ",,6,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “git commit” exercise from the lesson “Basic Git Workflow”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development Computer Science
+Learn Git
+FAQs on the exercise git commit
+
+
+Why is my git commit invalid?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I honestly still don’t really understand what git commit is used for. Can I have another example?
+
+To describe the changes you made and reference them later either in the title or in the code itself.  Imagine submitting a report to your boss.  Then if your boss likes it, he will “push” the report.  Push comes after commit.
+
+Hi, the exercise worked fine but can someone please explain the meaning of the text in bold:
+[master (root commit) ba9349c]
+1 file changed,  3 insertions (+)
+create mode 100644 scene-1.txt
+
+image859×233 5.84 KB
+
+
+What does -m do and mean?
+
+For what is Git projects used for?
+"
+29,FAQ: Basic Git Workflow - Hello Git,"FAQ,Git FAQ",,3,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Hello Git” exercise from the lesson “Basic Git Workflow”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development Computer Science
+Learn Git
+FAQs on the exercise Hello Git
+
+
+Why is git important and what technical tools do developers use to work in teams?
+What’s the bigger picture of how developers work in teams, beyond git?
+What should I do if the file I need isn’t displaying?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I’m sorry, i’m on the Computer Science course, i’ve just completed this
+
+def581×679 43.7 KB
+
+but i kinda had a bug in my connection, so now when i connect i directly got the Git section,
+though i’m not sure if this is part of the course (or the next section), or part of another course i’m taking on bash. Can someone tell? Thanks
+
+I don’t understand, i was in the development section doing python, and now i’m in a bash session
+"
+30,FAQ: Git Teamwork - git merge,"FAQ,Git FAQ",,9,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “git merge” exercise from the lesson “Git Teamwork”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise git merge
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I am having trouble understanding the process of merging origin/master, specifically the text required to do this.
+
+image.png1261×617 50 KB
+
+Does anyone have any information on this?
+
+In the terminal just use: git merge origin/master
+
+I did that but still having the same issue with the original poster,
+
+correct answer is:
+step 1:
+cd my-quizzes
+step 2:
+git fetch origin
+git merge origin/master
+step 3:
+git log
+
+git fetch origin
+is not required in those steps.
+
+it is if you reload the page
+
+The course should be updated to include this information. A simple note stating that if you see:
+
+merge: origin/master - not something we can merge
+
+you will need to issue the command:
+git fetch origin
+
+i cannot find the right steps to proceed, i’ve tried the steps told in this page but none of those seems to be the right ones. Pls help
+"
+31,FAQ: Basic Git Workflow - Generalizations,"FAQ,Git FAQ",,4,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Generalizations” exercise from the lesson “Basic Git Workflow”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development Computer Science
+Learn Git
+FAQs on the exercise Generalizations
+
+
+Is this workflow the same regardless of the project I work on?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Been wondering that for a while but never really checked/asked:
+why are commit messages always(?) written out as “add/change/refactor” rather than added etc. in past tense?
+it would make sense to me to have it like this on a to-do list (add milk) and then say “added milk” on commit  (two chars more but looks more natural  to me)
+So is this a convention that everyone follows or does it vary?
+
+I agree, it seems quite unnatural to write commit messages in present tense. Past tense makes much more sense to me.
+
+
+Why is it that after I modify a file in the working directory and save the file, git status shows the name of the modified file as “modified: filename.txt” in red, and after I do git add filename.txt and then do git status again the same message is displayed, but now in green? What does red and green really mean here?
+
+I guess I’m a little confused about what git add actually does. I thought that I only need to add a file to the staging area once; after that git will automatically track all changes I make to a file and save the changes to the staging area. Looks like that’s not true, so then…
+
+
+… What is the purpose of the staging area if it’s not automatic tracking?
+
+
+How often should one push modifications to the staging area, vs. how often to commit? Should you push modifications to the staging area after every little change? At the end of a day’s work? 3-4 times a day?
+
+
+"
+32,FAQ: How to Backtrack - more git add,"FAQ,Git FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “more git add” exercise from the lesson “How to Backtrack”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise more git add
+
+
+Can we backtrack multiple files simultaneously?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Hi,
+I am very new with git bash and maybe I do not understand anything…
+In this lesson we have to change all “LARRY” to “LAERTES”.
+I tried to use the following command in the bash command line as we learned at the previous lessons:
+sed ""s/LARRY/LAERTES/g"" scene-3.txt scene-7.txt
+When I run this command I see everything been changed as I expected.
+Ones again I check the files output with the command:
+cat scene-3.txt  and the output is still the unchanged version…
+Maybe need more override the file with a pipe command?
+PS: I found the solutions. I forget to use the -i flag. Without this flag the files did not changed. After changing need to close the edited files and open again…
+"
+33,FAQ: Git Teamwork - Git workflow,"FAQ,Git FAQ",,22,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Git workflow” exercise from the lesson “Git Teamwork”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise Git workflow
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Anyone have any issues with inputting the biology question/completing this step of the exercise?
+
+image.png1197×470 44 KB
+
+
+im facing same issues on this page
+
+I passed the 4. instruction  by putting the question to “my-quizzes” folder.
+
+this doesn’t work…i couldn’t get past it without selecting “give me solution”
+
+I’m also having some issue I can’t run the code editor after adding the text in biology.txt. I’ve tried many times and it still doesn’t work
+
+Yeah this doesn’t work. The screen keeps going white every time I click anything
+
+Happens the same thing to me.
+
+Ditto on the white screen.
+
+Same here… with this error : 
+
+I am experiencing the same issue described above by other codecademy users. Hitting on Run (not save) brings an error - see the step before the error. After hitting on run button the page becomes blank. I am using Mozilla Firefox
+
+gitmergeissues.PNG756×573 27.5 KB
+
+
+I managed to move forward only by using @rayraychilll suggestion above to select “give me a solution”
+
+I also facing with the white page error And Selected “give me a solution” . bug not fixed.
+
+anyone get this to work
+
+Instruction number 1 asks to enter in the directory my-quizzes, therefore, the file biology.txt to be used, is the one from this folder, instead of the the one in the science-quizzes folder.
+
+20d45d30c7952270a5399fceba4b19c6d649a7c2.png1615×876 124 KB
+
+
+There is no biology.txt file in my-quizzes folder, unless you run ‘git pull’ or ‘git fetch’ && ‘git merge origin/master’ on ‘master’ to retrieve the latest updates from the remote. However the tutorial does not include that instruction.
+
+Points 2 and 3 require an  extra new line enter in the terminal to be registered as completed.
+
+Can someone explain steps 1-4 at the top of the learn tab in more detail, because I’m getting confused.
+
+I got stuck there
+I didn’t care  where the text is. You have Good Insight. Thanx!!
+
+Okay… So the ‘Save’ button is labelled ‘Run’ and that seems to be the only issue I can find with this lesson.
+For step 4: Add your question to biology.txt in the ‘my-quizzes’ directory (branch). Then click ‘Run’. This will save your work to the file. (An indicator that this satisfied the requirements of step 4 is that the tick turns to green)
+For step 5: Do as the task requests and add the ‘biology.txt’ file to the staging area (git add biology.txt). This will result in step 5 being completed.
+For step 6: Commit this file to the repository (git commit -m “Added biology question”). This commits it to the ‘my-quizzes’ branch and satisfies the requirement for step 6.
+If the team at Codeacademy could update the ‘Run’ button to be ‘Save’ it would prevent a lot of confusion in this lesson.
+"
+34,FAQ: Basic Git Workflow - git diff,"FAQ,Git FAQ",,12,"
+
+This community-built FAQ covers the “git diff” exercise from the lesson “Basic Git Workflow”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development Computer Science
+Learn Git
+FAQs on the exercise git diff
+
+
+How can I add changes to the staging area?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+In exercise 6 it says "" Notice the output:
+
+“Harry Programmer and the Sorcerer’s Code: Scene 1” is in the staging area, as indicated in white."" But its actually in green and red. Why?
+
+
+“Harry Programmer and the Sorcerer’s Code: Scene 1” is already in the staging area that’s why it’s indicated in white. If you have done any changes to that line, it will be marked in red or green.
+
+In the exercise, the last step says to “Add the changes to the staging area in Git. Recall that you will need to identify the file by its name.” What does that mean?
+
+Screen Shot 2018-12-28 at 3.27.19 PM.png960×686 61.5 KB
+
+
+You just have to use the name of the file that you are adding to the staging area. Your last line here should be:
+$ git add scene-1.txt
+because “scene-1.txt” is the file that you’re using and adding. If you didn’t identify the file by name, Git wouldn’t know what you want to add to the staging area.
+
+i tried the ""git diff""command on my computer so i installed MuffinPy<it’s a code editor btw
+but it didn’t work.why?
+
+Hello, I’m curious about these lines of codes, what do they mean?
+
+index 913b994…2d6e91a 100644
+— a/scene-1.txt
++++ b/scene-1.txt
+@@ -1 +1,2 @@
+
+
+Screen Shot 2018-12-28 at 3.27.19 PM.png960×686 61.5 KB
+
+
+
+Git commit1279×761 80.3 KB
+
+Hello everyone,
+I got through all the lessons in Basic Git Workflow once but stuck in the Manhattan Zoo. When I use “git commit”, it appeared like this. I don’t know how to get through this step (step 6)
+
+When I ran “git commit”, the screen appeared this question. I chose Y and then the previous picture appeared
+
+
+I’m curious about this too, if anyone can explain.
+
+Why does it ask you to add the scene to git again at the end? It told you to add the scene to the staging area earlier… is the last line of code needed?
+
+I initially had that problem. You have to run it in the bash file
+"
+35,FAQ: How to Backtrack - git reset II,"FAQ,Git FAQ",,4,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “git reset II” exercise from the lesson “How to Backtrack”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise git reset II
+
+
+Why must we use the first seven characters of a SHA hash to identify a commit?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Can we go back to any previous commits by just referencing the 7 characters from the SHA?
+
+What’s the difference between git reset HEAD and git reset ?
+
+Hi,
+I am stuck in the second step of “exercise git reset II”.
+Q. 2) From the terminal, enter the command to  reset  to a previous commit, using the first 7 characters of one of the past commit SHAs in your Git log.
+Thanks in advance.
+"
+36,Why must we use the first seven characters of a SHA hash to identify a commit?,"FAQ,Git FAQ",,3,"
+Question
+We learn here that when using git reset with the commit’s SHA hash, we should use the first seven characters of the hash. Why is this?
+Answer
+The reason for this is to reduce the potential ambiguity of the commit you are selecting. The characters are hexadecimal digits (0-9, a-f) and so by using seven characters, there are over 250 million potential hashes. This range reduces the possibility of collision.
+Note that we can use a smaller number of characters to identify a commit at the cost of a higher chance of collisions. If ever the hash characters you choose are ambiguous, you will receive a error message stating so.
+","
+Hi,
+I am unable to write anything on terminal.  After typing git log, received all the details of previous commit. But along with that “Add.gitignore is visible.”
+
+click q to exit the log
+"
+37,FAQ: Git Branching - merge conflict II,"FAQ,Git FAQ",,8,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “merge conflict II” exercise from the lesson “Git Branching”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise merge conflict II
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+In section 9/10 of Merge Conflict II, the left column instructions state “In the code editor, look at resume.txt” to see a listing of the differences (with markings) between the “master” and “fencing” branches.  What command do I enter to get the “code editor” to show this?  This appears in
+https://www.codecademy.com/courses/learn-git/lessons/git-branching/exercises/merge-conflict-2?action=resume_content_item .
+Also a general item: when entering git commands and getting git messages, the column space fills up and messages become hidden past the bottom of the screen.  There is no way to scroll up the messages.  (I am accessing git under Red Hat Enterprise Linux using Mozilla Firefox.)  It took me a long time to discover that when space fills up, I should click on the X [in X bash] at top of column which clears the column.  Then a “new Session” box appears; click on box to resume typing commands.  VJS
+
+In section 8/10 of merge conflict II, the left column instruction states that - ""In the code editor, look at  resume.txt . Git uses markings to indicate the  HEAD  (master) version of the file and the  fencing  version of the file, like this:
+<<<<<<< HEAD
+master version of line
+=======
+fencing version of line
+>>>>>>> fencing
+
+But no markings or differences like above are being shown.
+What should i do to get this?
+
+I used “nano resume.txt” to view the file within the terminal, then make the changes, save, exit, add, commit, then merge, then delete the branch.
+
+I clicked ‘back’ to the previous exercise then ‘next’ to return to ‘merge conflict II’ and it seemed to work. I also turned of uBlock Origin (adblocker), though unsure if that made a difference.
+
+In scection 8/10 closing the resume.txt and open it again in the implemented file explorer worked for me to display the new markings.
+In 8/10 - 5, when i tried to commit the changes, i got a
+
+fatal: cannot do a partial commit during a merge.
+
+Adding the parameter -i in the commit worked for me. Don’t know exactly what went wrong…
+
+git commit -i -m “Resolve merge conflict”
+
+Heres a quick explanation of the parameter from https://git-scm.com/docs/git-commit :
+-i
+–include
+Before making a commit out of staged contents so far, stage the contents of paths given on the command line as well. This is usually not what you want unless you are concluding a conflicted merge.
+
+I ended up just skipping that step after running “git status”. Hope that helps!
+
+same problem and just skipped running the “git status” command . Thank you @erinwmccall
+"
+38,FAQ: Git Teamwork - git remote -v,"FAQ,Git FAQ",,5,"
+
+This community-built FAQ covers the “git remote -v” exercise from the lesson “Git Teamwork”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise git remote -v
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+What should I do if after changine directory and entering “git remote -v” this error message appears:
+fatal: Not a git repository (for any of the parent directories): .git
+
+Hi,
+I am not getting desired output.
+After typing both the below  commands -
+cd my-quizzes
+git remote -v
+Output: fatal: Not a git repository(for any of the parent directories)
+Please advice.
+Thanks.
+
+I think, you should clone again:
+git clone science-quizzes my-quizzes
+Then:
+cd my-quizzes
+git remote -v
+
+
+Hi,
+I restarted the whole process again.
+It worked later.
+Thanks.
+"
+39,FAQ: Git Branching - delete branch,"FAQ,Git FAQ",,5,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “delete branch” exercise from the lesson “Git Branching”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise delete branch
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Is there a bug with this excercice ? I tried many option but it won’t validate 
+
+a6a07f76fb644c299d217e319bfb1710b7f475f8.png3157×1145 227 KB
+
+
+Yes, I tried refreshing many times and it wouldn’t validate my same “git branch -d fencing”
+And the worst part is when you Get Solution, it just erases everything and checks out the task… Major bug, come on CodeCademy.
+
+Same issue with the “git branch -d fencing”
+Screen Shot3137×1838 468 KB
+
+git branch -d fencing
+"
+40,FAQ: Basic Git Workflow - git init,"FAQ,Git FAQ",,5,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “git init” exercise from the lesson “Basic Git Workflow”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development Computer Science
+Learn Git
+FAQs on the exercise git init
+
+
+What does it mean to be a Git project?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+In this lesson, are we creating a local or remote project/repository? Perhaps a short concepts intro would help setup lesson expectations.
+
+Is this “bash” terminal only for Linux? Would I be typing this stuff into the Command Prompt on Windows?
+
+You can (I have) install Bash on Windows. There are a few commands that work for both Command Prompt and Bash Terminal. See this link: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/ap-doslinux.html
+
+In step 1, I added a string to some text file. In step 2 I typed git init at a bash prompt and it created a project directory under sorcerers code. Where and how did it know where to create it? (sorcerers-code) Was there some information I wasn’t aware of in Step 1 that told me where the .txt file was?
+"
+41,FAQ: Git Teamwork - git fetch,"FAQ,Git FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “git fetch” exercise from the lesson “Git Teamwork”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise git fetch
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+What does each of the exits mean?
+"
+42,FAQ: Git Teamwork - git push,"FAQ,Git FAQ",,4,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “git push” exercise from the lesson “Git Teamwork”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise git push
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+
+image.png1413×280 19.2 KB
+
+The exercise comes up with a tick - however my output from git is not the same as the output the tutorial says I should have, any ideas?
+
+reload the page again
+
+Hi there!
+Your first entry on the command line is “cd my quizzes”. Bash tried changing into the directory “my”. Unfortunately there is no such directory, as indicated by the output on the next line.
+As branch names must have no whitespaces (aka spaces), this first line should have been “cd my-quizzes” if your  branch is called “my-quizzes” as per the exercise.
+"
+43,FAQ: Git Branching - commit on a new branch,"FAQ,Git FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “commit on a new branch” exercise from the lesson “Git Branching”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise commit on a new branch
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+44,FAQ: Git Branching - branching overview,"FAQ,Git FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “branching overview” exercise from the lesson “Git Branching”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise branching overview
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+45,FAQ: Git Branching - git branch,"FAQ,Git FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “git branch” exercise from the lesson “Git Branching”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise git branch
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+46,FAQ: Git Branching - merge conflict I,"FAQ,Git FAQ",,1,"
+
+This community-built FAQ covers the “merge conflict I” exercise from the lesson “Git Branching”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise merge conflict I
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+47,FAQ: Deploy Your Website to GitHub Pages - Create A GitHub Account,"FAQ,Git FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Create A GitHub Account” exercise from the lesson “Deploy Your Website to GitHub Pages”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Create A GitHub Account
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+48,FAQ: Basic Git Workflow - Git Workflow,"FAQ,Git FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Git Workflow” exercise from the lesson “Basic Git Workflow”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development Computer Science
+Learn Git
+FAQs on the exercise Git Workflow
+
+
+What makes Git useful to a developer?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+49,FAQ: Basic Git Workflow - git status,"FAQ,Git FAQ",,3,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “git status” exercise from the lesson “Basic Git Workflow”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development Computer Science
+Learn Git
+FAQs on the exercise git status
+
+
+What are these untracked files showing up that I didn’t create?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+When you type git status, what are the init_test and add_test things under untracked files? (They only show up after you do git add and git init so I know it has something to with those but I don’t know what the _test parts are about.
+
+I think they are used by codeacademy  to track the progress of the course. You can check theri content using “vi add_test.rb” or “vi init_test.rb”
+"
+50,FAQ: Basic Git Workflow - git log,"FAQ,Git FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “git log” exercise from the lesson “Basic Git Workflow”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development Computer Science
+Learn Git
+FAQs on the exercise git log
+
+
+Why would I want to see a log of past commits?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+51,FAQ: How to Backtrack - head commit,"FAQ,Git FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “head commit” exercise from the lesson “How to Backtrack”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise head commit
+
+
+How is the Git HEAD command used in backtracking?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+52,FAQ: How to Backtrack - git reset review,"FAQ,Git FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “git reset review” exercise from the lesson “How to Backtrack”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise git reset review
+
+
+Once we reset a project to an earlier point, do the commits after that point get deleted?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+53,FAQ: How to Backtrack - Generalizations,"FAQ,Git FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Generalizations” exercise from the lesson “How to Backtrack”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise Generalizations
+
+
+What is the difference between `checkout` and `reset`?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+54,FAQ: Git Teamwork - Overview,"FAQ,Git FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Overview” exercise from the lesson “Git Teamwork”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Web Development
+Learn Git
+FAQs on the exercise Overview
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I committed some error while coding, is there a way to reset the entire exercise?
+"
