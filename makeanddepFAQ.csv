@@ -1,0 +1,1997 @@
+,Title,Categories,Tags,Replies,Post,Comment
+0,About the Make & Deploy a Website FAQ category,"FAQ,Make & Deploy a Website FAQ",,1,"
+Once you have learned some HTML & CSS, you’ll be able to build and deploy a website.  This forum category covers FAQs on the Codecademy courses that teach you how.
+",
+1,FAQ: Deploy Your Website to GitHub Pages - Review,"FAQ,Make & Deploy a Website FAQ",,4,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Deploy Your Website to GitHub Pages”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I couldn’t successfully deploy my website, it shows 404 Page Not found. Kindly help! 
+Screenshot 2019-12-04 at 6.21.26 PM.png2526×1364 171 KB
+
+
+unable to push to github
+“remote: repository not found.”
+“fatal: repository https://github.com/my-username/my-username.github.io.git/ not found”
+Password and username is correct and repository exists on github.
+
+is there a way to manually down load the files being pushed to github so I can continue on with the rest of the course?
+"
+2,FAQ: Site Structure - Add a Div,"FAQ,Make & Deploy a Website FAQ",,3,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Add a Div” exercise from the lesson “Site Structure”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Add a Div
+
+
+What can be nested inside  <div>  elements?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+On exercise 11/13 there’s a “flex: 1” in the main.css, I tried to figure out what effect it has and it looks like the navbar actually gets smaller when it’s deleted, why is that? Why is the idea behind using flex: 1 in this case?
+
+What can be the other ways to place 2 divs inline like this 
+Screenshot (1410)1366×768 96.1 KB
+ ?
+"
+3,FAQ: Boundaries and Space - Review,"FAQ,Make & Deploy a Website FAQ",,3,"
+
+This community-built FAQ covers the “Review” exercise from the lesson “Boundaries and Space”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Review
+
+
+How do we use  flexbox  ( display: flex; ) to align elements vertically?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Hello there,
+I was wondering if it were possible to make a border of an HTML element transparent but still present. If there is a way, how do you do it ?
+Thank you.
+
+Why would you want to that? If it is to position an element, use margin, padding, left or top combined with positioning
+"
+4,FAQ: Create a Static Website Using Jekyll - Generate a Static Site,"FAQ,Make & Deploy a Website FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Generate a Static Site” exercise from the lesson “Create a Static Website Using Jekyll”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Generate a Static Site
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+i tried to create static site with command jekyll new myweb but, error occurs and it does not generate correctly.
+"
+5,FAQ: Assign a Custom Domain Name to Your Website - Access Your Hosted Zone,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Access Your Hosted Zone” exercise from the lesson “Assign a Custom Domain Name to Your Website”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Access Your Hosted Zone
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+6,FAQ: Assign a Custom Domain Name to Your Website - Setting Up Your Custom Domain,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Setting Up Your Custom Domain” exercise from the lesson “Assign a Custom Domain Name to Your Website”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Setting Up Your Custom Domain
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+7,FAQ: Assign a Custom Domain Name to Your Website - Confirm NS Record,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Confirm NS Record” exercise from the lesson “Assign a Custom Domain Name to Your Website”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Confirm NS Record
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+8,FAQ: Assign a Custom Domain Name to Your Website - Custom Domain II,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Custom Domain II” exercise from the lesson “Assign a Custom Domain Name to Your Website”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Custom Domain II
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+9,FAQ: Assign a Custom Domain Name to Your Website - Custom Domain I,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Custom Domain I” exercise from the lesson “Assign a Custom Domain Name to Your Website”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Custom Domain I
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+10,FAQ: Assign a Custom Domain Name to Your Website - What is a domain name?,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “What is a domain name?” exercise from the lesson “Assign a Custom Domain Name to Your Website”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise What is a domain name?
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+11,FAQ: Deploy Your Website to GitHub Pages - Commit Your Changes,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Commit Your Changes” exercise from the lesson “Deploy Your Website to GitHub Pages”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Commit Your Changes
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+12,FAQ: Assign a Custom Domain Name to Your Website - Testing your CNAME record,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Testing your CNAME record” exercise from the lesson “Assign a Custom Domain Name to Your Website”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Testing your CNAME record
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+13,FAQ: Assign a Custom Domain Name to Your Website - DNS Overview,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “DNS Overview” exercise from the lesson “Assign a Custom Domain Name to Your Website”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise DNS Overview
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+14,FAQ: Assign a Custom Domain Name to Your Website - Create a CNAME record,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Create a CNAME record” exercise from the lesson “Assign a Custom Domain Name to Your Website”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Create a CNAME record
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+15,FAQ: Assign a Custom Domain Name to Your Website - Review,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Assign a Custom Domain Name to Your Website”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+16,FAQ: Create a Static Website Using Jekyll - Installing Jekyll,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Installing Jekyll” exercise from the lesson “Create a Static Website Using Jekyll”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Installing Jekyll
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+17,FAQ: Create a Static Website Using Jekyll - Review,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Create a Static Website Using Jekyll”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+18,FAQ: Create a Static Website Using Jekyll - Deploying: Overview,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Deploying: Overview” exercise from the lesson “Create a Static Website Using Jekyll”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Deploying: Overview
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+19,FAQ: Create a Static Website Using Jekyll - Jekyll's Directory Structure,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+This community-built FAQ covers the “Jekyll’s Directory Structure” exercise from the lesson “Create a Static Website Using Jekyll”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Jekyll’s Directory Structure
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+20,FAQ: Site Structure - Anatomy of an HTML Element,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Anatomy of an HTML Element” exercise from the lesson “Site Structure”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Anatomy of an HTML Element
+
+
+Why can’t I see the title of the website?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+21,FAQ: Site Structure - Add a Heading,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+This community-built FAQ covers the “Add a Heading” exercise from the lesson “Site Structure”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Add a Heading
+
+
+ Is the <head> element a heading element?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+22,FAQ: Site Structure - Add a Paragraph,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Add a Paragraph” exercise from the lesson “Site Structure”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Add a Paragraph
+
+
+Can I use the <p> element for a heading?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+23,FAQ: Site Structure - Anchor Elements,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+This community-built FAQ covers the “Anchor Elements” exercise from the lesson “Site Structure”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Anchor Elements
+
+
+What is a URL?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+24,FAQ: Site Structure - Adding Images,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Adding Images” exercise from the lesson “Site Structure”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Adding Images
+
+
+What’s the difference between href and src attributes?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+25,FAQ: Site Structure - Parent and Child Elements,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Parent and Child Elements” exercise from the lesson “Site Structure”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Parent and Child Elements
+
+
+Why is indentation important?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+26,FAQ: Site Structure - Metadata: The Brains,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Metadata: The Brains” exercise from the lesson “Site Structure”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Metadata: The Brains
+
+
+Why does my website work without the  <!DOCTYPE html>  tag?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+27,FAQ: Site Structure - HTML Review,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+This community-built FAQ covers the “HTML Review” exercise from the lesson “Site Structure”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise HTML Review
+
+
+What other HTML elements can I use to add structure and content to a website?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+28,FAQ: Boundaries and Space - The Box Model,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “The Box Model” exercise from the lesson “Boundaries and Space”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise The Box Model
+
+
+Why is the  box model concept important?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+29,FAQ: Boundaries and Space - Working with Padding,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Working with Padding” exercise from the lesson “Boundaries and Space”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Working with Padding
+
+
+Can I give each side of my content different padding ?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+30,FAQ: Boundaries and Space - Working with Padding,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Working with Padding” exercise from the lesson “Boundaries and Space”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Working with Padding
+
+
+Can I give each side of my content different padding ?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+31,FAQ: Boundaries and Space - Working with Margin,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Working with Margin” exercise from the lesson “Boundaries and Space”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Working with Margin
+
+
+When should I use  padding  vs  margin?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+32,FAQ: Boundaries and Space - More Margins,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “More Margins” exercise from the lesson “Boundaries and Space”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise More Margins
+
+
+Can I use responsive units like  em  and  rem  for  margin  and  padding?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+33,FAQ: Boundaries and Space - Using Float,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Using Float” exercise from the lesson “Boundaries and Space”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Using Float
+
+
+Does the  float  property affect  inline  elements differently than  block  elements?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+34,FAQ: Building with Bootstrap - CSS Frameworks,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “CSS Frameworks” exercise from the lesson “Building with Bootstrap”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise CSS Frameworks
+
+
+Is Bootstrap the only CSS framework?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+35,FAQ: Building with Bootstrap - On the Grid,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “On the Grid” exercise from the lesson “Building with Bootstrap”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise On the Grid
+
+
+If I’m using Bootstrap, do I have to use Bootstrap’s grid?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+36,FAQ: Building with Bootstrap - Header/Navigation,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Header/Navigation” exercise from the lesson “Building with Bootstrap”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Header/Navigation
+
+
+What is the purpose of a Bootstrap  .row  class?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+37,FAQ: Building with Bootstrap - Footers,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Footers” exercise from the lesson “Building with Bootstrap”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Footers
+
+
+Can I make my Bootstrap columns stack at screen widths other than widths less than 768px (tablet width)?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+38,FAQ: Create a Static Website Using Jekyll - Jekyll: Overview,"FAQ,Make & Deploy a Website FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Jekyll: Overview” exercise from the lesson “Create a Static Website Using Jekyll”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Jekyll: Overview
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I have been working on this lesson for quite a while. I will create my personal-website directory but it doesn’t show up in the next lesson. Here is one possibility as to why: “just make sure that your HTML is inside of a file called index.html. As you’ll see, even Jekyll uses a file called index.html.”. Anything I type is in a bash file. How do I get my directory into the index.html so that it will show in the next lesson and I can complete this course? Thank you for your help.
+"
+39,FAQ: Deploy Your Website to GitHub Pages - Create Your Repo,"FAQ,Make & Deploy a Website FAQ",,3,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Create Your Repo” exercise from the lesson “Deploy Your Website to GitHub Pages”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Create Your Repo
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+"" our repo’s name  must  also follow GitHub Pages’ naming convention, otherwise your site will not publish at all.""
+I dont understand this part. Why we have to place the repo name like “your-user-name.github.io”. What if I host 2 repositories?
+
+I came across these error message. What should I do?
+Admin@User-PC MINGW64 ~/Desktop/html/halimjon.com/my-portfolio-site (master)
+$ git push -u origin master
+To https://github.com/HalimHamidov/halim.github.io.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/HalimHamidov/halim.github.io.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+"
+40,FAQ: Deploy Your Website to GitHub Pages - Deploy Your Site,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Deploy Your Site” exercise from the lesson “Deploy Your Website to GitHub Pages”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Deploy Your Site
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+41,"[FAQ] Common Problems for ""Make an Interactive Website: News Reader""","FAQ,Make & Deploy a Website FAQ",,5,"
+This FAQ is for Make an Interactive Website: News Reader.
+
+Problems discussed:
+Why do I have a dot (.) before a class name when selecting an element, but not when adding or removing it’s class?
+Why am I told to select the <div> with the “description” class when there is only a <div> with the “description row” class?
+
+We hope the answers to these common problems will help all of you with your coding. If you see any questions in this category that can be answered by this FAQ, please link the person needing help over here.
+Thanks,
+The Codecademy Moderators
+
+If we see a post worthy of being added to this or any other FAQ we may send you a PM to ask you to repost your answer in one of the FAQs.
+This topic is not for questions, if your problem is still not answered after reading through all these Common Problem then please create a new topic.
+","
+
+
+Why do I have a dot (.) before a class name when selecting an element, but not when adding or removing it’s class?
+
+When you select an HTML element, there are three main ways you can do that. By it’s tag name (tag), by one of it’s classes (.class), or by it’s id (#id). So, with these elements:
+<div></div>
+<div class=""example-class""></div>
+<div id=""example-id""></div>
+
+(the class or id name could be anything you want it to be)
+you would select each element like this with jQuery, respectively:
+$('div')
+$('.example-class')
+$('#example-id')
+
+The character in front of your selection (nothing, ., or #) represents what selector it is. This is necessary because you might have a class name that’s the same as a tag name, for some reason.
+However, addClass(), removeClass(), and toggleClass() don’t need that distinction. They know they’re dealing with a class, so the distinction between the various selectors isn’t necessary.
+
+Additional reading
+https://api.jquery.com/addClass
+https://api.jquery.com/removeClass
+https://api.jquery.com/toggleClass
+
+
+Why am I told to select the <div> with the description class when there is only a <div> with the description row class?
+
+In the class attribute on an HTML element, a space represents two different classes. So here:
+<div class=""description row"">
+  <!-- ... -->
+</div>
+
+the <div> has two classes, description and row. Not one class called “description row”.
+You can have as many classes as you like (within reason) on an element, as long as you separate each different class name by a space.
+
+Additional Reading
+
+
+
+MDN Web Docs
+
+
+
+class
+The class global attribute is a space-separated list of the classes of the element. Classes allows CSS and Javascript to select and access specific elements via the class selectors or functions like the DOM method document.getElementsByClassName.
+
+
+
+
+
+
+"
+42,FAQ: Setting Up Your Domain - Hosting your Site with Namecheap,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Hosting your Site with Namecheap” exercise from the lesson “Setting Up Your Domain”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Hosting your Site with Namecheap
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+43,FAQ: Setting Up Your Domain - Registering a Domain Name with Namecheap,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Registering a Domain Name with Namecheap” exercise from the lesson “Setting Up Your Domain”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Registering a Domain Name with Namecheap
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+44,FAQ: Setting Up Your Domain - How Websites Work,"FAQ,Make & Deploy a Website FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “How Websites Work” exercise from the lesson “Setting Up Your Domain”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise How Websites Work
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+45,FAQ: Building with Bootstrap - Connecting to Bootstrap,"FAQ,Make & Deploy a Website FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Connecting to Bootstrap” exercise from the lesson “Building with Bootstrap”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Connecting to Bootstrap
+
+
+Does the order the of the  <link>  elements matter?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Just out of curiousity, what exactly is the purpose of this particular link element ?:
+ <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+
+"
+46,FAQ: Boundaries and Space - Create a Border,"FAQ,Make & Deploy a Website FAQ",,7,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Create a Border” exercise from the lesson “Boundaries and Space”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Create a Border
+
+
+Can I change the  border  thickness, type, or color individually?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Hi there,
+I just wanted to know if it is possible to assign an html element to 2 or more classes like this :
+<h1 class=""page-title"" class=""sub-ref"">TUNDRA GALLERY</h1>
+
+Above, the ‘h1’ element is assigned to two classes by the name “page-title” and “sub-ref”. I just want to know if this is allowed in HTML.
+If it is allowed, then could someone explain how I could create a CSS selector for that particular element above.
+Thank you.
+
+Thankfully there is a tool for that:
+https://validator.w3.org/nu/#textarea
+i put this code in:
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""utf-8"">
+  <meta name=""viewport"" content=""width=device-width"">
+  <title>test</title>
+</head>
+<body>
+ <h1 class=""page-title"" class=""sub-ref"">TUNDRA GALLERY</h1>
+</body>
+</html>
+
+otherwise we get a lot of other warnings/errors
+as we can see, we get an error (duplicate attribute)
+an element can have multiple classes, but only a single class attribute. Simply give the class attribute multiple values (space separated)
+
+Thank you.  So does that mean I can do something like this:
+<h1 class=""page-title"" ""sub-ref"">TUNDRA GALLERY</h1>
+
+Instead of :
+<h1 class=""page-title"" class=""sub-ref"">TUNDRA GALLERY</h1>
+
+Once again, Thank you for the quick reply.
+
+
+
+
+ natarior:
+
+Thank you. So does that mean I can do something like this:
+<h1 class=""page-title"" ""sub-ref"">TUNDRA GALLERY</h1>
+
+
+
+almost, did you put that code through the validator/w3c tool i put in my previous reply? Then you would have know it was not correct
+when we have an attribute with its value:
+attribute=""value""
+
+the value is between the quotation marks. If we want to have multiple values, all values should be between the quotation marks (separated by spaces)
+
+Sorry if I took to long to see this. Makes more sense to have values within the quotes.
+Thank you.
+So do you have any idea on how I could create a CSS selector for this particular element ? :
+<h1 class=""page-title sub-ref"">TUNDRA GALLERY</h1>
+
+Thank you once more.
+
+
+
+
+ natarior:
+
+So do you have any idea on how I could create a CSS selector for this particular element ? :
+
+
+that depends on the other elements in your code, if you truly want it be unique, use id
+"
+47,FAQ: Boundaries and Space - Working with Position,"FAQ,Make & Deploy a Website FAQ",,4,"
+
+This community-built FAQ covers the “Working with Position” exercise from the lesson “Boundaries and Space”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Working with Position
+
+
+What other values are used on the  position  property?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+.contact-btn a { 
+  position: relative;
+}
+
+Instead of putting position attribute here , Why not put position: relative; in the .contact-btn a:active selector like this
+.contact-btn a:active {
+   position: relative;
+  top: 2px;
+}
+
+
+[QUESTION]
+Hi, about the example code in this lesson that reads:
+.container {
+  position: relative; 
+  top: 10px; 
+  left: 20px;
+}
+
+I was wondering about its similarities with the following:
+.container {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+So, is there a difference in these two ways of coding? If so, what is it?
+Thanks in advance.
+Cheers. David.
+
+
+
+
+ cloud7748704013:
+
+is there a difference in these two ways of coding?
+
+
+The first example does not change the size of the box, only shifts it right and down. If it has a parent container, it may overflow that box.
+The second example does change the size of the box. It does not overflow its parent viewport.
+"
+48,FAQ: Boundaries and Space - Keep It Inline,"FAQ,Make & Deploy a Website FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Keep It Inline” exercise from the lesson “Boundaries and Space”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Keep It Inline
+
+
+Which commonly used elements are  display: block;? Which are  display: inline;?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Hello! I have a question on the inline vs block display of the 7.Keep it inline lesson.
+The HTML file for the nav bar reads:
+<nav>
+      <ul>
+        <li><b>Arctic</b></a></li>
+        <li>Alpine</a></li>
+        <li>Antarctic</a></li>
+      </ul>
+      <div class=""contact-btn""><a>Contact</a>
+      </div>
+    </nav>
+
+So nav ul contains nav li.
+In the CSS file nav ul is styled - display: inline; - but the results of the code is still a block display. Only when nav li is styled inline then the display changes. So, as nav ul contains nav li, why is that that the display doesn’t change to inline?
+Thanks for your help!
+Ilaria
+"
+49,FAQ: Site Structure - A Closer Look,"FAQ,Make & Deploy a Website FAQ",,6,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “A Closer Look” exercise from the lesson “Site Structure”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise A Closer Look
+
+
+Can something other than text be in-between the opening and closing tags of an anchor element?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Fyi, step 6 (A Closer Look) displays a diagram that is illegible in Chrome 64 bit  80.0.3987.132 via Windows 10 Home ver. 1903, build 18362.65.
+Screen image - https://drive.google.com/file/d/1nJuByOMaZ6io2cI4toibbM8ETfayaCQB/view?usp=sharing
+
+also https://www.codecademy.com/courses/make-a-website/lessons/site-structure/exercises/parent-child
+
+Hello @dev2747104694!
+Can confirm this is a bug report and am submitting a request to the Codecademy Help Desk. Thanks for point this out!
+
+
+
+Submitted a bug report and it seems to be resolved! Is it fixed on your end?
+"
+50,FAQ: Boundaries and Space - Understanding Display,"FAQ,Make & Deploy a Website FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Understanding Display” exercise from the lesson “Boundaries and Space”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Understanding Display
+
+
+What is the difference between  display: block;  and  display: inline; ?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Is the “display: block” only for h1, p and ul elements? And the “display: block” only for img and anchor elements? Or is it just an example?
+"
+51,FAQ: Deploy Your Website to GitHub Pages - Initialize Your Repo,"FAQ,Make & Deploy a Website FAQ",,13,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Initialize Your Repo” exercise from the lesson “Deploy Your Website to GitHub Pages”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Initialize Your Repo
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+where do you find a websites directory on github pages
+
+Hello,
+I don’t understand how to use the “cd” command to navigate to my site’s directory. 
+
+For example you have a directory:
+Desktop:
+     Images:
+          Cloudes.png
+          Shadows.jpg
+     Videos:
+          Funny:
+              Skatboarding-fail
+          Sad:
+              Cat's funeral
+     Programmes:
+          HTML.html
+          JS.js
+          CSS.css
+
+Okay so you are in images folder,
+You can go back using cd ..
+Then you want to go to funny folder inside videos so you can do this in one command: cd Videos/Funny
+Or you can do it in two commands: cd Videos (On a new line)
+cd Funny
+You could do it in one command  cd ../Videos/Funny
+And if like you are in Sad folder inside videos and you want to get to the Desktop: cd ../.. firstly it backs to videos folder then to the desktop folder
+Hope this helps to understand the cd command 
+
+Thank you very much for your help ! Now I can peacefully continue my exercise 
+
+Hi, I want to create my website from scratch instead of using Jekyll. How do I use GitHub in  this scenario?
+I already have all my codes?
+
+Step 2 is really simple, but not working. I type “git init” and hit enter and the terminal initializes, but the little box next to step 2 doesn’t turn into a green checkmark or a red X. It just turns to a grey X that I can’t do anything with.
+
+Add ‘personal-website/’ after ‘git init’. It took me awhile to figure that out but it worked and I would guess is correct since I got a green checkmark box. I had a similar problem in another exercise where the only instruction was to type ‘cd’ but the terminal needed additional information.
+
+Its doesnt work! So I write
+-git init
+-mkdir personal-website
+-cd personal-website
+And next button doesn`t work
+
+I think this is a bug. The solution - get Help button in the lower right corner of the browser
+
+Isn’t the correct order of the commands,
+
+
+cd personal-website
+
+
+git init
+
+
+?
+
+In my own command line, when i write “git init” i get ‘git’ is not recognized as an internal or external command, operable program or batch file.
+How do i initialize the git file?
+
+Yes git init is not working after using mkdir personal-website and then cd personal-website/  and then git init still not working
+"
+52,FAQ: Site Structure - Add a Video,"FAQ,Make & Deploy a Website FAQ",,5,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Add a Video” exercise from the lesson “Site Structure”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Add a Video
+
+
+Some embedded videos on the web play automatically, how can I get my embedded video to play automatically?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I’m a bit confused on what the “type” function does. What do I use when inserting one of my personal videos?
+
+Is it necessary to use the “source” tag?
+Can I simply use the “src” attribute inside the “video” tag?
+
+It depends on the format (extension) of this video file. The most popular video MIME types are video/webm (for .webm files) and video/ogg (for files .ogg and .ogv). But it is really easy to find the correct MIME type for given file extension using a search engine.
+
+Yeah, sure, you can 
+source elements are really important when you want to make sure that your video will be correctly displayed in all web browsers. Web browsers do not support every MIME type. By using source elements you are able to provide your video in a few different MIME types which allows you to widen the range of supported web browsers.
+"
+53,FAQ: Create a Static Website Using Jekyll - Preview Your Site Locally,"FAQ,Make & Deploy a Website FAQ",,8,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Preview Your Site Locally” exercise from the lesson “Create a Static Website Using Jekyll”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Preview Your Site Locally
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I need help with this part because I have been stuck on part four for days. I just can’t seem to understand what it wants me to do, and how to do it. I have to do these courses for school, and this assignment is due soon. Could you help me? 
+
+This is a  crappy course - actually the terminal is super slow to begin with - almost two decades old - you need to type alphabet by alphabet and still even if you cd into the folder and ran jekyll serve the instructions wont let you proceed forward. The popups are f***ing annoying for a typical developer. I am totally pissed of with this stupid course already.
+
+This exercise and this course is broken.
+In the portion where you create the site with jekyll ‘jekyll new personal-website’, change to the site directory ‘cd personal-website’, and execute ‘jekyll serve’, it gives me the following error message:
+/home/ccuser/.gem/ruby/2.3.0/gems/mercenary-0.3.6/lib/mercenary/program.rb:31:
+in `go': invalid argument: --port  (OptionParser::InvalidArgument)
+from /home/ccuser/.gem/ruby/2.3.0/gems/mercenary-0.3.6/lib/mercenary.rb:19:in `program'
+from /home/ccuser/.gem/ruby/2.3.0/gems/jekyll-3.1.3/bin/jekyll:13:in `<top (required)>'
+from /home/ccuser/.bin/jekyll:30:in `load'
+from /home/ccuser/.bin/jekyll:30:in `<main>'
+
+
+I am stuck at the same step.  It is no use continuing. This broken course was reported months ago. Who is fixing this course?
+
+I got this to work, kind of.  If you install jekyll on your pc, and use that to do the steps up to the “serve” command, you can then cd to the directory “personal-site”, and type "" jekyll serve "", and get something like:
+lt@lt-desktop:~/demonfinder$ jekyll serve
+Configuration file: /home/lt/demonfinder/_config.yml
+Source: /home/lt/demonfinder
+Destination: /home/lt/demonfinder/_site
+Incremental build: disabled. Enable with --incremental
+Generating…
+done in 0.34 seconds.
+Auto-regeneration: enabled for ‘/home/lt/demonfinder’
+Configuration file: /home/lt/demonfinder/_config.yml
+Server address: http://127.0.0.1:4000/
+Server running… press ctrl-c to stop.
+( obviously I named my site "" demonfinder"" rather than "" personal-site"". )
+Next, go to your browser, and type in “http://localhost:4000”
+There, you should see a page like was shown earlier in the course, that says "" Welcome to jekyll"" and has a page title of “your awesome site”.
+Hope that helps!
+-LT
+
+
+
+
+ code4111957450:
+
+use that to do the steps up to the “serve”
+
+
+… wat?
+
+it’s clearly showing some errors in ruby files, even tho I’ve name project as they wanted…
+plus the server is set to http://localhost:8000/ I’ve also changed to port :4000 with no luck !
+let’s see what’s gonna happen next
+
+image1181×281 38.8 KB
+
+
+image995×798 70.2 KB
+
+"
+54,FAQ: Boundaries and Space - Display: Flex,"FAQ,Make & Deploy a Website FAQ",,3,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Display: Flex” exercise from the lesson “Boundaries and Space”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Display: Flex
+
+
+Why use  display: flex;?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Why does “display: inline” doesn’t horizontally align the images in this exercise?
+
+I was wondering the same thing. Doing this course after the HTML/CSS ones has mostly been review but display: flex; is the first topic that wasn’t covered in the CSS course at all - we only learned about other display  values such a inline, block, and inline-block, none of which seem to have any impact on this page when used instead of flex.
+I did some experimenting and it looks like the key difference has to do with parent/child element relationships.
+HTML:
+<!DOCTYPE html>
+<html>
+
+<link href=""./test.css"" type=""text/css"" rel=""stylesheet"">
+
+<!--TESTING SPACE-->
+
+<div class=""rectangle"">
+	<p>I'm a rectangle!</p>
+</div>
+<div class=""rectangle"">
+	<p>So am I!</p>
+</div>
+<div class=""rectangle"">
+	<p>Me three!</p>
+</div>
+
+<div class=""parent"">
+	<p>I'm the first child!</p>
+	<p>I'm the second!</p>
+	<p>I'm the third!</p>
+</div>
+
+<!--TESTING SPACE-->
+
+</html>
+
+CSS:
+.rectangle {
+	border: 2px solid blue;
+	width: 200px;
+	height: 300px;
+	display: inline-block;
+}
+
+.parent {
+	margin-top: 10px;
+	display: flex;
+}
+
+.parent p {
+	border: 2px solid red;
+	width: 200px;
+	height: 300px;
+}
+
+Render:
+image1413×944 7.7 KB
+Changing display to flex for the “rectangle” class had no effect, so that tells me that flex is only useful on container elements. On the other hand, changing display to inline-block for the “parent” class created some strange layout changes that I can’t explain.
+Hopefully this helps someone!
+"
+55,FAQ: Building with Bootstrap - The Jumbotron,"FAQ,Make & Deploy a Website FAQ",,8,"
+
+This community-built FAQ covers the “The Jumbotron” exercise from the lesson “Building with Bootstrap”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise The Jumbotron
+
+
+What is the purpose of Bootstrap’s  btn btn-primary  class?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Hey! I am doing this for the first time, so forgive any mistakes.
+I am currenyly doing the “building with bootstrap” lesson and couldn’t help wondering: is what I am currently doing “inline CSS”? As all the customisations seem to be done on the HTML page and not the external css one.
+Thanks for any replies!
+
+From the lesson overview page (can’t find the link!), the image of the 12-column grid included .col-span-3 class names. Since these are classes that Bootstrap gives CSS for, you assign the class and the CSS to make it span 3 columns happens.
+It should work just the same as if you wrote the styling in your own CSS file for
+.col-span-3 {column-span: 3;} yourself, right? (My apologies for any syntax errors!)
+I’m just a noob too, so same disclaimer here: I could be totally wrong.
+If we’re assigning classes like ‘text-right’ and ‘row’, I expect these are also styled to match.
+.text-right {
+  align-text: right;
+}
+/* and */
+.row {
+  row-span: 100%; /* tho this one feels incorrect */
+}
+
+(These might need to be some grid ‘justify-item’ -type declaration in the parent container. I’m still struggling with CSS grids generally, tbf.)
+I think it isn’t inline CSS since we’re not applying any styles in the HTML, we’re just applying class properties. These act like shorthand styling so it’s more like linking to a stylesheet (like regular CSS you write yourself) than adding style as a property?
+Inline CSS would be:
+<div style=""font-weight: bold;""> ... </div>
+(<element style=""property: value;""> is roughly correct! I checked with a coworker.)
+
+In the example for the lesson, a container class is included under the jumbotron class like this:
+<section class=""jumbotron"">
+   <div class=""container"">
+  ... 
+   </div>
+</section>
+
+Why not just make the section a container? What is the point of the jumbotron class if all the child elements are under a container class?
+
+Jumbotron can be used without a container but here in the lesson CC is making you style with it as the result is different and they are aiming for that outcome.
+Please read Bootstrap document to get an understanding: https://getbootstrap.com/docs/4.3/components/jumbotron/
+
+
+
+ corinnemiller0149215:
+
+Why not just make the section a container?
+
+
+having multiple classes on one element with contradicting styling is never a good idea and most likely won’t work.
+
+Why do we need to create separate  tags for the “container” class and the “row text-center” class? Here is the code:
+
+
+Thanks
+(link: https://www.codecademy.com/courses/make-a-website/lessons/bootstrap/exercises/jumbotron?action=resume_content_item)
+
+
+
+
+In the fragment:
+<section class=""jumbotron"">
+  <div class=""container"">
+    <div class=""row text-center"">
+      <h2>Homemade Goods</h2>
+      <h3>This Year's Best</h3>
+      <a class=""btn btn-primary"" href=""#"" role=""button"">See all</a>
+    </div>
+  </div>
+</section>
+
+why was role=""button"" attribute used?
+
+I was wondering the same thing. I think it’s confusing here because there is only that one <div> child, but in theory when building an actual website you might have a background image or something that you want to span the whole width of the webpage. Changing that <section> element to class=""container"" would limit its contents to only taking up the 12 columns.
+I thought of it as the section is the whole jumbotron, the first container div is a 12-column-wide box within the jumbotron, and then the subsequent row div is the first line in that 12-column-wide box.
+Hope that helps!
+"
+56,FAQ: Building with Bootstrap - Bootstrap Generalizations,"FAQ,Make & Deploy a Website FAQ",,5,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Bootstrap Generalizations” exercise from the lesson “Building with Bootstrap”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Bootstrap Generalizations
+
+
+Are there any other useful Bootstrap classes I should know about?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Does anyone know where I can access the Bootstrap official documentation ?
+A URL would be helpful. Thanks.
+
+If i create a web page with the help of bootstrap, will i be able to modify or make any new changes in the layout of the web page using CSS?
+
+Hopefully this is what you’re looking for:
+
+
+
+getbootstrap.com
+
+
+
+Overview
+Components and options for laying out your Bootstrap project, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.
+
+
+
+
+
+
+We didn’t learn a single thing about buttons in this lesson lol unless you count having them thrown into the code as part of the jumbotron exercise?
+If anyone’s as confused as I was to see it included in the overview, here’s some additional reading:
+
+
+
+getbootstrap.com
+
+
+
+Buttons
+Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
+
+
+
+
+
+"
+57,FAQ: Site Structure - Create an Unordered List,"FAQ,Make & Deploy a Website FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Create an Unordered List” exercise from the lesson “Site Structure”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Create an Unordered List
+
+
+How do we create numbered list items?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Hi there.actually i am on NameCheap making a website …my question is while i entered for unordered list it was sucessfull but when i open that browser local hostpage it was not lookin that good because things were not alligned…why is it so and how to get things alligned…
+Thanks  
+"
+58,FAQ: Setting Up Your Domain - Choosing a Domain Name,"FAQ,Make & Deploy a Website FAQ",,6,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Choosing a Domain Name” exercise from the lesson “Setting Up Your Domain”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Choosing a Domain Name
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I tried to claim my free domain and it’s saying I need to pay $4.39 for it. What’s the deal with that?
+
+I too am facing the same problem
+
+I’m getting an error message “503 | System maintenance” 
+
+Same message I’m receiving. Will update after I reach out for help
+
+Please, let me know.
+Thanks 
+"
+59,Make a Website – Site Structure – Anatomy of an HTML Element,"FAQ,Make & Deploy a Website FAQ",,2,"
+
+This community-built FAQ covers the “Anatomy of an HTML Element” exercise in Codecademy’s lessons on Making and Deploying a Website.
+FAQs on the Make a Website exercise Anatomy of an HTML Element
+
+
+You can help contribute to this section by offering your own questions or feedback on the exercise!
+Unlock your understanding, and share that aha moment with someone else!  Teaching others and answering their questions is one of the best ways to learn.
+Questions about formatting, syntax, or conceptual understanding are just a few avenues you may consider exploring.
+
+Join the Discussion. We Want to Hear From You!
+Have a new question or can answer someone else’s?  Reply () to an existing thread!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources about making and deploying a website in general? Go here!
+Want to take the conversation in a totally different direction? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account, billing, Pro, or Pro Intensive? Reach out to our support team!
+None of the above?  Find out where to ask other questions here!
+","
+Other FAQs
+The following are links to additional questions that our community has asked about this exercise:
+
+This list will contain other frequently asked questions that aren’t quite as popular as the ones above.
+Currently there have not been enough questions asked and answered about this exercise to populate this FAQ section.
+This FAQ is built and maintained by you, the Codecademy community – help yourself and other learners like you by contributing!
+
+Not seeing your question?  It may still have been asked before – try searching for it by clicking the spyglass icon  () in the top-right of this page.  Still can’t find it?  Ask it below by hitting the reply button below this post ().
+"
+60,FAQ: Building with Bootstrap - Supporting Content,"FAQ,Make & Deploy a Website FAQ",,3,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Supporting Content” exercise from the lesson “Building with Bootstrap”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Make a Website
+FAQs on the exercise Supporting Content
+
+
+What is the number in the Bootstrap  .col-sm-...  (i.e.  .col-sm-6 ) class for? Can I use any number I want?
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Why the need to use figure element in this exercise? I used another div element and it works right with same result.
+
+when i run code for instruction 6 exercise 3 it continues top buffer but doesn’t give me a green check or a red x?
+"
+61,Deploy a Website – Create a Static Website Using Jekyll – Installing Jekyll,"FAQ,Make & Deploy a Website FAQ",,2,"
+
+This community-built FAQ covers the “Installing Jekyll” exercise in Codecademy’s lessons on Making and Deploying a Website.
+FAQs on the Deploy a Website exercise Installing Jekyll
+
+
+You can help contribute to this section by offering your own questions or feedback on the exercise!
+Unlock your understanding, and share that aha moment with someone else!  Teaching others and answering their questions is one of the best ways to learn.
+Questions about formatting, syntax, or conceptual understanding are just a few avenues you may consider exploring.
+
+Join the Discussion. We Want to Hear From You!
+Have a new question or can answer someone else’s?  Reply () to an existing thread!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources about making and deploying a website in general? Go here!
+Want to take the conversation in a totally different direction? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account, billing, Pro, or Pro Intensive? Reach out to our support team!
+None of the above?  Find out where to ask other questions here!
+","
+Other FAQs
+The following are links to additional questions that our community has asked about this exercise:
+
+This list will contain other frequently asked questions that aren’t quite as popular as the ones above.
+Currently there have not been enough questions asked and answered about this exercise to populate this FAQ section.
+This FAQ is built and maintained by you, the Codecademy community – help yourself and other learners like you by contributing!
+
+Not seeing your question?  It may still have been asked before – try searching for it by clicking the spyglass icon  () in the top-right of this page.  Still can’t find it?  Ask it below by hitting the reply button below this post ().
+"
+62,FAQ: Create a Static Website Using Jekyll - Generate a Static Site,"FAQ,Make & Deploy a Website FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Generate a Static Site” exercise from the lesson “Create a Static Website Using Jekyll”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Deploy a Website
+FAQs on the exercise Generate a Static Site
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+i tried to create static site with command jekyll new myweb but, error occurs and it does not generate correctly.
+"
