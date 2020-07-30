@@ -1,0 +1,2994 @@
+,Title,Categories,Tags,Replies,Post,Comment
+0,About the Amazon Alexa FAQ category,"FAQ,Amazon Alexa FAQ",,1,"
+Alexa is an intelligent personal assistant developed by Amazon, first used in the Amazon Echo and now used across a range of smart devices.  Anyone can develop new skills for Alexa, this forum category covers FAQs on the Codecademy courses that teach you how.
+",
+1,FAQ: Session Attributes - Create the Lambda Function,"FAQ,Amazon Alexa FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Create the Lambda Function” exercise from the lesson “Session Attributes”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Create the Lambda Function
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+The code given in the lesson does not work. I am not terribly familiar with all of this, but I wrote the similar program that does work. I tried to use the same good coding practice shown in the example.
+I used the fact skill template, and had slots
+Animals: cats, birds, and dogs,
+Answers: 4, 2, small, both, bark, meow, and chirp
+Here is my code below
+/* eslint-disable  func-names /
+/ eslint-disable  no-console */
+const Alexa = require(‘ask-sdk’);
+var globalAnimals;
+var cardsTaken = 0;
+var points = 0;
+var flashcards = [
+{
+question: “make what sound?”,
+dogsAnswer: “bark”,
+catsAnswer: “meow”,
+birdsAnswer: “chirp”,
+},
+{
+question: “have how many legs?”,
+dogsAnswer: “4”,
+catsAnswer: “4”,
+birdsAnswer: “2”,
+},
+{
+question: "" are generally small, large, or both?"",
+dogsAnswer: “both”,
+catsAnswer: “small”,
+birdsAnswer: “small”,
+},
+];
+const GetNewFactHandler = {
+canHandle(handlerInput) {
+const request = handlerInput.requestEnvelope.request;
+return request.type === ‘LaunchRequest’
+|| (request.type === ‘IntentRequest’
+&& request.intent.name === ‘GetNewFactIntent’);
+},
+handle(handlerInput) {
+return handlerInput.responseBuilder
+  .speak('Welcome to flashcards! What animal will you choose?')
+  .reprompt('come again?')
+  .getResponse();
+
+},
+};
+const SetMyAnimalIntentHandler = {
+canHandle(handlerInput) {
+const request = handlerInput.requestEnvelope.request;
+return request.type === ‘IntentRequest’
+&& request.intent.name === ‘SetMyAnimalIntent’;
+},
+handle(handlerInput) {
+var animal = handlerInput.requestEnvelope.request.intent.slots.animals.value;
+globalAnimals = animal;
+return handlerInput.responseBuilder
+  .speak(""You have chosen "" + animal + "". Are you ready for your first question?"")
+  .reprompt(""is that okay?"")
+  .getResponse();
+
+},
+};
+const FirstQuestionIntentHandler = {
+canHandle(handlerInput) {
+const request = handlerInput.requestEnvelope.request;
+return request.type === ‘IntentRequest’
+&& request.intent.name === ‘FirstQuestionIntent’;
+},
+handle(handlerInput) {
+const speakOutput = globalAnimals + "" "" + flashcards[cardsTaken].question;
+return handlerInput.responseBuilder
+  .speak(speakOutput)
+  .reprompt(""say that again"")
+  .getResponse();
+
+},
+};
+const AnswersIntentHandler = {
+canHandle(handlerInput) {
+const request = handlerInput.requestEnvelope.request;
+return request.type === ‘IntentRequest’
+&& request.intent.name === ‘AnswersIntent’;
+},
+handle(handlerInput) {
+var answer = handlerInput.requestEnvelope.request.intent.slots.answers.value;
+var correctAnswer = globalAnimals + ‘Answer’;
+var finalAnswer = flashcards[cardsTaken][correctAnswer];
+var speakOutput
+
+
+if(answer === finalAnswer)
+{
+  speakOutput = ""That is correct! ""
+  points++;
+}
+else
+{
+  speakOutput = ""That is wrong! You answered "" + answer + "". The right answer is "" + finalAnswer + "". "";
+}
+
+cardsTaken++;
+if(cardsTaken < flashcards.length)
+{
+  speakOutput+= "" Are you ready for the next question?""
+
+return handlerInput.responseBuilder
+  .speak(speakOutput)
+  .reprompt(""say that again"")
+  .getResponse();
+}
+else
+{
+  speakOutput += ""That was the final flashcard. You got "" + points + "" out of "" +   cardsTaken + "" possible."";
+  
+  return handlerInput.responseBuilder
+  .speak(speakOutput)
+  .getResponse();
+}
+
+},
+};
+const HelpHandler = {
+canHandle(handlerInput) {
+const request = handlerInput.requestEnvelope.request;
+return request.type === ‘IntentRequest’
+&& request.intent.name === ‘AMAZON.HelpIntent’;
+},
+handle(handlerInput) {
+return handlerInput.responseBuilder
+.speak(HELP_MESSAGE)
+.reprompt(HELP_REPROMPT)
+.getResponse();
+},
+};
+const ExitHandler = {
+canHandle(handlerInput) {
+const request = handlerInput.requestEnvelope.request;
+return request.type === ‘IntentRequest’
+&& (request.intent.name === ‘AMAZON.CancelIntent’
+|| request.intent.name === ‘AMAZON.StopIntent’);
+},
+handle(handlerInput) {
+return handlerInput.responseBuilder
+.speak(STOP_MESSAGE)
+.getResponse();
+},
+};
+const SessionEndedRequestHandler = {
+canHandle(handlerInput) {
+const request = handlerInput.requestEnvelope.request;
+return request.type === ‘SessionEndedRequest’;
+},
+handle(handlerInput) {
+console.log(Session ended with reason: ${handlerInput.requestEnvelope.request.reason});
+return handlerInput.responseBuilder.getResponse();
+
+},
+};
+const ErrorHandler = {
+canHandle() {
+return true;
+},
+handle(handlerInput, error) {
+console.log(Error handled: ${error.message});
+return handlerInput.responseBuilder
+  .speak('Sorry, an error occurred.')
+  .getResponse();
+
+},
+};
+const SKILL_NAME = ‘Animal Facts’;
+const GET_FACT_MESSAGE = 'Here’s your fact: ';
+const HELP_MESSAGE = ‘You can say tell me a space fact, or, you can say exit… What can I help you with?’;
+const HELP_REPROMPT = ‘What can I help you with?’;
+const STOP_MESSAGE = ‘Goodbye!’;
+const skillBuilder = Alexa.SkillBuilders.standard();
+exports.handler = skillBuilder
+.addRequestHandlers(
+GetNewFactHandler,
+SetMyAnimalIntentHandler,
+FirstQuestionIntentHandler,
+AnswersIntentHandler,
+HelpHandler,
+ExitHandler,
+SessionEndedRequestHandler
+)
+.addErrorHandlers(ErrorHandler)
+.lambda();
+"
+2,FAQ: Session Attributes - Building the Interaction Model,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Building the Interaction Model” exercise from the lesson “Session Attributes”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Building the Interaction Model
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+3,FAQ: Dialog Code Challenge - Review,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Dialog Code Challenge”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+4,FAQ: Slots - Lambda Function: Respond to Slot,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Lambda Function: Respond to Slot” exercise from the lesson “Slots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Lambda Function: Respond to Slot
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+5,FAQ: Slots - Slots: Passing Values to Lambda Functions,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Slots: Passing Values to Lambda Functions” exercise from the lesson “Slots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Slots: Passing Values to Lambda Functions
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+6,"FAQ: Speak, Listen & Reprompt - Make Alexa Speak","FAQ,Amazon Alexa FAQ",,1,"
+
+This community-built FAQ covers the “Make Alexa Speak” exercise from the lesson “Speak, Listen & Reprompt”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Make Alexa Speak
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+7,FAQ: DynamoDB - Working with Databases,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Working with Databases” exercise from the lesson “DynamoDB”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Working with Databases
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+8,FAQ: DynamoDB - Add DynamoDB Table to Lambda Function,"FAQ,Amazon Alexa FAQ",,1,"
+
+This community-built FAQ covers the “Add DynamoDB Table to Lambda Function” exercise from the lesson “DynamoDB”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Add DynamoDB Table to Lambda Function
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+9,FAQ: DynamoDB - Review: DynamoDB,"FAQ,Amazon Alexa FAQ",,1,"
+
+This community-built FAQ covers the “Review: DynamoDB” exercise from the lesson “DynamoDB”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Review: DynamoDB
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+10,FAQ: DynamoDB - Check Out Your New Table,"FAQ,Amazon Alexa FAQ",,1,"
+
+This community-built FAQ covers the “Check Out Your New Table” exercise from the lesson “DynamoDB”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Check Out Your New Table
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+11,FAQ: DynamoDB - Testing with the Service Simulator,"FAQ,Amazon Alexa FAQ",,1,"
+
+This community-built FAQ covers the “Testing with the Service Simulator” exercise from the lesson “DynamoDB”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Testing with the Service Simulator
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+12,FAQ: DynamoDB - Linking the Lambda Function,"FAQ,Amazon Alexa FAQ",,1,"
+
+This community-built FAQ covers the “Linking the Lambda Function” exercise from the lesson “DynamoDB”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Linking the Lambda Function
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+13,FAQ: DynamoDB - IAM Permissions,"FAQ,Amazon Alexa FAQ",,1,"
+
+This community-built FAQ covers the “IAM Permissions” exercise from the lesson “DynamoDB”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise IAM Permissions
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+14,FAQ: DynamoDB - Introduction,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Introduction” exercise from the lesson “DynamoDB”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Introduction
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+15,FAQ: Slots - Lambda Function: Read Slot,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Lambda Function: Read Slot” exercise from the lesson “Slots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Lambda Function: Read Slot
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+16,FAQ: Use Dialog Management in Voice Interaction - Slot Confirmation,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Slot Confirmation” exercise from the lesson “Use Dialog Management in Voice Interaction”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Slot Confirmation
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+17,FAQ: Use Dialog Management in Voice Interaction - Slot Elicitation Testing,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Slot Elicitation Testing” exercise from the lesson “Use Dialog Management in Voice Interaction”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Slot Elicitation Testing
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+18,FAQ: Use Dialog Management in Voice Interaction - Slot Elicitation,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Slot Elicitation” exercise from the lesson “Use Dialog Management in Voice Interaction”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Slot Elicitation
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+19,FAQ: Use Dialog Management in Voice Interaction - Single and Multi-Turn Conversations,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Single and Multi-Turn Conversations” exercise from the lesson “Use Dialog Management in Voice Interaction”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Single and Multi-Turn Conversations
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+20,FAQ: Use Dialog Management in Voice Interaction - Human Conversation,"FAQ,Amazon Alexa FAQ",,1,"
+
+This community-built FAQ covers the “Human Conversation” exercise from the lesson “Use Dialog Management in Voice Interaction”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Human Conversation
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+21,FAQ: Use Synonyms in Lambda Functions - Review,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Use Synonyms in Lambda Functions”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+22,FAQ: Use Synonyms in Lambda Functions - Access the Resolved Value in Lambda,"FAQ,Amazon Alexa FAQ",,1,"
+
+This community-built FAQ covers the “Access the Resolved Value in Lambda” exercise from the lesson “Use Synonyms in Lambda Functions”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Access the Resolved Value in Lambda
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+23,FAQ: Use Synonyms in Lambda Functions - Access the synonym (slot value) in Lambda,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Access the synonym (slot value) in Lambda” exercise from the lesson “Use Synonyms in Lambda Functions”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Access the synonym (slot value) in Lambda
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+24,FAQ: Use Synonyms in Lambda Functions - Check Resolution Status in AWS Lambda,"FAQ,Amazon Alexa FAQ",,1,"
+
+This community-built FAQ covers the “Check Resolution Status in AWS Lambda” exercise from the lesson “Use Synonyms in Lambda Functions”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Check Resolution Status in AWS Lambda
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+25,FAQ: Understand Your Lambda Function - Add Response for LaunchRequest,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Add Response for LaunchRequest” exercise from the lesson “Understand Your Lambda Function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Add Response for LaunchRequest
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+26,FAQ: Understand Your Lambda Function - Add Handler for HelloIntent,"FAQ,Amazon Alexa FAQ",,1,"
+
+This community-built FAQ covers the “Add Handler for HelloIntent” exercise from the lesson “Understand Your Lambda Function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Add Handler for HelloIntent
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+27,FAQ: Understand Your Lambda Function - Create Handlers Object,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Create Handlers Object” exercise from the lesson “Understand Your Lambda Function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Create Handlers Object
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+28,FAQ: Understand Your Lambda Function - Include Alexa SDK,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Include Alexa SDK” exercise from the lesson “Understand Your Lambda Function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Include Alexa SDK
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+29,FAQ: Slots - Interaction Model: Associating Slots with Intents,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Interaction Model: Associating Slots with Intents” exercise from the lesson “Slots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Interaction Model: Associating Slots with Intents
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+30,FAQ: Slots - Interaction Model: Associating Slots with Intents,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Interaction Model: Associating Slots with Intents” exercise from the lesson “Slots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Interaction Model: Associating Slots with Intents
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+31,"FAQ: Speak, Listen & Reprompt - Reprompt","FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Reprompt” exercise from the lesson “Speak, Listen & Reprompt”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Reprompt
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+32,FAQ: DynamoDB - Distinguishing Sessions,"FAQ,Amazon Alexa FAQ",,1,"
+
+This community-built FAQ covers the “Distinguishing Sessions” exercise from the lesson “DynamoDB”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Distinguishing Sessions
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+33,FAQ: DynamoDB - Refactor Session Attributes,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Refactor Session Attributes” exercise from the lesson “DynamoDB”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Refactor Session Attributes
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+34,FAQ: DynamoDB - Saving Session Attributes to the Database,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Saving Session Attributes to the Database” exercise from the lesson “DynamoDB”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Saving Session Attributes to the Database
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+35,FAQ: Dialog Code Challenge - Scenario 3,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Scenario 3” exercise from the lesson “Dialog Code Challenge”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Scenario 3
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+36,FAQ: Dialog Code Challenge - Scenario 2,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Scenario 2” exercise from the lesson “Dialog Code Challenge”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Scenario 2
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+37,FAQ: Dialog Code Challenge - Scenario 1,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Scenario 1” exercise from the lesson “Dialog Code Challenge”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Scenario 1
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+38,FAQ: Dialog Code Challenge - Challenge Intro,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Challenge Intro” exercise from the lesson “Dialog Code Challenge”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Challenge Intro
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+39,FAQ: Control Dialog in Lambda - Review,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Control Dialog in Lambda”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+40,FAQ: Control Dialog in Lambda - Setting Default Values,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Setting Default Values” exercise from the lesson “Control Dialog in Lambda”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Setting Default Values
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+41,FAQ: Control Dialog in Lambda - Overriding Intent Confirmation,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Overriding Intent Confirmation” exercise from the lesson “Control Dialog in Lambda”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Overriding Intent Confirmation
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+42,FAQ: Control Dialog in Lambda - Overriding Slot Confirmation,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Overriding Slot Confirmation” exercise from the lesson “Control Dialog in Lambda”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Overriding Slot Confirmation
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+43,FAQ: Control Dialog in Lambda - Confirmation Status: Intent,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Confirmation Status: Intent” exercise from the lesson “Control Dialog in Lambda”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Confirmation Status: Intent
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+44,FAQ: Control Dialog in Lambda - Confirmation Status: Slots,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Confirmation Status: Slots” exercise from the lesson “Control Dialog in Lambda”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Confirmation Status: Slots
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+45,FAQ: Control Dialog in Lambda - Overriding Slot Elicitation,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Overriding Slot Elicitation” exercise from the lesson “Control Dialog in Lambda”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Overriding Slot Elicitation
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+46,FAQ: Control Dialog in Lambda - Introduction,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Introduction” exercise from the lesson “Control Dialog in Lambda”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Introduction
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+47,FAQ: Use Dialog Management in Lambda - Review,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Use Dialog Management in Lambda”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+48,FAQ: Use Dialog Management in Lambda - Delegate Directive,"FAQ,Amazon Alexa FAQ",,1,"
+
+This community-built FAQ covers the “Delegate Directive” exercise from the lesson “Use Dialog Management in Lambda”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Delegate Directive
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+49,FAQ: Use Dialog Management in Lambda - Dialog State II,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Dialog State II” exercise from the lesson “Use Dialog Management in Lambda”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Dialog State II
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+50,FAQ: Use Dialog Management in Lambda - Dialog State I,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Dialog State I” exercise from the lesson “Use Dialog Management in Lambda”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Dialog State I
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+51,FAQ: Use Dialog Management in Lambda - Introduction,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Introduction” exercise from the lesson “Use Dialog Management in Lambda”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Introduction
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+52,FAQ: Use Dialog Management in Voice Interaction - Review,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Use Dialog Management in Voice Interaction”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+53,FAQ: Use Dialog Management in Voice Interaction - Intent Confirmation Testing,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Intent Confirmation Testing” exercise from the lesson “Use Dialog Management in Voice Interaction”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Intent Confirmation Testing
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+54,FAQ: Use Dialog Management in Voice Interaction - Intent Confirmation,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Intent Confirmation” exercise from the lesson “Use Dialog Management in Voice Interaction”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Intent Confirmation
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+55,FAQ: Use Dialog Management in Voice Interaction - Slot Confirmation Testing,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Slot Confirmation Testing” exercise from the lesson “Use Dialog Management in Voice Interaction”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Slot Confirmation Testing
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+56,FAQ: Use Synonyms in Voice Interaction - Using Synonyms,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Using Synonyms” exercise from the lesson “Use Synonyms in Voice Interaction”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Using Synonyms
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+57,FAQ: Session Attributes - Assigning Slot Values to Session Attributes,"FAQ,Amazon Alexa FAQ",,1,"
+
+This community-built FAQ covers the “Assigning Slot Values to Session Attributes” exercise from the lesson “Session Attributes”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Assigning Slot Values to Session Attributes
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+58,FAQ: Understand Your Lambda Function - Add Response for HelloIntent,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Add Response for HelloIntent” exercise from the lesson “Understand Your Lambda Function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Add Response for HelloIntent
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+59,FAQ: Build Your First Alexa Skill - Building an Alexa Skill,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Building an Alexa Skill” exercise from the lesson “Build Your First Alexa Skill”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Building an Alexa Skill
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+60,FAQ: Creating Your Lambda function - Create Lambda Function,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Create Lambda Function” exercise from the lesson “Creating Your Lambda function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Create Lambda Function
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+61,FAQ: Build Your First Alexa Skill - Intents & Utterances,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Intents & Utterances” exercise from the lesson “Build Your First Alexa Skill”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Intents & Utterances
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+62,FAQ: Build Your First Alexa Skill - Interacting with an Alexa Skill,"FAQ,Amazon Alexa FAQ",,1,"
+
+This community-built FAQ covers the “Interacting with an Alexa Skill” exercise from the lesson “Build Your First Alexa Skill”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Interacting with an Alexa Skill
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+63,FAQ: Build Your First Alexa Skill - What is Alexa?,"FAQ,Amazon Alexa FAQ",,1,"
+
+This community-built FAQ covers the “What is Alexa?” exercise from the lesson “Build Your First Alexa Skill”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise What is Alexa?
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+64,FAQ: Creating Your Lambda function - Sign in or Sign up for AWS Account,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Sign in or Sign up for AWS Account” exercise from the lesson “Creating Your Lambda function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Sign in or Sign up for AWS Account
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+65,FAQ: Creating Your Lambda function - Select AWS Lambda,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the ""Select AWS Lambda "" exercise from the lesson “Creating Your Lambda function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise _Select AWS Lambda _
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+66,FAQ: Creating Your Lambda function - Copy the Code,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Copy the Code” exercise from the lesson “Creating Your Lambda function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Copy the Code
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+67,FAQ: Build Your First Alexa Skill - Connect Lambda Function,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Connect Lambda Function” exercise from the lesson “Build Your First Alexa Skill”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Connect Lambda Function
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+68,FAQ: Build Your First Alexa Skill - Alexa Developer Console,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Alexa Developer Console” exercise from the lesson “Build Your First Alexa Skill”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Alexa Developer Console
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+69,FAQ: Use Synonyms in Voice Interaction - Why Use Synonyms,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Why Use Synonyms” exercise from the lesson “Use Synonyms in Voice Interaction”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Why Use Synonyms
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+70,FAQ: DynamoDB - Building the Interaction Model,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Building the Interaction Model” exercise from the lesson “DynamoDB”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Building the Interaction Model
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+71,FAQ: Build Your First Alexa Skill - Testing with Echosim.io,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Testing with Echosim.io” exercise from the lesson “Build Your First Alexa Skill”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Testing with Echosim.io
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+72,FAQ: Session Attributes - Review,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Session Attributes”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+73,FAQ: Session Attributes - Testing with the Service Simulator,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Testing with the Service Simulator” exercise from the lesson “Session Attributes”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Testing with the Service Simulator
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+74,FAQ: Session Attributes - Session Attributes and Variables,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Session Attributes and Variables” exercise from the lesson “Session Attributes”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Session Attributes and Variables
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+75,FAQ: Session Attributes - String Interpolation with Session Attributes,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “String Interpolation with Session Attributes” exercise from the lesson “Session Attributes”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise String Interpolation with Session Attributes
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+76,FAQ: Session Attributes - Modifying Session Attributes,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Modifying Session Attributes” exercise from the lesson “Session Attributes”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Modifying Session Attributes
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+77,FAQ: Session Attributes - Session Attributes,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Session Attributes” exercise from the lesson “Session Attributes”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Session Attributes
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+78,FAQ: Slots - Interaction Model: Slot Types,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Interaction Model: Slot Types” exercise from the lesson “Slots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Interaction Model: Slot Types
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+79,FAQ: Use Synonyms in Lambda Functions - Parse JSON,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Parse JSON” exercise from the lesson “Use Synonyms in Lambda Functions”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Parse JSON
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+80,FAQ: Use Synonyms in Lambda Functions - Intro,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Intro” exercise from the lesson “Use Synonyms in Lambda Functions”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Intro
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+81,FAQ: Use Synonyms in Voice Interaction - Review,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Use Synonyms in Voice Interaction”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+82,FAQ: Use Synonyms in Voice Interaction - Entity Resolution No Match,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Entity Resolution No Match” exercise from the lesson “Use Synonyms in Voice Interaction”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Entity Resolution No Match
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+83,FAQ: Use Synonyms in Voice Interaction - Entity Resolution Explained,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Entity Resolution Explained” exercise from the lesson “Use Synonyms in Voice Interaction”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Entity Resolution Explained
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+84,FAQ: Use Synonyms in Voice Interaction - Testing: Synonyms,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Testing: Synonyms” exercise from the lesson “Use Synonyms in Voice Interaction”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Testing: Synonyms
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+85,FAQ: Use Synonyms in Voice Interaction - Movie Preference Skill,"FAQ,Amazon Alexa FAQ",,1,"
+
+This community-built FAQ covers the “Movie Preference Skill” exercise from the lesson “Use Synonyms in Voice Interaction”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Movie Preference Skill
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+86,FAQ: Understand Your Lambda Function - Add Handler for LaunchRequest,"FAQ,Amazon Alexa FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Add Handler for LaunchRequest” exercise from the lesson “Understand Your Lambda Function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Add Handler for LaunchRequest
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Is the requestHandler name you designate correlate directly to what you named your intent on the ASK?
+"
+87,FAQ: Creating Your Lambda function - Review,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Creating Your Lambda function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+88,FAQ: Understand Your Lambda Function - Add Error Handler,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Add Error Handler” exercise from the lesson “Understand Your Lambda Function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Add Error Handler
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+89,FAQ: Understand Your Lambda Function - Register Handlers and Execute Lambda Function,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Register Handlers and Execute Lambda Function” exercise from the lesson “Understand Your Lambda Function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Register Handlers and Execute Lambda Function
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+90,FAQ: Understand Your Lambda Function - Review,"FAQ,Amazon Alexa FAQ",,1,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Understand Your Lambda Function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+91,FAQ: Creating Your Lambda function - Introduction to AWS Lambda,"FAQ,Amazon Alexa FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Introduction to AWS Lambda” exercise from the lesson “Creating Your Lambda function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Introduction to AWS Lambda
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+When I paste the ARN for my Lambda function into the Default box and click Save Endpoints I get this Error message:
+Save Failed
+The Lambda ARN arn:aws:lambda:us-east-2:313675029864:function:serverlessrepo-myCodecade-alexaskillskitnodejsfact-VX9T7YZ98B0Y is not valid for any of the supported regions. Error code: SkillManifestError
+I copied the ARN for my Lambda function exactly as instructed so I don’t know why I’m getting this error message. Any ideas?
+"
+92,"FAQ: Speak, Listen & Reprompt - Interacting with Alexa","FAQ,Amazon Alexa FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Interacting with Alexa” exercise from the lesson “Speak, Listen & Reprompt”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Interacting with Alexa
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+When will this be updated for SDK 2?
+"
+93,"FAQ: Speak, Listen & Reprompt - Wait for a User to Respond","FAQ,Amazon Alexa FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Wait for a User to Respond” exercise from the lesson “Speak, Listen & Reprompt”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Wait for a User to Respond
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Do you still need the .listen() method in SDK2 ?
+"
+94,FAQ: Build Your First Alexa Skill - Test Simulator,"FAQ,Amazon Alexa FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Test Simulator” exercise from the lesson “Build Your First Alexa Skill”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Test Simulator
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Why is Alexa referring to me as “White family”?
+"
+95,FAQ: Creating Your Lambda function - Lambda Function Name and Role,"FAQ,Amazon Alexa FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Lambda Function Name and Role” exercise from the lesson “Creating Your Lambda function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Lambda Function Name and Role
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I copy and pasted the index.js in my lambda. Then saved.
+I copied and pasted the ARN to my end point in my developer console.
+Then I saved and built my model.
+When I go to test, the results do not show up. Please help to navigate.
+"
+96,FAQ: Creating Your Lambda function - Lambda Function Code,"FAQ,Amazon Alexa FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Lambda Function Code” exercise from the lesson “Creating Your Lambda function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Lambda Function Code
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Quick question as i have seen this issue with other examples as well…
+if i say, ask code academy ‘time’----then the response is “Hello Code Academy” , it should have gone in the error handler…
+If i asy "" ask code academy ‘time today’----then it goes to error handler… not sure why…
+‘time’ is not an utterance that i have used in my skill.
+"
+97,FAQ: Slots - Collecting User Input,"FAQ,Amazon Alexa FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Collecting User Input” exercise from the lesson “Slots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Collecting User Input
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+The code doesn’t look like it did in the previous lessons. What format is it in?
+"
+98,FAQ: Use Dialog Management in Voice Interaction - Build Your Skill,"FAQ,Amazon Alexa FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Build Your Skill” exercise from the lesson “Use Dialog Management in Voice Interaction”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Conversational Design with Alexa
+FAQs on the exercise Build Your Skill
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+For Backend host, should I choose Provision my own or Using Alexa-hosted AWS Lambda?
+"
+99,FAQ: Creating Your Lambda function - Copy the ARN,"FAQ,Amazon Alexa FAQ",,5,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Copy the ARN” exercise from the lesson “Creating Your Lambda function”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Copy the ARN
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Not able to save the ARN
+Save Failed
+The Lambda ARN arn:aws:lambda:us-east-2:542003144933:function:serverlessrepo-myCodecade-alexaskillskitnodejsfact-1N40IEJ2TMKB9 is not valid for any of the supported regions. Error code: SkillManifestError
+Please help
+
+Seems the issue was my default server in my part of the country didn’t work - had to move it to North Virginia
+
+How did you move the server?
+
+You can change the server location from region drop-down in the upper-right corner. Please note that  currently, only four region support Alexa skills: Asia Pacific (Tokyo), EU (Ireland), US East (N. Virginia), US West (Oregon).
+"
+100,FAQ: Build Your First Alexa Skill - Service Simulator II,"FAQ,Amazon Alexa FAQ",,21,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Service Simulator II” exercise from the lesson “Build Your First Alexa Skill”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Service Simulator II
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I don’t see ‘JSON Input’ or ‘JSON Output’ in test tab. I only see ‘Skill I/O is available only for speech requests to skills you have created.’ (which is seen in the video as well but disappears once there is a request)
+I do get output for what’s asked in the Simulator tab but, don’t see the text content to view request and response.
+
+i am facing a similar problem, did you manage to find a fix for it? i presume its because we didnt actually implement the lambda function ourselves but rather just copied the ARN endpoints.
+
+Hello
+When I input >> “tell code academy hello”
+I get this reply >> “I solemnly swear I am up to no good, White Family”
+I checked all my current enable skills and the only one that is active is the one I created in this exercise but is called > White Family
+I disabled this skill and repeated this exercise 3 times and this is what I get.
+Also I get this >>Skill I/O is available only for speech requests to skills you have created.is >> "" and >> “previous rendered templates are not available to view.” on the Json and Lambda boxes.
+Is this normal?
+thanx
+
+Yep, same problem. Any answer on this?
+
+Bump, same issue here
+
+Hey @mr.replicant, @nejjy, and @bytecoder84128, thanks for reporting! I’m a Curriculum Developer here and I’d like to help out.
+Before fixing anything, I need to reproduce the issue. Could you each share:
+
+The exact ARN you are using on the developer portal
+
+The JSON code shown under “JSON Editor”
+The utterance you typed to get that response
+
+
+Here are mine:
+
+
+The exact ARN you are using on the developer portal You can find this under the Endpoint page
+arn:aws:lambda:us-east-1:151096212661:function:codecademyLearnAlexaIntro-ii
+
+
+The JSON code shown under “JSON Editor”
+nicks_model.txt (1.0 KB)
+
+
+The utterance you typed to get that response
+“tell code academy hello”
+
+
+
+I am receiving the same so I decided to push through to the next lesson: “Create a New Intent”, but I believe that has been altered as well. When testing “ask code academy what’s my favorite language”, it returns no content. Can we get a notification when the course is back online? Thanks!
+
+And here are mine as well:
+ARN being used: arn:aws:lambda:us-east-1:151096212661:function:codecademyLearnAlexaIntro-ii
+JSON being used: https://justpaste.it/3m6l8
+Utterance that returns odd response: “open code academy”, “tell code academy hello”
+
+Thanks @bytecoder84128! I found the issue and I’m working with the Alexa team to fix it.
+
+Any updates on “Skill I/O is available only for speech requests to skills you have created.” ? Still not able to see the JSON input / output
+
+I was experiencing the same problem and came here hoping to find an answer. I looked at the list of enabled skills on my amazon account and found one entitled “White Family Code Academy”. I disabled it from my alexa phone app as I couldn’t get it to disable from the web broswer. After it was disabled my own changes to the lambda response was recognized. Hopefully the Code Academy team can figure out a permanent solution but I thought I’d let you know how I got around it.
+
+I don’t see the “White Family Code Academy” skill listed in my account but I’m still getting “I solemnly swear I am up to no good, White Family” as a response.
+I was hoping it was a quick fix but no luck as of yet.
+
+I have the same issue - I don’t understand why there is still reference to White Family? did you solve the problem?
+
+@nduckwiler
+Guys, I had the same issue only showing me ‘Skill I/O is available only for speech requests to skills you have created.’
+I figured out the reason behind this error.
+My anti-virus software, avanst was blocking all the connections that the Alexa simulator was attempting to do in the browser.
+You can check it out from the dev tool in your browser.
+There’s a bunch of errors with access denied.
+Just turning off the web shield from avanst worked.
+Now, I see the response from the test and JSON response as well.
+
+Hi All, I just figured out why we keep getting the white family code academy responses. It looks like someone, presumably the White family, created a public skill that’s essentially identical to the one we build in our lessons. So that skill keeps getting triggered rather than the one we’ve built.
+You can disable the white family codeacademy skill by telling Alexa “disable white family code academy” in the test tab or on your Alexa device. Once it’s disabled your skill will work.
+
+Hey all!
+Issue 1: White Family Code Academy
+It sounds like a number of people are having the “White Family Code Academy” issue, including @bitwhiz35879, @sjnelson919gmail.com, @wannerj44, and @n8tedoggyt5966891611.
+While I work on a permanent solution, there are two workarounds:
+
+Like @n8tedoggyt5966891611 said, disable that White Family skill:
+
+
+It looks like someone, presumably the White family, created a public skill that’s essentially identical to the one we build in our lessons. So that skill keeps getting triggered rather than the one we’ve built.
+You can disable the white family codeacademy skill by telling Alexa “disable white family code academy” in the test tab or on your Alexa device. Once it’s disabled your skill will work.
+
+
+
+Change the name of your own skill. Instead of “code academy”, try something unique like “nick first project” or “super fabulous highly effective machine”. It’s silly I know, but it means that Alexa won’t accidentally find a skill with a similar name.
+
+Issue 2: Anti-virus software
+There is another problem that @schabibi had, in which anti-virus software was blocking the Alexa simulator. You might be experiencing this if you receive a message: “Skill I/O is available only for speech requests to skills you have created.”…I’m having trouble reproducing this one myself, but @schabibi solved it by disabling the anti-virus software.
+
+Guys, I had the same issue only showing me ‘Skill I/O is available only for speech requests to skills you have created.’
+I figured out the reason behind this error.
+My anti-virus software, avanst was blocking all the connections that the Alexa simulator was attempting to do in the browser.
+You can check it out from the dev tool in your browser.
+There’s a bunch of errors with access denied.
+Just turning off the web shield from avanst worked.
+Now, I see the response from the test and JSON response as well.
+
+
+Upon testing the skill in the console itself I get the following error
+Sorry, I’m having trouble accessing your Codecademy Skill right now
+Input: Open code academy
+alexaissue1351×627 68 KB
+
+
+
+
+
+ nduckwiler:
+
+response
+
+
+My suggested fix to the first issue (use a unique invocation) is now added to the lessons! You’ll see that the lessons now ask you to use an invocation like “Nick D’s code academy” instead of the generic “code academy”.
+"
+101,"FAQ: Speak, Listen & Reprompt - Review","FAQ,Amazon Alexa FAQ",,6,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Speak, Listen & Reprompt”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I tried to follow this exercice.
+I put this code into my lambda function on AWS  :
+""use strict"";
+
+var Alexa = require(""alexa-sdk"");
+
+var handlers = {
+  'LaunchRequest': function() {
+    this.response.speak(""Hello, Welcome to Codecademy. What do you think is Codecademy's most popular language?"").listen(""Tell me what you think is Codecademy's most popular language."");
+    this.emit(':responseReady');
+  },
+
+  'LanguageIntent': function () {
+    this.response.speak(""Python is our most popular language."");
+    this.emit(':responseReady');
+  },
+}
+
+exports.handler = function(event, context, callback){
+    var alexa = Alexa.handler(event, context);
+    alexa.registerHandlers(handlers);
+    alexa.execute();
+};
+
+I associate it with my Alexa skill using the ARN but when I test it (just say : “open Popular Language”, which is the waking word of my skill), the only response I get is :
+
+There was a problem with the requested skill’s response
+
+Does someone knows why I can’t launch my skill ?
+
+Same problem, do you figure it out?
+
+If somebody could give more detailed instructions on how to copy the code over that would be amazing.
+
+Hello !
+I don’t know if that have anything to do with it but when I was doing some research on Internet I found that :  This version of the Alexa Skills Kit SDK is no longer supported. Please use the v2 release found here: https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs
+Source : https://www.npmjs.com/package/alexa-sdk
+So I guess there are some changing to do on all the lesson… I’m trying something and I’ll let you know if it works
+
+Hey !
+You should watch here : https://developer.amazon.com/fr-FR/docs/alexa/custom-skills/handle-requests-sent-by-alexa.html#listen-and-reprompt
+"
+102,FAQ: Build Your First Alexa Skill - Review,"FAQ,Amazon Alexa FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Build Your First Alexa Skill”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Alexa says it has problems opening the skill, but I followed all the steps correctly. What would it be?
+"
+103,FAQ: Slots - Slots Review,"FAQ,Amazon Alexa FAQ",,5,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Slots Review” exercise from the lesson “Slots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Slots Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+hello everyone… I followed every step and I keep getting error when I run it.
+Alexa would respond: There was a problem with the requested skill’s response
+and the error code is below:
+
+{
+“version”: “1.0”,
+“session”: {
+“new”: false,
+“sessionId”: “amzn1.echo-api.session.ed5533ff-d900-471a-bde9-8f83153c90b8”,
+“application”: {
+“applicationId”: “amzn1.ask.skill.ae231389-0acb-4f73-aab2-cdc39c26d7a8”
+},
+“user”: {
+“userId”: “amzn1.ask.account…”
+}
+},
+“context”: {
+“Display”: {},
+“System”: {
+“application”: {
+“applicationId”: “amzn1.ask.skill.ae231389-0acb-4f73-aab2-cdc39c26d7a8”
+},
+“user”: {
+“userId”: “amzn1.ask.account…”
+},
+“device”: {
+“deviceId”: “amzn1.ask.device.AFX6YAACFXRCC4CPBYBOGCQV5XFD5VR7WEMLEKE7CQQZDMVDUGTIF32LOBOJPFMNPV44CJH4CKGHAKT6E5BGEIX5XOI47LZPIA2UYWNMX3MMYWWAVIR6CXHEF2TGDWYBNHQBVBGRIFKDS3OTPMTD2YPFQV6VGULNEZVQ6QDTS3MJZI7ZRYTCK”,
+“supportedInterfaces”: {
+“Display”: {
+“templateVersion”: “1.0”,
+“markupVersion”: “1.0”
+}
+}
+},
+“apiEndpoint”: “https://api.amazonalexa.com”,
+“apiAccessToken”: “…”
+},
+“Viewport”: {
+“experiences”: [
+{
+“arcMinuteWidth”: 246,
+“arcMinuteHeight”: 144,
+“canRotate”: false,
+“canResize”: false
+}
+],
+“shape”: “RECTANGLE”,
+“pixelWidth”: 1024,
+“pixelHeight”: 600,
+“dpi”: 160,
+“currentPixelWidth”: 1024,
+“currentPixelHeight”: 600,
+“touch”: [
+“SINGLE”
+]
+}
+},
+“request”: {
+“type”: “SessionEndedRequest”,
+“requestId”: “amzn1.echo-api.request.67a24ded-92c6-4fe2-a7d8-cf5f6529d36e”,
+“timestamp”: “2019-03-29T17:17:59Z”,
+“locale”: “en-US”,
+“reason”: “ERROR”,
+“error”: {
+“type”: “INVALID_RESPONSE”,
+“message”: “An exception occurred while dispatching the request to the skill.”
+}
+}
+}
+if everyone could look into it I would really appreciate… thanks so much!
+
+Hey alfredo, I know this is a super late response to your question, but I just stumbled across the same issue and believe I figured out why it happens at least. The problem is that the Inroduction to Alexa series was initially published with the older Alexa SDK and now the first two courses have been update to the newer version, while the later two have not been. The course requests that we use a serverless app repository blueprint that no longer seems to exist in the repo. So, long story short, we either have to wait for the course to be updated or read up on the GitHub documentation (linked here ).
+
+Thank you a ton! I’ve been stuck on the last bit for hours now trying to figure out if I was using the wrong template or missing a semi-colon somewhere. Would really like an update soon, this is very hard to learn without being able to test.
+
+Thanks for you answer. I am having the same issue and cannot figure out what happened. Good to know, and wish to see the update.
+"
+104,FAQ: Build Your First Alexa Skill - Connect Lambda Function II,"FAQ,Amazon Alexa FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Connect Lambda Function II” exercise from the lesson “Build Your First Alexa Skill”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Connect Lambda Function II
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Hello,
+My Alexa language is set to French by default, since I live in France. I cannot have access to the skill, since the ARN is set to US … What shall I do?
+Thanks,
+"
+105,FAQ: Build Your First Alexa Skill - Create the Interaction Model,"FAQ,Amazon Alexa FAQ",,2,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Create the Interaction Model” exercise from the lesson “Build Your First Alexa Skill”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Create the Interaction Model
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+FAQ: Build Your First Alexa Skill- Create the Interaction Model:grinning:
+"
+106,FAQ: Build Your First Alexa Skill - Create Skill,"FAQ,Amazon Alexa FAQ",,4,"
+
+Community FAQs on Codecademy Exercises.jpeg1000×208 141 KB
+
+This community-built FAQ covers the “Create Skill” exercise from the lesson “Build Your First Alexa Skill”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Introduction to Alexa
+FAQs on the exercise Create Skill
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head here.
+Looking for motivation to keep learning? Join our wider discussions.
+Learn more about how to use this guide.
+Found a bug? Report it!
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Which method should we use to host backend resources? The exercise doesn’t say.
+
+1375×549 74.3 KB
+
+
+I had the same question,
+It’s provision your own
+
+What should I choose?
+Annotation 2020-07-06 0815101328×572 56.3 KB
+"
