@@ -1,0 +1,792 @@
+,Title,Categories,Tags,Replies,Post,Comment
+0,About the Build Chatbots with Python FAQ category,"FAQ,Build Chatbots with Python FAQ",,1,"
+Chatbots are everywhere these days, from customer support dialog boxes to virtual assistants like Siri and Google Home. Hone your Python skills as you build increasingly complex chatbots, from a simple bot that echoes what you say to a deep learning program that can converse with you!
+",
+1,FAQ: Retrieval-Based Chatbots - Intent with TF-IDF,"FAQ,Build Chatbots with Python FAQ",,3,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Intent with TF-IDF” exercise from the lesson “Retrieval-Based Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Intent with TF-IDF
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I have completed the full Chatbot course. However, I still have the open question, how can I create several categories within the answers in the retrieval based chatbot?
+As an example: In the retrieval based chatbot project “Cyborg Cantina”, a category “food” exists as variable “blank_spot”. How can I extend the bot now so that further categories are added? E.g. “opening hours”, “table reservation” etc.?
+If I understand it correctly, the bot Cyborg Cantina is for example limited to questions about food at the moment. I would like to extend this to more categories.
+
+I must say that I am quite disappointed not to get any help. It’s a pity, I had hoped for more and can do so little with the course contents. No officals here to help??
+"
+2,FAQ: Generative Chatbots - Setting Up the Bot,"FAQ,Build Chatbots with Python FAQ",,2,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Setting Up the Bot” exercise from the lesson “Generative Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Setting Up the Bot
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I’m having trouble validating this exercise, as well. I had to go to the solution code to get through step 3.
+After resetting the workspace, I copy-pasted the solution code and still could not validate step 3; the error “Expected .generate_response() to be called” persists, as can be seen in the attached screenshot.
+Screen Shot 2020-05-21 at 12.13.10 PM2302×1062 327 KB
+"
+3,FAQ: Generative Chatbots - Choosing the Right Dataset,"FAQ,Build Chatbots with Python FAQ",,2,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Choosing the Right Dataset” exercise from the lesson “Generative Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Choosing the Right Dataset
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I can’t get through this exercise without choosing to view the solution code. The exercise validation also continues to fail after resetting the workspace and using the solution code itself.
+Screen Shot 2020-05-21 at 11.57.51 AM2300×1062 410 KB
+"
+4,FAQ: Retrieval-Based Chatbots - Entity Recognition with Word Embeddings,"FAQ,Build Chatbots with Python FAQ",,2,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Entity Recognition with Word Embeddings” exercise from the lesson “Retrieval-Based Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Entity Recognition with Word Embeddings
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I wasn’t able to pass through this exercise without going to the solution code. Step 2 calls for the word2vec model to be named both word2vec() AND word2vec_model() simultaneously.
+
+Call  word2vec()  on the string  ""clothes""  and assign the result to  category .
+Call  word2vec_model()  on the concatenated form of  message_nouns  and assign the result to  tokens .
+
+When you opt for the solution code, you’ll see that the model in the provided code has been renamed word2vec(). I reset the entire exercise, then used the copy-pasted solution code, and was still unable to validate Step 2.
+"
+5,Coffee Chatbot : NameError order_latte is not defined,"FAQ,Build Chatbots with Python FAQ",,6,"
+Hello. I have a little problem with this exercise. I dont understand where is a mistake.
+i have a NameError: order_latte is not defined. Maybe someone can help me. Thank you  for help.
+def  coffee_bot():
+  print(""Welcome to the cafe!"")
+coffee_bot()
+
+def print_message():
+  print(""I'm sorry, I did not understand your selection. Please enter the corresponding letter for your response."")
+
+def get_size():
+  res = input('What size drink can I get for you? \n[a] Small \n[b] Medium \n[c] Large \n> ')
+  if res == 'a':
+    return 'small'
+  if res == 'b':
+    return 'medium'
+  if res == 'c':
+    return 'large'
+  else:
+    print_message()
+    return get_size()
+    
+size = get_size()
+print(size)   
+
+def get_drink_type():
+  res = input(""What type of drink would you like? \n[a] Brewed Coffe \n[b] Mocha \n[c] Latte \n> "")
+  if res == 'a':
+    return ""Brewed Coffe""
+  if res == 'b':
+    return 'Mocha'
+  if res == 'c':
+    return order_latte()
+  else:
+    print_message()
+    return get_drink_type()
+    
+drink_type = get_drink_type()
+print(drink_type)
+  
+def order_latte():
+  res = input(""What kind of milk for your latte? \n[a] 2% milk \n[b] Non-fat milk \n[c] Soy milk \n> "")
+  if res == 'a':
+    return '2% milk'
+  if res == 'b':
+    return 'Non-fat milk'
+  if res == 'c':
+    return 'Soy milk'
+  else:
+    print_message()
+    return order_latte()
+    
+latte_options = order_latte()
+print(latte_options)
+
+when I use answer c in the second step this error occurs
+","
+Hi there, welcome to the forums.
+It’s because Python is an interpreted language, so when you run your program Python executes it line-by-line, top to bottom.
+In your code, by the time you get to doing
+if res == 'c':
+    return order_latte()
+
+you haven’t yet declared the function order_latte(), so Python doesn’t know what you mean. 
+Also, I formatted your code correctly so we can see the indenting. Please read this thread to see how to do this for future questions. (It makes it a lot easier for us to help you, especially with Python!  )
+
+great thank you for help 
+
+tries to declare caffe_latte () before it appears in the get_drink_type () function, however, despite all attempts, NameError messages still appear. Could you show me exactly what it should look like? I will be very grateful.
+
+You should be able to simply move the entire order_latte function above get_drink_type and it should work. (At least, it did when I tried that in a repl…) 
+
+You don’t declare things.
+When you execute a def statement, you create a function and assign that name to it, it is an action carried out.
+So you would create all the functions you need, then invoke them. Doesn’t matter what order they are created in, you just need to create them before you end up calling them.
+def a():
+    b()
+
+def b():
+  return 0
+
+a()  # a and b both exist at this time
+"
+6,Python,"FAQ,Build Chatbots with Python FAQ",,2,"
+I’m facing error in this code. Can anyone tell the reason please.
+line1 = “Myself XYZ”
+line2 = “I’m new to Codecademy”
+print(line1\n\line2)
+I am trying to use the variable with line break function. But it’s showing error
+","
+Hello. Have you though about using string formatting?
+"
+7,FAQ: Generative Chatbots - Handling User Input,"FAQ,Build Chatbots with Python FAQ",,3,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Handling User Input” exercise from the lesson “Generative Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Handling User Input
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+I dont know if it is just me but is anyone else having a loading problem with this particular exercise? where the instructions checkbox will freeze and not load? I have tried refreshing the website and exiting out of the webpage but the problem seems to continue.
+
+nevermind solved it lol
+"
+8,FAQ: Retrieval-Based Chatbots - Lesson Review,"FAQ,Build Chatbots with Python FAQ",,2,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Lesson Review” exercise from the lesson “Retrieval-Based Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Lesson Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+My chatbot won’t understand my how_to_pay_bill or pay_bill inputs.  It just keeps saying it doesn’t understand. Not sure why.
+class SupportBot:
+negative_responses = (“nothing”, “don’t”, “stop”, “sorry”)
+exit_commands = (“quit”, “pause”, “exit”, “goodbye”, “bye”, “later”)
+def init(self):
+self.matching_phrases = {‘how_to_pay_bill’: [r’.*how.pay bills.’, r’.*how.pay my bill.’], r’pay_bill’: [r’.*want.*pay.*my.*bill.*account.*number.*is (\d+)’, r’.*need.*pay.*my.*bill.*account.*number.*is (\d+)’]}
+def welcome(self):
+name = input(""Hi, I’m a customer support representative. Welcome to Codecademy Bank. Before we can help you, I need some information from you. What is your first name and last name? "")
+will_help = input(f""Ok {name}, what can I help you with? "")
+
+if will_help in self.negative_responses:
+  print(""Ok, have a great day!"")
+  return
+
+self.handle_conversation(will_help)
+
+def handle_conversation(self, reply):
+while not self.make_exit(reply):
+reply = self.match_reply(reply)
+def make_exit(self, reply):
+for exit_command in self.exit_commands:
+if exit_command in reply:
+print(“Ok, have a great day!”)
+return True
+return False
+
+def match_reply(self, reply):
+for key, values in self.matching_phrases.items():
+for regex_pattern in values:
+found_match = re.match(regex_pattern, reply)
+if found_match and key == ‘how_to_pay_bill’:
+return self.how_to_pay_bill_intent()
+elif found_match and key == ‘pay_bill’:
+return self.pay_bill_intent(found_match.groups()[0])
+return input(""I did not understand you. Can you please ask your question again?"")
+
+def how_to_pay_bill_intent(self):
+return input(“You can pay your bill a couple of ways. 1) online at bill.codecademybank.com or 2) you can pay your bill right now with me. Can I help you with anything else?”)
+def pay_bill_intent(self, account_number=None):
+return input(f""The account with number {account_number} was paid off. What else can I help you with?"")
+Create a SupportBot instance
+SupportConversation = SupportBot()
+Call the .welcome() method
+SupportConversation.welcome()
+"
+9,FAQ: Rule-Based Chatbots - Interpreting User Responses I,"FAQ,Build Chatbots with Python FAQ",,2,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Interpreting User Responses I” exercise from the lesson “Rule-Based Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Interpreting User Responses I
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+","
+Hi - in this exercise the negative_responses and exit_commands attributes come before def init(self):, whereas the class variable matching_phrases comes afterwords. I am not fully understanding the distinction between an attribute coming before  def init(self): and variable coming after.  What is the difference in behaviour? The fact that both attribute and class variable are accessed within the instance by self. prefix adds to my confusion. Any clarification on this would be greatly appreciated.
+"
+10,FAQ: Retrieval-Based Chatbots - Introduction to Retrieval-based Chatbots,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Introduction to Retrieval-based Chatbots” exercise from the lesson “Retrieval-Based Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Introduction to Retrieval-based Chatbots
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+11,FAQ: Rule-Based Chatbots - Handling the Conversation,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Handling the Conversation” exercise from the lesson “Rule-Based Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Handling the Conversation
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+12,FAQ: Rule-Based Chatbots - Introduction,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Introduction” exercise from the lesson “Rule-Based Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Introduction
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+13,FAQ: Rule-Based Chatbots - Greeting the User,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Greeting the User” exercise from the lesson “Rule-Based Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Greeting the User
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+14,FAQ: Generative Chatbots - Review,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Generative Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+15,FAQ: Generative Chatbots - Putting It All Together,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Putting It All Together” exercise from the lesson “Generative Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Putting It All Together
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+16,FAQ: Generative Chatbots - Handling Unknown Words,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Handling Unknown Words” exercise from the lesson “Generative Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Handling Unknown Words
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+17,FAQ: Generative Chatbots - Generating Chatbot Responses,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Generating Chatbot Responses” exercise from the lesson “Generative Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Generating Chatbot Responses
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+18,FAQ: Retrieval-Based Chatbots - Intent with Bag-of-Words,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Intent with Bag-of-Words” exercise from the lesson “Retrieval-Based Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Intent with Bag-of-Words
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+19,FAQ: Rule-Based Chatbots - Review,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Review” exercise from the lesson “Rule-Based Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Review
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+20,FAQ: Rule-Based Chatbots - Entities,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Entities” exercise from the lesson “Rule-Based Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Entities
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+21,FAQ: Rule-Based Chatbots - Interpreting User Responses II,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Interpreting User Responses II” exercise from the lesson “Rule-Based Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Interpreting User Responses II
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+22,FAQ: Rule-Based Chatbots - Exiting the Conversation,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Exiting the Conversation” exercise from the lesson “Rule-Based Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Exiting the Conversation
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+23,FAQ: Retrieval-Based Chatbots - Entity Recognition with POS Tagging,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Entity Recognition with POS Tagging” exercise from the lesson “Retrieval-Based Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Entity Recognition with POS Tagging
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+24,FAQ: Retrieval-Based Chatbots - Response Selection,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Response Selection” exercise from the lesson “Retrieval-Based Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Response Selection
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+25,FAQ: Retrieval-Based Chatbots - Building a Retrieval System,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Building a Retrieval System” exercise from the lesson “Retrieval-Based Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Building a Retrieval System
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+26,FAQ: Rule-Based Chatbots - Intents,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Intents” exercise from the lesson “Rule-Based Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Intents
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
+27,FAQ: Generative Chatbots - Introduction to Generative Chatbots,"FAQ,Build Chatbots with Python FAQ",,1,"
+
+Community%20FAQs%20on%20Codecademy%20Exercises1000×208 141 KB
+
+This community-built FAQ covers the “Introduction to Generative Chatbots” exercise from the lesson “Generative Chatbots”.
+Paths and Courses
+This exercise can be found in the following Codecademy content:
+Build Chatbots with Python
+FAQs on the exercise Introduction to Generative Chatbots
+
+
+There are currently no frequently asked questions associated with this exercise – that’s where you come in!  You can contribute to this section by offering your own questions, answers, or clarifications on this exercise.  Ask or answer a question by clicking reply () below.
+If you’ve had an “aha” moment about the concepts, formatting, syntax, or anything else with this exercise, consider sharing those insights!  Teaching others and answering their questions is one of the best ways to learn and stay sharp.
+
+Join the Discussion. Help a fellow learner on their journey.
+Ask or answer a question about this exercise by clicking reply () below!
+You can also find further discussion and get answers to your questions over in #get-help.
+Agree with a comment or answer? Like () to up-vote the contribution!
+Need broader help or resources?  Head to #get-help and #community:tips-and-resources. If you are wanting feedback or inspiration for a project, check out #project.
+Looking for motivation to keep learning? Join our wider discussions in #community
+Learn more about how to use this guide.
+Found a bug? Report it online, or post in #community:Codecademy-Bug-Reporting
+Have a question about your account or billing? Reach out to our customer support team!
+None of the above?  Find out where to ask other questions here!
+",
