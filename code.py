@@ -13,7 +13,7 @@ cats = 'Get Help,Git'
 # Find the number of pages in categories to determine the range
 for i in range(0, 15):
     # Add the URL to the category page you have to scrape
-    URL = 'https://discuss.codecademy.com/c/get-help/git/1813?page='+str(i)
+    URL = 'https://discuss.codecademy.com/c/get-help/git/1813'+'?page='+str(i)
     page = requests.get(URL)
     soup = BeautifulSoup(page.content, 'html.parser')
     results = soup.find_all(class_='topic-list-item')
@@ -41,7 +41,7 @@ for i in range(0, 15):
     # To prevent DDoS
     time.sleep(3)
 
-gitcsv = pd.DataFrame({'Title': titles,
+getcsv = pd.DataFrame({'Title': titles,
                        'Categories': categories,
                        'Tags': tags,
                        'Replies': replies,
@@ -49,6 +49,6 @@ gitcsv = pd.DataFrame({'Title': titles,
                        'Comment': comments,
                        })
 
-print(gitcsv.info())
+print(getcsv.info())
 
-gitcsv.to_csv('gitcsv.csv')
+getcsv.to_csv('output.csv')
